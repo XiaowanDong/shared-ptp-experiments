@@ -1,0 +1,4245 @@
+@ ITLB_MISSES.WALK_COMPLETED [4223 samples]
+
+22.66%  [957]      pthread_mutex_trylock @ /lib/libthr.so.3
+ 98.64%  [944]       create_groupingsets_path @ /usr/local/bin/postgres
+  100.0%  [944]        ExplainNode
+   100.0%  [944]         AlterUserMapping
+    100.0%  [944]          RemoveForeignServerById
+     100.0%  [944]           create_unique_path
+      100.0%  [944]            get_relation_info
+       100.0%  [944]             tokenize_inc_file
+        100.0%  [944]              CreateTransform
+ 00.84%  [8]         _bt_leafbuild
+  100.0%  [8]          brin_desc
+   100.0%  [8]           heap_xlog_update
+    100.0%  [8]            _bt_restore_page
+     100.0%  [8]             infer_arbiter_indexes
+      100.0%  [8]              tokenize_inc_file
+       100.0%  [8]               CreateTransform
+ 00.31%  [3]         create_sort_path
+  100.0%  [3]          ExplainNode
+   100.0%  [3]           parse_func_options
+    100.0%  [3]            parse_func_options
+     100.0%  [3]             get_relation_info
+      100.0%  [3]              tokenize_inc_file
+       100.0%  [3]               CreateTransform
+ 00.21%  [2]         create_minmaxagg_path
+  100.0%  [2]          ExplainNode
+   100.0%  [2]           AlterUserMapping
+    100.0%  [2]            RemoveForeignServerById
+     100.0%  [2]             create_unique_path
+      100.0%  [2]              get_relation_info
+       100.0%  [2]               tokenize_inc_file
+        100.0%  [2]                CreateTransform
+
+09.85%  [416]      roundl @ /lib/libm.so.5
+ 100.0%  [416]       ExecGroup @ /usr/local/bin/postgres
+  100.0%  [416]        ExecReScanSort
+   100.0%  [416]         ExecWindowAgg
+    100.0%  [416]          ExecParallelRetrieveInstrumentation
+     100.0%  [416]           ExecInitExpr
+      100.0%  [416]            ExecEvalRowCompare
+       100.0%  [416]             ExecEvalNullIf
+        100.0%  [416]              ExecEvalWholeRowVar
+         100.0%  [416]               create_modifytable_path
+          100.0%  [416]                predicate_refuted_by_recurse
+           100.0%  [416]                 tokenize_inc_file
+            100.0%  [416]                  CreateTransform
+
+05.04%  [213]      ComputeIndexAttrs @ /usr/local/bin/postgres
+ 92.49%  [197]       spgdoinsert
+  95.43%  [188]        ComputeIndexAttrs
+   96.81%  [182]         spgdoinsert
+    100.0%  [182]          spgdoinsert
+     100.0%  [182]           ComputeIndexAttrs
+      100.0%  [182]            heap_abort_speculative
+       100.0%  [182]             heap_update
+        100.0%  [182]              predicate_refuted_by_recurse
+         100.0%  [182]               tokenize_inc_file
+          100.0%  [182]                CreateTransform
+   03.19%  [6]           ComputeIndexAttrs
+    100.0%  [6]            spgdoinsert
+     100.0%  [6]             ComputeIndexAttrs
+      100.0%  [6]              spgdoinsert
+       100.0%  [6]               spgdoinsert
+        100.0%  [6]                ComputeIndexAttrs
+         100.0%  [6]                 heap_abort_speculative
+          100.0%  [6]                  heap_update
+           100.0%  [6]                   predicate_refuted_by_recurse
+            100.0%  [6]                    tokenize_inc_file
+             100.0%  [6]                     CreateTransform
+  04.57%  [9]          spgdoinsert
+   100.0%  [9]           ComputeIndexAttrs
+    100.0%  [9]            heap_abort_speculative
+     100.0%  [9]             heap_update
+      100.0%  [9]              predicate_refuted_by_recurse
+       100.0%  [9]               tokenize_inc_file
+        100.0%  [9]                CreateTransform
+ 03.29%  [7]         ExecIndexBuildScanKeys
+  100.0%  [7]          ExecInitExpr
+   100.0%  [7]           tupledesc_match
+    100.0%  [7]            ExecEndNode
+     100.0%  [7]             ExecProcNode
+      100.0%  [7]              ExecInitExpr
+       100.0%  [7]               ExecEvalRowCompare
+        100.0%  [7]                ExecEvalNullIf
+         100.0%  [7]                 ExecEvalWholeRowVar
+          100.0%  [7]                  create_modifytable_path
+           100.0%  [7]                   predicate_refuted_by_recurse
+            100.0%  [7]                    tokenize_inc_file
+             100.0%  [7]                     CreateTransform
+ 02.35%  [5]         ComputeIndexAttrs
+  80.00%  [4]          ExecuteDoStmt
+   100.0%  [4]           spgdoinsert
+    100.0%  [4]            heap_lock_updated_tuple
+     100.0%  [4]             heap_update
+      100.0%  [4]              predicate_refuted_by_recurse
+       100.0%  [4]               tokenize_inc_file
+        100.0%  [4]                CreateTransform
+  20.00%  [1]          ExecIndexBuildScanKeys
+   100.0%  [1]           ExecInitExpr
+    100.0%  [1]            tupledesc_match
+     100.0%  [1]             ExecEndNode
+      100.0%  [1]              ExecProcNode
+       100.0%  [1]               ExecInitExpr
+        100.0%  [1]                ExecEvalRowCompare
+         100.0%  [1]                 ExecEvalNullIf
+          100.0%  [1]                  ExecEvalWholeRowVar
+           100.0%  [1]                   create_modifytable_path
+            100.0%  [1]                    predicate_refuted_by_recurse
+             100.0%  [1]                     tokenize_inc_file
+              100.0%  [1]                      CreateTransform
+ 00.47%  [1]         CheckIndexCompatible
+  100.0%  [1]          ComputeIndexAttrs
+   100.0%  [1]           ComputeIndexAttrs
+    100.0%  [1]            ExecuteDoStmt
+     100.0%  [1]             spgdoinsert
+      100.0%  [1]              heap_lock_updated_tuple
+       100.0%  [1]               heap_update
+        100.0%  [1]                predicate_refuted_by_recurse
+         100.0%  [1]                 tokenize_inc_file
+          100.0%  [1]                  CreateTransform
+ 00.47%  [1]         reorderqueue_cmp
+  100.0%  [1]          ComputeIndexAttrs
+   100.0%  [1]           ComputeIndexAttrs
+    100.0%  [1]            ExecIndexBuildScanKeys
+     100.0%  [1]             ExecInitExpr
+      100.0%  [1]              tupledesc_match
+       100.0%  [1]               ExecEndNode
+        100.0%  [1]                ExecProcNode
+         100.0%  [1]                 ExecInitExpr
+          100.0%  [1]                  ExecEvalRowCompare
+           100.0%  [1]                   ExecEvalNullIf
+            100.0%  [1]                    ExecEvalWholeRowVar
+             100.0%  [1]                     create_modifytable_path
+              100.0%  [1]                      predicate_refuted_by_recurse
+               100.0%  [1]                       tokenize_inc_file
+ 00.47%  [1]         ExecuteDoStmt
+  100.0%  [1]          spgdoinsert
+   100.0%  [1]           heap_lock_updated_tuple
+    100.0%  [1]            heap_update
+     100.0%  [1]             predicate_refuted_by_recurse
+      100.0%  [1]              tokenize_inc_file
+       100.0%  [1]               CreateTransform
+ 00.47%  [1]         InstrAggNode
+  100.0%  [1]          InstrEndLoop
+   100.0%  [1]           ComputeIndexAttrs
+    100.0%  [1]            fmgr_sql
+     100.0%  [1]             ExecEvalScalarVar
+      100.0%  [1]              create_modifytable_path
+       100.0%  [1]               predicate_refuted_by_recurse
+        100.0%  [1]                tokenize_inc_file
+         100.0%  [1]                 CreateTransform
+
+04.93%  [208]      0x11ee9a @ /lib/libc.so.7
+ 94.71%  [197]       CreateUserMapping @ /usr/local/bin/postgres
+  100.0%  [197]        ImportForeignSchema
+ 04.81%  [10]        CreateForeignServer
+  100.0%  [10]         get_relation_info
+   100.0%  [10]          tokenize_inc_file
+    100.0%  [10]           CreateTransform
+ 00.48%  [1]         range_union_internal
+  100.0%  [1]          get_base_rel_indexes
+   100.0%  [1]           grouping_planner
+    100.0%  [1]            dataBeginPlaceToPage
+
+04.14%  [175]      CheckIndexCompatible @ /usr/local/bin/postgres
+ 100.0%  [175]       spgdoinsert
+  100.0%  [175]        ComputeIndexAttrs
+   69.14%  [121]         ComputeIndexAttrs
+    100.0%  [121]          spgdoinsert
+     100.0%  [121]           ComputeIndexAttrs
+      100.0%  [121]            spgdoinsert
+       100.0%  [121]             spgdoinsert
+        100.0%  [121]              ComputeIndexAttrs
+         100.0%  [121]               heap_abort_speculative
+          100.0%  [121]                heap_update
+           100.0%  [121]                 predicate_refuted_by_recurse
+            100.0%  [121]                  tokenize_inc_file
+             100.0%  [121]                   CreateTransform
+   30.86%  [54]          spgdoinsert
+    100.0%  [54]           spgdoinsert
+     100.0%  [54]            ComputeIndexAttrs
+      100.0%  [54]             heap_abort_speculative
+       100.0%  [54]              heap_update
+        100.0%  [54]               predicate_refuted_by_recurse
+         100.0%  [54]                tokenize_inc_file
+          100.0%  [54]                 CreateTransform
+
+04.12%  [174]      0x5480 @ /libexec/ld-elf.so.1
+ 95.98%  [167]       0x8eb37 @ /lib/libc.so.7
+  100.0%  [167]        _bt_leafbuild @ /usr/local/bin/postgres
+   100.0%  [167]         brin_desc
+    100.0%  [167]          heap_xlog_update
+     100.0%  [167]           _bt_restore_page
+      100.0%  [167]            infer_arbiter_indexes
+       100.0%  [167]             tokenize_inc_file
+        100.0%  [167]              CreateTransform
+ 04.02%  [7]         0x118b0b @ /lib/libc.so.7
+  100.0%  [7]          0x66384f @ /usr/local/bin/postgres
+   100.0%  [7]           predicate_refuted_by_recurse
+    100.0%  [7]            tokenize_inc_file
+     100.0%  [7]             CreateTransform
+
+03.48%  [147]      pg_icu_collator_from_collation @ /usr/local/bin/postgres
+ 100.0%  [147]       pg_stat_get_backend_client_port
+  100.0%  [147]        ExecSubPlan
+   100.0%  [147]         AfterTriggerBeginSubXact
+    100.0%  [147]          afterTriggerInvokeEvents
+     100.0%  [147]           DefineType
+      100.0%  [147]            ExecCallTriggerFunc
+       100.0%  [147]             ExecEvalWholeRowVar
+        100.0%  [147]              ExecEvalRowCompare
+         100.0%  [147]               ExecEvalNullIf
+          100.0%  [147]                ExecEvalWholeRowVar
+           100.0%  [147]                 create_modifytable_path
+            100.0%  [147]                  predicate_refuted_by_recurse
+             100.0%  [147]                   tokenize_inc_file
+              100.0%  [147]                    CreateTransform
+
+02.96%  [125]      __mallocx @ /lib/libc.so.7
+ 17.60%  [22]        ExplainNode @ /usr/local/bin/postgres
+  100.0%  [22]         parse_func_options
+   100.0%  [22]          parse_func_options
+    100.0%  [22]           get_relation_info
+     100.0%  [22]            tokenize_inc_file
+      100.0%  [22]             CreateTransform
+
+02.32%  [98]       0x11ee91 @ /lib/libc.so.7
+ 98.98%  [97]        ImportForeignSchema @ /usr/local/bin/postgres
+ 01.02%  [1]         get_relation_info
+  100.0%  [1]          tokenize_inc_file
+   100.0%  [1]           CreateTransform
+
+02.01%  [85]       EncodeTimezone @ /usr/local/bin/postgres
+ 100.0%  [85]        pg_stat_get_backend_client_port
+  100.0%  [85]         ExecSubPlan
+   100.0%  [85]          AfterTriggerBeginSubXact
+    100.0%  [85]           afterTriggerInvokeEvents
+     100.0%  [85]            DefineType
+      100.0%  [85]             ExecCallTriggerFunc
+       100.0%  [85]              ExecEvalWholeRowVar
+        100.0%  [85]               ExecEvalRowCompare
+         100.0%  [85]                ExecEvalNullIf
+          100.0%  [85]                 ExecEvalWholeRowVar
+           100.0%  [85]                  create_modifytable_path
+            100.0%  [85]                   predicate_refuted_by_recurse
+             100.0%  [85]                    tokenize_inc_file
+              100.0%  [85]                     CreateTransform
+
+01.97%  [83]       _bt_restore_array_keys @ /usr/local/bin/postgres
+ 100.0%  [83]        brin_desc
+  100.0%  [83]         heap_xlog_update
+   100.0%  [83]          _bt_restore_page
+    100.0%  [83]           infer_arbiter_indexes
+     100.0%  [83]            tokenize_inc_file
+      100.0%  [83]             CreateTransform
+
+01.78%  [75]       CreateUserMapping @ /usr/local/bin/postgres
+ 100.0%  [75]        ImportForeignSchema
+
+01.70%  [72]       0x1212a8 @ /lib/libc.so.7
+ 94.44%  [68]        create_groupingsets_path @ /usr/local/bin/postgres
+  100.0%  [68]         ExplainNode
+   100.0%  [68]          AlterUserMapping
+    100.0%  [68]           RemoveForeignServerById
+     100.0%  [68]            create_unique_path
+      100.0%  [68]             get_relation_info
+       100.0%  [68]              tokenize_inc_file
+        100.0%  [68]               CreateTransform
+ 04.17%  [3]         create_sort_path
+  100.0%  [3]          ExplainNode
+   100.0%  [3]           parse_func_options
+    100.0%  [3]            parse_func_options
+     100.0%  [3]             get_relation_info
+      100.0%  [3]              tokenize_inc_file
+       100.0%  [3]               CreateTransform
+ 01.39%  [1]         _bt_leafbuild
+  100.0%  [1]          brin_desc
+   100.0%  [1]           heap_xlog_update
+    100.0%  [1]            _bt_restore_page
+     100.0%  [1]             infer_arbiter_indexes
+      100.0%  [1]              tokenize_inc_file
+       100.0%  [1]               CreateTransform
+
+01.63%  [69]       spgdoinsert @ /usr/local/bin/postgres
+ 97.10%  [67]        ComputeIndexAttrs
+  53.73%  [36]         spgdoinsert
+   100.0%  [36]          spgdoinsert
+    100.0%  [36]           ComputeIndexAttrs
+     100.0%  [36]            heap_abort_speculative
+      100.0%  [36]             heap_update
+       100.0%  [36]              predicate_refuted_by_recurse
+        100.0%  [36]               tokenize_inc_file
+         100.0%  [36]                CreateTransform
+  46.27%  [31]         ComputeIndexAttrs
+   100.0%  [31]          spgdoinsert
+    100.0%  [31]           ComputeIndexAttrs
+     100.0%  [31]            spgdoinsert
+      100.0%  [31]             spgdoinsert
+       100.0%  [31]              ComputeIndexAttrs
+        100.0%  [31]               heap_abort_speculative
+         100.0%  [31]                heap_update
+          100.0%  [31]                 predicate_refuted_by_recurse
+           100.0%  [31]                  tokenize_inc_file
+            100.0%  [31]                   CreateTransform
+ 02.90%  [2]         spgdoinsert
+  100.0%  [2]          ComputeIndexAttrs
+   50.00%  [1]           heap_abort_speculative
+    100.0%  [1]            heap_update
+     100.0%  [1]             predicate_refuted_by_recurse
+      100.0%  [1]              tokenize_inc_file
+       100.0%  [1]               CreateTransform
+   50.00%  [1]           spgdoinsert
+    100.0%  [1]            spgdoinsert
+     100.0%  [1]             ComputeIndexAttrs
+      100.0%  [1]              heap_abort_speculative
+       100.0%  [1]               heap_update
+        100.0%  [1]                predicate_refuted_by_recurse
+         100.0%  [1]                 tokenize_inc_file
+          100.0%  [1]                  CreateTransform
+
+01.61%  [68]       atanh @ /lib/libm.so.5
+ 95.59%  [65]        float8out @ /usr/local/bin/postgres
+  100.0%  [65]         float4mi
+   100.0%  [65]          AfterTriggerSetState
+    100.0%  [65]           ExecInitModifyTable
+     100.0%  [65]            AlterRole
+      100.0%  [65]             AlterDomainValidateConstraint
+       100.0%  [65]              validateDomainConstraint
+        100.0%  [65]               afterTriggerInvokeEvents
+         100.0%  [65]                ExecCallTriggerFunc
+          100.0%  [65]                 ExecEvalWholeRowVar
+           100.0%  [65]                  ExecEvalRowCompare
+            100.0%  [65]                   ExecEvalNullIf
+             100.0%  [65]                    ExecEvalWholeRowVar
+              100.0%  [65]                     create_modifytable_path
+               100.0%  [65]                      predicate_refuted_by_recurse
+ 04.41%  [3]         float4mi
+  100.0%  [3]          AfterTriggerSetState
+   100.0%  [3]           ExecInitModifyTable
+    100.0%  [3]            AlterRole
+     100.0%  [3]             AlterDomainValidateConstraint
+      100.0%  [3]              validateDomainConstraint
+       100.0%  [3]               afterTriggerInvokeEvents
+        100.0%  [3]                ExecCallTriggerFunc
+         100.0%  [3]                 ExecEvalWholeRowVar
+          100.0%  [3]                  ExecEvalRowCompare
+           100.0%  [3]                   ExecEvalNullIf
+            100.0%  [3]                    ExecEvalWholeRowVar
+             100.0%  [3]                     create_modifytable_path
+              100.0%  [3]                      predicate_refuted_by_recurse
+               100.0%  [3]                       tokenize_inc_file
+
+01.52%  [64]       materialize_finished_plan @ /usr/local/bin/postgres
+ 100.0%  [64]        ExplainNode
+  100.0%  [64]         parse_func_options
+   100.0%  [64]          parse_func_options
+    100.0%  [64]           get_relation_info
+     100.0%  [64]            tokenize_inc_file
+      100.0%  [64]             CreateTransform
+
+01.18%  [50]       0x5481 @ /libexec/ld-elf.so.1
+ 98.00%  [49]        0x8eb37 @ /lib/libc.so.7
+  100.0%  [49]         _bt_leafbuild @ /usr/local/bin/postgres
+   100.0%  [49]          brin_desc
+    100.0%  [49]           heap_xlog_update
+     100.0%  [49]            _bt_restore_page
+      100.0%  [49]             infer_arbiter_indexes
+       100.0%  [49]              tokenize_inc_file
+        100.0%  [49]               CreateTransform
+ 02.00%  [1]         0x118b0b @ /lib/libc.so.7
+  100.0%  [1]          0x66384f @ /usr/local/bin/postgres
+   100.0%  [1]           predicate_refuted_by_recurse
+    100.0%  [1]            tokenize_inc_file
+     100.0%  [1]             CreateTransform
+
+01.11%  [47]       gincostestimate @ /usr/local/bin/postgres
+ 82.98%  [39]        fetch_upper_rel
+  100.0%  [39]         build_join_rel
+   100.0%  [39]          predicate_refuted_by_recurse
+    100.0%  [39]           tokenize_inc_file
+     100.0%  [39]            CreateTransform
+ 12.77%  [6]         predicate_refuted_by_recurse
+  100.0%  [6]          tokenize_inc_file
+   100.0%  [6]           CreateTransform
+ 04.26%  [2]         gincostestimate
+  100.0%  [2]          predicate_refuted_by_recurse
+   100.0%  [2]           tokenize_inc_file
+    100.0%  [2]            CreateTransform
+
+00.97%  [41]       ExecuteDoStmt @ /usr/local/bin/postgres
+ 100.0%  [41]        spgdoinsert
+  100.0%  [41]         ComputeIndexAttrs
+   70.73%  [29]          ComputeIndexAttrs
+    100.0%  [29]           spgdoinsert
+     100.0%  [29]            ComputeIndexAttrs
+      100.0%  [29]             spgdoinsert
+       100.0%  [29]              spgdoinsert
+        100.0%  [29]               ComputeIndexAttrs
+         100.0%  [29]                heap_abort_speculative
+          100.0%  [29]                 heap_update
+           100.0%  [29]                  predicate_refuted_by_recurse
+            100.0%  [29]                   tokenize_inc_file
+             100.0%  [29]                    CreateTransform
+   29.27%  [12]          spgdoinsert
+    100.0%  [12]           spgdoinsert
+     100.0%  [12]            ComputeIndexAttrs
+      100.0%  [12]             heap_abort_speculative
+       100.0%  [12]              heap_update
+        100.0%  [12]               predicate_refuted_by_recurse
+         100.0%  [12]                tokenize_inc_file
+          100.0%  [12]                 CreateTransform
+
+00.90%  [38]       makepol @ /usr/local/bin/postgres
+ 100.0%  [38]        _bt_leafbuild
+  100.0%  [38]         brin_desc
+   100.0%  [38]          heap_xlog_update
+    100.0%  [38]           _bt_restore_page
+     100.0%  [38]            infer_arbiter_indexes
+      100.0%  [38]             tokenize_inc_file
+       100.0%  [38]              CreateTransform
+
+00.90%  [38]       0xdf5a @ /lib/libthr.so.3
+ 92.11%  [35]        materialize_finished_plan @ /usr/local/bin/postgres
+  100.0%  [35]         ExplainNode
+   100.0%  [35]          parse_func_options
+    100.0%  [35]           parse_func_options
+     100.0%  [35]            get_relation_info
+      100.0%  [35]             tokenize_inc_file
+       100.0%  [35]              CreateTransform
+ 07.89%  [3]         ExplainNode
+  66.67%  [2]          parse_func_options
+   100.0%  [2]           parse_func_options
+    100.0%  [2]            get_relation_info
+     100.0%  [2]             tokenize_inc_file
+      100.0%  [2]              CreateTransform
+  33.33%  [1]          AlterUserMapping
+   100.0%  [1]           RemoveForeignServerById
+    100.0%  [1]            create_unique_path
+     100.0%  [1]             get_relation_info
+      100.0%  [1]              tokenize_inc_file
+       100.0%  [1]               CreateTransform
+
+00.90%  [38]       exp_var @ /usr/local/bin/postgres
+ 78.95%  [30]        DelRoleMems
+  100.0%  [30]         validateDomainConstraint
+   100.0%  [30]          afterTriggerInvokeEvents
+    100.0%  [30]           ExecCallTriggerFunc
+     100.0%  [30]            ExecEvalWholeRowVar
+      100.0%  [30]             ExecEvalRowCompare
+       100.0%  [30]              ExecEvalNullIf
+        100.0%  [30]               ExecEvalWholeRowVar
+         100.0%  [30]                create_modifytable_path
+          100.0%  [30]                 predicate_refuted_by_recurse
+           100.0%  [30]                  tokenize_inc_file
+            100.0%  [30]                   CreateTransform
+ 21.05%  [8]         validateDomainConstraint
+  100.0%  [8]          afterTriggerInvokeEvents
+   100.0%  [8]           ExecCallTriggerFunc
+    100.0%  [8]            ExecEvalWholeRowVar
+     100.0%  [8]             ExecEvalRowCompare
+      100.0%  [8]              ExecEvalNullIf
+       100.0%  [8]               ExecEvalWholeRowVar
+        100.0%  [8]                create_modifytable_path
+         100.0%  [8]                 predicate_refuted_by_recurse
+          100.0%  [8]                  tokenize_inc_file
+           100.0%  [8]                   CreateTransform
+
+00.88%  [37]       numeric_exp @ /usr/local/bin/postgres
+ 54.05%  [20]        DelRoleMems
+  100.0%  [20]         validateDomainConstraint
+   100.0%  [20]          afterTriggerInvokeEvents
+    100.0%  [20]           ExecCallTriggerFunc
+     100.0%  [20]            ExecEvalWholeRowVar
+      100.0%  [20]             ExecEvalRowCompare
+       100.0%  [20]              ExecEvalNullIf
+        100.0%  [20]               ExecEvalWholeRowVar
+         100.0%  [20]                create_modifytable_path
+          100.0%  [20]                 predicate_refuted_by_recurse
+           100.0%  [20]                  tokenize_inc_file
+            100.0%  [20]                   CreateTransform
+ 37.84%  [14]        numeric_power
+  100.0%  [14]         ExecInitExpr
+   100.0%  [14]          tupledesc_match
+    100.0%  [14]           ExecEndNode
+     100.0%  [14]            ExecProcNode
+      100.0%  [14]             ExecInitExpr
+       100.0%  [14]              ExecEvalRowCompare
+        100.0%  [14]               ExecEvalNullIf
+         100.0%  [14]                ExecEvalWholeRowVar
+          100.0%  [14]                 create_modifytable_path
+           100.0%  [14]                  predicate_refuted_by_recurse
+            100.0%  [14]                   tokenize_inc_file
+             100.0%  [14]                    CreateTransform
+ 05.41%  [2]         dataBeginPlaceToPage
+ 02.70%  [1]         ExecModifyTable
+  100.0%  [1]          ExecLockRows
+   100.0%  [1]           ExecLockRows
+    100.0%  [1]            ExecEvalFieldStore
+     100.0%  [1]             ExecEvalCoerceViaIO
+      100.0%  [1]              ExecEvalArrayRef
+       100.0%  [1]               ExecEvalWholeRowVar
+        100.0%  [1]                create_modifytable_path
+         100.0%  [1]                 predicate_refuted_by_recurse
+          100.0%  [1]                  tokenize_inc_file
+           100.0%  [1]                   CreateTransform
+
+00.81%  [34]       ParallelQueryMain @ /usr/local/bin/postgres
+ 100.0%  [34]        ExecParallelRetrieveInstrumentation
+  100.0%  [34]         ExecInitExpr
+   100.0%  [34]          ExecEvalRowCompare
+    100.0%  [34]           ExecEvalNullIf
+     100.0%  [34]            ExecEvalWholeRowVar
+      100.0%  [34]             create_modifytable_path
+       100.0%  [34]              predicate_refuted_by_recurse
+        100.0%  [34]               tokenize_inc_file
+         100.0%  [34]                CreateTransform
+
+00.76%  [32]       infer_arbiter_indexes @ /usr/local/bin/postgres
+ 100.0%  [32]        tokenize_inc_file
+  100.0%  [32]         CreateTransform
+
+00.71%  [30]       __ns_sprintrrf @ /lib/libc.so.7
+ 70.00%  [21]        _bt_leafbuild @ /usr/local/bin/postgres
+  100.0%  [21]         brin_desc
+   100.0%  [21]          heap_xlog_update
+    100.0%  [21]           _bt_restore_page
+     100.0%  [21]            infer_arbiter_indexes
+      100.0%  [21]             tokenize_inc_file
+       100.0%  [21]              CreateTransform
+ 26.67%  [8]         predicate_refuted_by_recurse
+  100.0%  [8]          tokenize_inc_file
+   100.0%  [8]           CreateTransform
+ 03.33%  [1]         makepol
+  100.0%  [1]          _bt_leafbuild
+   100.0%  [1]           brin_desc
+    100.0%  [1]            heap_xlog_update
+     100.0%  [1]             _bt_restore_page
+      100.0%  [1]              infer_arbiter_indexes
+       100.0%  [1]               tokenize_inc_file
+        100.0%  [1]                CreateTransform
+
+00.71%  [30]       build_join_rel @ /usr/local/bin/postgres
+ 100.0%  [30]        predicate_refuted_by_recurse
+  100.0%  [30]         tokenize_inc_file
+   100.0%  [30]          CreateTransform
+
+00.66%  [28]       ExplainNode @ /usr/local/bin/postgres
+ 89.29%  [25]        parse_func_options
+  100.0%  [25]         parse_func_options
+   100.0%  [25]          get_relation_info
+    100.0%  [25]           tokenize_inc_file
+     100.0%  [25]            CreateTransform
+ 10.71%  [3]         AlterUserMapping
+  100.0%  [3]          RemoveForeignServerById
+   100.0%  [3]           create_unique_path
+    100.0%  [3]            get_relation_info
+     100.0%  [3]             tokenize_inc_file
+      100.0%  [3]              CreateTransform
+
+00.57%  [24]       parse_ident @ /usr/local/bin/postgres
+ 70.83%  [17]        numeric_power
+  94.12%  [16]         ExecInitExpr
+   100.0%  [16]          tupledesc_match
+    100.0%  [16]           ExecEndNode
+     100.0%  [16]            ExecProcNode
+      100.0%  [16]             ExecInitExpr
+       100.0%  [16]              ExecEvalRowCompare
+        100.0%  [16]               ExecEvalNullIf
+         100.0%  [16]                ExecEvalWholeRowVar
+          100.0%  [16]                 create_modifytable_path
+           100.0%  [16]                  predicate_refuted_by_recurse
+            100.0%  [16]                   tokenize_inc_file
+             100.0%  [16]                    CreateTransform
+  05.88%  [1]          ExecSubPlan
+   100.0%  [1]           AfterTriggerBeginSubXact
+    100.0%  [1]            afterTriggerInvokeEvents
+     100.0%  [1]             DefineType
+      100.0%  [1]              ExecCallTriggerFunc
+       100.0%  [1]               ExecEvalWholeRowVar
+        100.0%  [1]                ExecEvalRowCompare
+         100.0%  [1]                 ExecEvalNullIf
+          100.0%  [1]                  ExecEvalWholeRowVar
+           100.0%  [1]                   create_modifytable_path
+            100.0%  [1]                    predicate_refuted_by_recurse
+             100.0%  [1]                     tokenize_inc_file
+              100.0%  [1]                      CreateTransform
+ 16.67%  [4]         numeric_ln
+  100.0%  [4]          float4div
+   100.0%  [4]           AfterTriggerSetState
+    100.0%  [4]            ExecInitModifyTable
+     100.0%  [4]             AlterRole
+      100.0%  [4]              AlterDomainValidateConstraint
+       100.0%  [4]               validateDomainConstraint
+        100.0%  [4]                afterTriggerInvokeEvents
+         100.0%  [4]                 ExecCallTriggerFunc
+          100.0%  [4]                  ExecEvalWholeRowVar
+           100.0%  [4]                   ExecEvalRowCompare
+            100.0%  [4]                    ExecEvalNullIf
+             100.0%  [4]                     ExecEvalWholeRowVar
+              100.0%  [4]                      create_modifytable_path
+               100.0%  [4]                       predicate_refuted_by_recurse
+ 04.17%  [1]         numeric_exp
+  100.0%  [1]          DelRoleMems
+   100.0%  [1]           validateDomainConstraint
+    100.0%  [1]            afterTriggerInvokeEvents
+     100.0%  [1]             ExecCallTriggerFunc
+      100.0%  [1]              ExecEvalWholeRowVar
+       100.0%  [1]               ExecEvalRowCompare
+        100.0%  [1]                ExecEvalNullIf
+         100.0%  [1]                 ExecEvalWholeRowVar
+          100.0%  [1]                  create_modifytable_path
+           100.0%  [1]                   predicate_refuted_by_recurse
+            100.0%  [1]                    tokenize_inc_file
+             100.0%  [1]                     CreateTransform
+ 04.17%  [1]         pg_timezone_names
+  100.0%  [1]          EncodeDateTime
+   100.0%  [1]           EncodeTimezone
+    100.0%  [1]            pg_stat_get_backend_client_port
+     100.0%  [1]             ExecSubPlan
+      100.0%  [1]              AfterTriggerBeginSubXact
+       100.0%  [1]               afterTriggerInvokeEvents
+        100.0%  [1]                DefineType
+         100.0%  [1]                 ExecCallTriggerFunc
+          100.0%  [1]                  ExecEvalWholeRowVar
+           100.0%  [1]                   ExecEvalRowCompare
+            100.0%  [1]                    ExecEvalNullIf
+             100.0%  [1]                     ExecEvalWholeRowVar
+              100.0%  [1]                      create_modifytable_path
+               100.0%  [1]                       predicate_refuted_by_recurse
+
+00.54%  [23]       atanf @ /lib/libm.so.5
+ 100.0%  [23]        float4mi @ /usr/local/bin/postgres
+  100.0%  [23]         AfterTriggerSetState
+   100.0%  [23]          ExecInitModifyTable
+    100.0%  [23]           AlterRole
+     100.0%  [23]            AlterDomainValidateConstraint
+      100.0%  [23]             validateDomainConstraint
+       100.0%  [23]              afterTriggerInvokeEvents
+        100.0%  [23]               ExecCallTriggerFunc
+         100.0%  [23]                ExecEvalWholeRowVar
+          100.0%  [23]                 ExecEvalRowCompare
+           100.0%  [23]                  ExecEvalNullIf
+            100.0%  [23]                   ExecEvalWholeRowVar
+             100.0%  [23]                    create_modifytable_path
+              100.0%  [23]                     predicate_refuted_by_recurse
+               100.0%  [23]                      tokenize_inc_file
+
+00.54%  [23]       create_groupingsets_path @ /usr/local/bin/postgres
+ 100.0%  [23]        ExplainNode
+  100.0%  [23]         AlterUserMapping
+   100.0%  [23]          RemoveForeignServerById
+    100.0%  [23]           create_unique_path
+     100.0%  [23]            get_relation_info
+      100.0%  [23]             tokenize_inc_file
+       100.0%  [23]              CreateTransform
+
+00.52%  [22]       create_indexscan_plan @ /usr/local/bin/postgres
+ 100.0%  [22]        ExplainNode
+  100.0%  [22]         parse_func_options
+   100.0%  [22]          parse_func_options
+    100.0%  [22]           get_relation_info
+     100.0%  [22]            tokenize_inc_file
+      100.0%  [22]             CreateTransform
+
+00.52%  [22]       pg_get_function_identity_arguments @ /usr/local/bin/postgres
+ 59.09%  [13]        0x562c3d
+  100.0%  [13]         transformExprRecurse
+   100.0%  [13]          getObjectIdentityParts
+    100.0%  [13]           get_rule_expr
+     100.0%  [13]            predicate_refuted_by_recurse
+      100.0%  [13]             tokenize_inc_file
+       100.0%  [13]              CreateTransform
+ 18.18%  [4]         gincostestimate
+  100.0%  [4]          fetch_upper_rel
+   100.0%  [4]           build_join_rel
+    100.0%  [4]            predicate_refuted_by_recurse
+     100.0%  [4]             tokenize_inc_file
+      100.0%  [4]              CreateTransform
+ 18.18%  [4]         heap_update
+  100.0%  [4]          predicate_refuted_by_recurse
+   100.0%  [4]           tokenize_inc_file
+    100.0%  [4]            CreateTransform
+
+00.50%  [21]       0x8eb25 @ /lib/libc.so.7
+ 100.0%  [21]        _bt_leafbuild @ /usr/local/bin/postgres
+  100.0%  [21]         brin_desc
+   100.0%  [21]          heap_xlog_update
+    100.0%  [21]           _bt_restore_page
+     100.0%  [21]            infer_arbiter_indexes
+      100.0%  [21]             tokenize_inc_file
+       100.0%  [21]              CreateTransform
+
+00.50%  [21]       _bt_leafbuild @ /usr/local/bin/postgres
+ 100.0%  [21]        brin_desc
+  100.0%  [21]         heap_xlog_update
+   100.0%  [21]          _bt_restore_page
+    100.0%  [21]           infer_arbiter_indexes
+     100.0%  [21]            tokenize_inc_file
+      100.0%  [21]             CreateTransform
+
+00.47%  [20]       0x8eb22 @ /lib/libc.so.7
+ 100.0%  [20]        _bt_leafbuild @ /usr/local/bin/postgres
+  100.0%  [20]         brin_desc
+   100.0%  [20]          heap_xlog_update
+    100.0%  [20]           _bt_restore_page
+     100.0%  [20]            infer_arbiter_indexes
+      100.0%  [20]             tokenize_inc_file
+       100.0%  [20]              CreateTransform
+
+00.40%  [17]       0x1189e8 @ /lib/libc.so.7
+ 100.0%  [17]        0x66384f @ /usr/local/bin/postgres
+  100.0%  [17]         predicate_refuted_by_recurse
+   100.0%  [17]          tokenize_inc_file
+    100.0%  [17]           CreateTransform
+
+00.40%  [17]       getservent_r @ /lib/libc.so.7
+ 05.88%  [1]         ExplainNode @ /usr/local/bin/postgres
+  100.0%  [1]          AlterUserMapping
+   100.0%  [1]           RemoveForeignServerById
+    100.0%  [1]            create_unique_path
+     100.0%  [1]             get_relation_info
+      100.0%  [1]              tokenize_inc_file
+       100.0%  [1]               CreateTransform
+
+00.38%  [16]       print_function_arguments @ /usr/local/bin/postgres
+ 56.25%  [9]         generate_relation_name
+  55.56%  [5]          gincostestimate
+   60.00%  [3]           fetch_upper_rel
+    100.0%  [3]            build_join_rel
+     100.0%  [3]             predicate_refuted_by_recurse
+      100.0%  [3]              tokenize_inc_file
+       100.0%  [3]               CreateTransform
+   20.00%  [1]           predicate_refuted_by_recurse
+    100.0%  [1]            tokenize_inc_file
+     100.0%  [1]             CreateTransform
+   20.00%  [1]           gincostestimate
+    100.0%  [1]            predicate_refuted_by_recurse
+     100.0%  [1]             tokenize_inc_file
+      100.0%  [1]              CreateTransform
+  44.44%  [4]          generate_collation_name
+   100.0%  [4]           print_function_arguments
+ 37.50%  [6]         set_deparse_for_query
+  50.00%  [3]          _bt_restore_meta
+   100.0%  [3]           _bt_restore_page
+    100.0%  [3]            infer_arbiter_indexes
+     100.0%  [3]             tokenize_inc_file
+      100.0%  [3]              CreateTransform
+  16.67%  [1]          ValuesNext
+   100.0%  [1]           ExecWindowAgg
+    100.0%  [1]            ExecParallelRetrieveInstrumentation
+     100.0%  [1]             ExecInitExpr
+      100.0%  [1]              ExecEvalRowCompare
+       100.0%  [1]               ExecEvalNullIf
+        100.0%  [1]                ExecEvalWholeRowVar
+         100.0%  [1]                 create_modifytable_path
+          100.0%  [1]                  predicate_refuted_by_recurse
+           100.0%  [1]                   tokenize_inc_file
+            100.0%  [1]                    CreateTransform
+  16.67%  [1]          HandleParallelMessages
+   100.0%  [1]           TrimCLOG
+    100.0%  [1]            spg_redo
+     100.0%  [1]             spgrescan
+      100.0%  [1]              heap_lock_updated_tuple
+       100.0%  [1]               heap_update
+        100.0%  [1]                predicate_refuted_by_recurse
+         100.0%  [1]                 tokenize_inc_file
+          100.0%  [1]                  CreateTransform
+  16.67%  [1]          ValidateJoinEstimator
+   100.0%  [1]           ExecWindowAgg
+    100.0%  [1]            ExecParallelRetrieveInstrumentation
+     100.0%  [1]             ExecInitExpr
+      100.0%  [1]              ExecEvalRowCompare
+       100.0%  [1]               ExecEvalNullIf
+        100.0%  [1]                ExecEvalWholeRowVar
+         100.0%  [1]                 create_modifytable_path
+          100.0%  [1]                  predicate_refuted_by_recurse
+           100.0%  [1]                   tokenize_inc_file
+            100.0%  [1]                    CreateTransform
+ 06.25%  [1]         get_rule_expr
+  100.0%  [1]          predicate_refuted_by_recurse
+   100.0%  [1]           tokenize_inc_file
+    100.0%  [1]            CreateTransform
+
+00.36%  [15]       DefineOpClass @ /usr/local/bin/postgres
+ 100.0%  [15]        ParallelQueryMain
+  100.0%  [15]         ExecParallelRetrieveInstrumentation
+   100.0%  [15]          ExecInitExpr
+    100.0%  [15]           ExecEvalRowCompare
+     100.0%  [15]            ExecEvalNullIf
+      100.0%  [15]             ExecEvalWholeRowVar
+       100.0%  [15]              create_modifytable_path
+        100.0%  [15]               predicate_refuted_by_recurse
+         100.0%  [15]                tokenize_inc_file
+          100.0%  [15]                 CreateTransform
+
+00.36%  [15]       make_empty_range @ /usr/local/bin/postgres
+ 86.67%  [13]        get_base_rel_indexes
+  100.0%  [13]         grouping_planner
+ 06.67%  [1]         add_child_rel_equivalences
+  100.0%  [1]          create_index_paths
+   100.0%  [1]           0x63221a
+ 06.67%  [1]         make_pathkeys_for_window
+  100.0%  [1]          set_plan_refs
+   100.0%  [1]           finalize_plan
+    100.0%  [1]            0x7847cc
+     100.0%  [1]             get_rule_expr
+
+00.36%  [15]       TupleDescGetAttInMetadata @ /usr/local/bin/postgres
+ 100.0%  [15]        ExecEvalScalarVar
+  100.0%  [15]         create_modifytable_path
+   100.0%  [15]          predicate_refuted_by_recurse
+    100.0%  [15]           tokenize_inc_file
+     100.0%  [15]            CreateTransform
+
+00.33%  [14]       tokenize_file @ /usr/local/bin/postgres
+ 50.00%  [7]         infer_arbiter_indexes
+  100.0%  [7]          tokenize_inc_file
+   100.0%  [7]           CreateTransform
+
+00.31%  [13]       char2wchar @ /usr/local/bin/postgres
+ 100.0%  [13]        pg_stat_get_backend_client_port
+  100.0%  [13]         ExecSubPlan
+   100.0%  [13]          AfterTriggerBeginSubXact
+    100.0%  [13]           afterTriggerInvokeEvents
+     100.0%  [13]            DefineType
+      100.0%  [13]             ExecCallTriggerFunc
+       100.0%  [13]              ExecEvalWholeRowVar
+        100.0%  [13]               ExecEvalRowCompare
+         100.0%  [13]                ExecEvalNullIf
+          100.0%  [13]                 ExecEvalWholeRowVar
+           100.0%  [13]                  create_modifytable_path
+            100.0%  [13]                   predicate_refuted_by_recurse
+             100.0%  [13]                    tokenize_inc_file
+              100.0%  [13]                     CreateTransform
+
+00.31%  [13]       0x1212ad @ /lib/libc.so.7
+ 92.31%  [12]        ExplainNode @ /usr/local/bin/postgres
+  100.0%  [12]         AlterUserMapping
+   100.0%  [12]          RemoveForeignServerById
+    100.0%  [12]           create_unique_path
+     100.0%  [12]            get_relation_info
+      100.0%  [12]             tokenize_inc_file
+       100.0%  [12]              CreateTransform
+ 07.69%  [1]         brin_desc
+  100.0%  [1]          heap_xlog_update
+   100.0%  [1]           _bt_restore_page
+    100.0%  [1]            infer_arbiter_indexes
+     100.0%  [1]             tokenize_inc_file
+      100.0%  [1]              CreateTransform
+
+00.31%  [13]       AlterOpFamily @ /usr/local/bin/postgres
+ 100.0%  [13]        ParallelQueryMain
+  100.0%  [13]         ExecParallelRetrieveInstrumentation
+   100.0%  [13]          ExecInitExpr
+    100.0%  [13]           ExecEvalRowCompare
+     100.0%  [13]            ExecEvalNullIf
+      100.0%  [13]             ExecEvalWholeRowVar
+       100.0%  [13]              create_modifytable_path
+        100.0%  [13]               predicate_refuted_by_recurse
+         100.0%  [13]                tokenize_inc_file
+          100.0%  [13]                 CreateTransform
+
+00.28%  [12]       heap_xlog_update @ /usr/local/bin/postgres
+ 100.0%  [12]        _bt_restore_page
+  100.0%  [12]         infer_arbiter_indexes
+   100.0%  [12]          tokenize_inc_file
+    100.0%  [12]           CreateTransform
+
+00.26%  [11]       fetch_upper_rel @ /usr/local/bin/postgres
+ 100.0%  [11]        build_join_rel
+  100.0%  [11]         predicate_refuted_by_recurse
+   100.0%  [11]          tokenize_inc_file
+    100.0%  [11]           CreateTransform
+
+00.26%  [11]       _bt_restore_meta @ /usr/local/bin/postgres
+ 100.0%  [11]        _bt_restore_page
+  100.0%  [11]         infer_arbiter_indexes
+   100.0%  [11]          tokenize_inc_file
+    100.0%  [11]           CreateTransform
+
+00.26%  [11]       pg_stat_get_backend_client_port @ /usr/local/bin/postgres
+ 100.0%  [11]        ExecSubPlan
+  100.0%  [11]         AfterTriggerBeginSubXact
+   100.0%  [11]          afterTriggerInvokeEvents
+    100.0%  [11]           DefineType
+     100.0%  [11]            ExecCallTriggerFunc
+      100.0%  [11]             ExecEvalWholeRowVar
+       100.0%  [11]              ExecEvalRowCompare
+        100.0%  [11]               ExecEvalNullIf
+         100.0%  [11]                ExecEvalWholeRowVar
+          100.0%  [11]                 create_modifytable_path
+           100.0%  [11]                  predicate_refuted_by_recurse
+            100.0%  [11]                   tokenize_inc_file
+             100.0%  [11]                    CreateTransform
+
+00.26%  [11]       AlterUserMapping @ /usr/local/bin/postgres
+ 90.91%  [10]        RemoveForeignServerById
+  100.0%  [10]         create_unique_path
+   100.0%  [10]          get_relation_info
+    100.0%  [10]           tokenize_inc_file
+     100.0%  [10]            CreateTransform
+ 09.09%  [1]         ImportForeignSchema
+  100.0%  [1]          create_unique_path
+   100.0%  [1]           get_relation_info
+    100.0%  [1]            tokenize_inc_file
+     100.0%  [1]             CreateTransform
+
+00.24%  [10]       0x120938 @ /lib/libc.so.7
+ 100.0%  [10]        ReleasePredicateLocks @ /usr/local/bin/postgres
+
+00.24%  [10]       atan @ /lib/libm.so.5
+ 100.0%  [10]        float4mi @ /usr/local/bin/postgres
+  100.0%  [10]         AfterTriggerSetState
+   100.0%  [10]          ExecInitModifyTable
+    100.0%  [10]           AlterRole
+     100.0%  [10]            AlterDomainValidateConstraint
+      100.0%  [10]             validateDomainConstraint
+       100.0%  [10]              afterTriggerInvokeEvents
+        100.0%  [10]               ExecCallTriggerFunc
+         100.0%  [10]                ExecEvalWholeRowVar
+          100.0%  [10]                 ExecEvalRowCompare
+           100.0%  [10]                  ExecEvalNullIf
+            100.0%  [10]                   ExecEvalWholeRowVar
+             100.0%  [10]                    create_modifytable_path
+              100.0%  [10]                     predicate_refuted_by_recurse
+               100.0%  [10]                      tokenize_inc_file
+
+00.24%  [10]       similar_escape @ /usr/local/bin/postgres
+ 80.00%  [8]         spg_range_quad_inner_consistent
+  100.0%  [8]          tokenize_file
+   100.0%  [8]           infer_arbiter_indexes
+    100.0%  [8]            tokenize_inc_file
+     100.0%  [8]             CreateTransform
+ 20.00%  [2]         XLogFlush
+  100.0%  [2]          _bt_leafbuild
+   100.0%  [2]           brin_desc
+    100.0%  [2]            heap_xlog_update
+     100.0%  [2]             _bt_restore_page
+      100.0%  [2]              infer_arbiter_indexes
+       100.0%  [2]               tokenize_inc_file
+        100.0%  [2]                CreateTransform
+
+00.21%  [9]        spg_range_quad_inner_consistent @ /usr/local/bin/postgres
+ 88.89%  [8]         tokenize_file
+  100.0%  [8]          infer_arbiter_indexes
+   100.0%  [8]           tokenize_inc_file
+    100.0%  [8]            CreateTransform
+ 11.11%  [1]         spg_range_quad_inner_consistent
+  100.0%  [1]          tokenize_file
+   100.0%  [1]           infer_arbiter_indexes
+    100.0%  [1]            tokenize_inc_file
+     100.0%  [1]             CreateTransform
+
+00.21%  [9]        0x4c2a49 @ /usr/local/bin/postgres
+ 100.0%  [9]         _bt_restore_page
+  100.0%  [9]          infer_arbiter_indexes
+   100.0%  [9]           tokenize_inc_file
+    100.0%  [9]            CreateTransform
+
+00.19%  [8]        range_minus @ /usr/local/bin/postgres
+ 62.50%  [5]         inet_gist_picksplit
+ 25.00%  [2]         get_base_rel_indexes
+  100.0%  [2]          grouping_planner
+ 12.50%  [1]         make_pathkeys_for_window
+  100.0%  [1]          set_plan_refs
+   100.0%  [1]           finalize_plan
+    100.0%  [1]            0x7847cc
+     100.0%  [1]             get_rule_expr
+
+00.19%  [8]        _bt_start_array_keys @ /usr/local/bin/postgres
+ 87.50%  [7]         _bt_restore_page
+  100.0%  [7]          infer_arbiter_indexes
+   100.0%  [7]           tokenize_inc_file
+    100.0%  [7]            CreateTransform
+ 12.50%  [1]         brin_desc
+  100.0%  [1]          heap_xlog_update
+   100.0%  [1]           _bt_restore_page
+    100.0%  [1]            infer_arbiter_indexes
+     100.0%  [1]             tokenize_inc_file
+      100.0%  [1]              CreateTransform
+
+00.19%  [8]        set_deparse_for_query @ /usr/local/bin/postgres
+ 87.50%  [7]         DefineOpClass
+  100.0%  [7]          ParallelQueryMain
+   100.0%  [7]           ExecParallelRetrieveInstrumentation
+    100.0%  [7]            ExecInitExpr
+     100.0%  [7]             ExecEvalRowCompare
+      100.0%  [7]              ExecEvalNullIf
+       100.0%  [7]               ExecEvalWholeRowVar
+        100.0%  [7]                create_modifytable_path
+         100.0%  [7]                 predicate_refuted_by_recurse
+          100.0%  [7]                  tokenize_inc_file
+           100.0%  [7]                   CreateTransform
+ 12.50%  [1]         RangeVarCallbackForReindexIndex
+  100.0%  [1]          ParallelQueryMain
+   100.0%  [1]           ExecParallelRetrieveInstrumentation
+    100.0%  [1]            ExecInitExpr
+     100.0%  [1]             ExecEvalRowCompare
+      100.0%  [1]              ExecEvalNullIf
+       100.0%  [1]               ExecEvalWholeRowVar
+        100.0%  [1]                create_modifytable_path
+         100.0%  [1]                 predicate_refuted_by_recurse
+          100.0%  [1]                  tokenize_inc_file
+           100.0%  [1]                   CreateTransform
+
+00.19%  [8]        sqrt_var @ /usr/local/bin/postgres
+ 87.50%  [7]         numeric_power
+  100.0%  [7]          ExecInitExpr
+   100.0%  [7]           tupledesc_match
+    100.0%  [7]            ExecEndNode
+     100.0%  [7]             ExecProcNode
+      100.0%  [7]              ExecInitExpr
+       100.0%  [7]               ExecEvalRowCompare
+        100.0%  [7]                ExecEvalNullIf
+         100.0%  [7]                 ExecEvalWholeRowVar
+          100.0%  [7]                  create_modifytable_path
+           100.0%  [7]                   predicate_refuted_by_recurse
+            100.0%  [7]                    tokenize_inc_file
+             100.0%  [7]                     CreateTransform
+
+00.19%  [8]        BuildTupleFromCStrings @ /usr/local/bin/postgres
+ 100.0%  [8]         TupleDescGetAttInMetadata
+  100.0%  [8]          ExecEvalScalarVar
+   100.0%  [8]           create_modifytable_path
+    100.0%  [8]            predicate_refuted_by_recurse
+     100.0%  [8]             tokenize_inc_file
+      100.0%  [8]              CreateTransform
+
+00.19%  [8]        predicate_refuted_by_recurse @ /usr/local/bin/postgres
+ 100.0%  [8]         tokenize_inc_file
+  100.0%  [8]          CreateTransform
+
+00.19%  [8]        0xdf50 @ /lib/libthr.so.3
+ 50.00%  [4]         materialize_finished_plan @ /usr/local/bin/postgres
+  100.0%  [4]          ExplainNode
+   100.0%  [4]           parse_func_options
+    100.0%  [4]            parse_func_options
+     100.0%  [4]             get_relation_info
+      100.0%  [4]              tokenize_inc_file
+       100.0%  [4]               CreateTransform
+ 50.00%  [4]         ExplainNode
+  75.00%  [3]          AlterUserMapping
+   100.0%  [3]           RemoveForeignServerById
+    100.0%  [3]            create_unique_path
+     100.0%  [3]             get_relation_info
+      100.0%  [3]              tokenize_inc_file
+       100.0%  [3]               CreateTransform
+  25.00%  [1]          parse_func_options
+   100.0%  [1]           parse_func_options
+    100.0%  [1]            get_relation_info
+     100.0%  [1]             tokenize_inc_file
+      100.0%  [1]              CreateTransform
+
+00.17%  [7]        networkjoinsel_semi @ /usr/local/bin/postgres
+ 14.29%  [1]         do_analyze_rel
+  100.0%  [1]          transformExprRecurse
+   100.0%  [1]           getObjectIdentityParts
+    100.0%  [1]            get_rule_expr
+     100.0%  [1]             predicate_refuted_by_recurse
+      100.0%  [1]              tokenize_inc_file
+       100.0%  [1]               CreateTransform
+
+00.17%  [7]        btcostestimate @ /usr/local/bin/postgres
+ 28.57%  [2]         btcostestimate
+
+00.17%  [7]        0x11ee78 @ /lib/libc.so.7
+ 28.57%  [2]         numeric_exp @ /usr/local/bin/postgres
+  50.00%  [1]          DelRoleMems
+   100.0%  [1]           validateDomainConstraint
+    100.0%  [1]            afterTriggerInvokeEvents
+     100.0%  [1]             ExecCallTriggerFunc
+      100.0%  [1]              ExecEvalWholeRowVar
+       100.0%  [1]               ExecEvalRowCompare
+        100.0%  [1]                ExecEvalNullIf
+         100.0%  [1]                 ExecEvalWholeRowVar
+          100.0%  [1]                  create_modifytable_path
+           100.0%  [1]                   predicate_refuted_by_recurse
+            100.0%  [1]                    tokenize_inc_file
+             100.0%  [1]                     CreateTransform
+  50.00%  [1]          dataBeginPlaceToPage
+ 28.57%  [2]         ImportForeignSchema
+  50.00%  [1]          create_unique_path
+   100.0%  [1]           get_relation_info
+    100.0%  [1]            tokenize_inc_file
+     100.0%  [1]             CreateTransform
+ 14.29%  [1]         rename_constraint_internal
+  100.0%  [1]          SimpleLruFlush
+   100.0%  [1]           spgFormInnerTuple
+    100.0%  [1]            0x4c89ee
+     100.0%  [1]             heap_lock_updated_tuple
+      100.0%  [1]              heap_update
+       100.0%  [1]               predicate_refuted_by_recurse
+        100.0%  [1]                tokenize_inc_file
+         100.0%  [1]                 CreateTransform
+ 14.29%  [1]         BuildTupleFromCStrings
+  100.0%  [1]          TupleDescGetAttInMetadata
+   100.0%  [1]           ExecEvalScalarVar
+    100.0%  [1]            create_modifytable_path
+     100.0%  [1]             predicate_refuted_by_recurse
+      100.0%  [1]              tokenize_inc_file
+       100.0%  [1]               CreateTransform
+ 14.29%  [1]         numeric_avg_combine
+  100.0%  [1]          DefineType
+   100.0%  [1]           DefineType
+    100.0%  [1]            ExecCallTriggerFunc
+     100.0%  [1]             ExecEvalWholeRowVar
+      100.0%  [1]              ExecEvalRowCompare
+       100.0%  [1]               ExecEvalNullIf
+        100.0%  [1]                ExecEvalWholeRowVar
+         100.0%  [1]                 create_modifytable_path
+          100.0%  [1]                  predicate_refuted_by_recurse
+           100.0%  [1]                   tokenize_inc_file
+            100.0%  [1]                    CreateTransform
+
+00.14%  [6]        create_sort_path @ /usr/local/bin/postgres
+ 100.0%  [6]         ExplainNode
+  100.0%  [6]          parse_func_options
+   100.0%  [6]           parse_func_options
+    100.0%  [6]            get_relation_info
+     100.0%  [6]             tokenize_inc_file
+      100.0%  [6]              CreateTransform
+
+00.14%  [6]        0x118af9 @ /lib/libc.so.7
+ 100.0%  [6]         0x66384f @ /usr/local/bin/postgres
+  100.0%  [6]          predicate_refuted_by_recurse
+   100.0%  [6]           tokenize_inc_file
+    100.0%  [6]            CreateTransform
+
+00.14%  [6]        quote_identifier @ /usr/local/bin/postgres
+ 83.33%  [5]         generate_relation_name
+  80.00%  [4]          gincostestimate
+   75.00%  [3]           fetch_upper_rel
+    100.0%  [3]            build_join_rel
+     100.0%  [3]             predicate_refuted_by_recurse
+      100.0%  [3]              tokenize_inc_file
+       100.0%  [3]               CreateTransform
+   25.00%  [1]           gincostestimate
+    100.0%  [1]            predicate_refuted_by_recurse
+     100.0%  [1]             tokenize_inc_file
+      100.0%  [1]              CreateTransform
+  20.00%  [1]          addRangeTableEntryForSubquery
+   100.0%  [1]           do_analyze_rel
+    100.0%  [1]            operator_precedence_group
+     100.0%  [1]             checkWellFormedRecursionWalker
+      100.0%  [1]              find_join_rel
+       100.0%  [1]               predicate_refuted_by_recurse
+        100.0%  [1]                tokenize_inc_file
+         100.0%  [1]                 CreateTransform
+ 16.67%  [1]         set_deparse_for_query
+  100.0%  [1]          ReindexMultipleTables
+   100.0%  [1]           ExecProcNode
+    100.0%  [1]            ExecProcNode
+     100.0%  [1]             ExecInitExpr
+      100.0%  [1]              ExecEvalRowCompare
+       100.0%  [1]               ExecEvalNullIf
+        100.0%  [1]                ExecEvalWholeRowVar
+         100.0%  [1]                 create_modifytable_path
+          100.0%  [1]                  predicate_refuted_by_recurse
+           100.0%  [1]                   tokenize_inc_file
+            100.0%  [1]                    CreateTransform
+
+00.12%  [5]        pg_get_indexdef_worker @ /usr/local/bin/postgres
+ 100.0%  [5]         tokenize_inc_file
+  100.0%  [5]          CreateTransform
+
+00.12%  [5]        0xded1 @ /lib/libthr.so.3
+ 100.0%  [5]         ExplainNode @ /usr/local/bin/postgres
+  100.0%  [5]          AlterUserMapping
+   100.0%  [5]           RemoveForeignServerById
+    100.0%  [5]            create_unique_path
+     100.0%  [5]             get_relation_info
+      100.0%  [5]              tokenize_inc_file
+       100.0%  [5]               CreateTransform
+
+00.12%  [5]        add_path @ /usr/local/bin/postgres
+ 100.0%  [5]         ExecGroup
+  100.0%  [5]          ExecReScanSort
+   100.0%  [5]           ExecWindowAgg
+    100.0%  [5]            ExecParallelRetrieveInstrumentation
+     100.0%  [5]             ExecInitExpr
+      100.0%  [5]              ExecEvalRowCompare
+       100.0%  [5]               ExecEvalNullIf
+        100.0%  [5]                ExecEvalWholeRowVar
+         100.0%  [5]                 create_modifytable_path
+          100.0%  [5]                  predicate_refuted_by_recurse
+           100.0%  [5]                   tokenize_inc_file
+            100.0%  [5]                    CreateTransform
+
+00.12%  [5]        pg_get_function_arguments @ /usr/local/bin/postgres
+ 60.00%  [3]         gincostestimate
+  100.0%  [3]          fetch_upper_rel
+   100.0%  [3]           build_join_rel
+    100.0%  [3]            predicate_refuted_by_recurse
+     100.0%  [3]             tokenize_inc_file
+      100.0%  [3]              CreateTransform
+ 40.00%  [2]         0x562c3d
+  100.0%  [2]          transformExprRecurse
+   100.0%  [2]           getObjectIdentityParts
+    100.0%  [2]            get_rule_expr
+     100.0%  [2]             predicate_refuted_by_recurse
+      100.0%  [2]              tokenize_inc_file
+       100.0%  [2]               CreateTransform
+
+00.12%  [5]        heap_prepare_freeze_tuple @ /usr/local/bin/postgres
+ 100.0%  [5]         predicate_refuted_by_recurse
+  100.0%  [5]          tokenize_inc_file
+   100.0%  [5]           CreateTransform
+
+00.12%  [5]        0xdec0 @ /lib/libthr.so.3
+ 100.0%  [5]         ExplainNode @ /usr/local/bin/postgres
+  80.00%  [4]          AlterUserMapping
+   100.0%  [4]           RemoveForeignServerById
+    100.0%  [4]            create_unique_path
+     100.0%  [4]             get_relation_info
+      100.0%  [4]              tokenize_inc_file
+       100.0%  [4]               CreateTransform
+  20.00%  [1]          parse_func_options
+   100.0%  [1]           parse_func_options
+    100.0%  [1]            get_relation_info
+     100.0%  [1]             tokenize_inc_file
+      100.0%  [1]              CreateTransform
+
+00.12%  [5]        create_lockrows_path @ /usr/local/bin/postgres
+ 100.0%  [5]         predicate_refuted_by_recurse
+  100.0%  [5]          tokenize_inc_file
+   100.0%  [5]           CreateTransform
+
+00.09%  [4]        find_placeholder_info @ /usr/local/bin/postgres
+ 100.0%  [4]         ComputeIndexAttrs
+  100.0%  [4]          spgdoinsert
+   100.0%  [4]           spgdoinsert
+    100.0%  [4]            ComputeIndexAttrs
+     100.0%  [4]             heap_abort_speculative
+      100.0%  [4]              heap_update
+       100.0%  [4]               predicate_refuted_by_recurse
+        100.0%  [4]                tokenize_inc_file
+         100.0%  [4]                 CreateTransform
+
+00.09%  [4]        regexec @ /lib/libc.so.7
+ 100.0%  [4]         quote_identifier @ /usr/local/bin/postgres
+  75.00%  [3]          set_deparse_for_query
+   100.0%  [3]           ExplainNode
+    100.0%  [3]            RemoveUserMapping
+  25.00%  [1]          generate_relation_name
+   100.0%  [1]           gincostestimate
+    100.0%  [1]            predicate_refuted_by_recurse
+     100.0%  [1]             tokenize_inc_file
+      100.0%  [1]              CreateTransform
+
+00.09%  [4]        get_rule_expr @ /usr/local/bin/postgres
+
+00.09%  [4]        _bt_restore_page @ /usr/local/bin/postgres
+ 50.00%  [2]         heap_xlog_update
+  100.0%  [2]          _bt_restore_page
+   100.0%  [2]           infer_arbiter_indexes
+    100.0%  [2]            tokenize_inc_file
+     100.0%  [2]             CreateTransform
+ 50.00%  [2]         infer_arbiter_indexes
+  100.0%  [2]          tokenize_inc_file
+   100.0%  [2]           CreateTransform
+
+00.09%  [4]        set_simple_column_names @ /usr/local/bin/postgres
+ 75.00%  [3]         gincostestimate
+  100.0%  [3]          fetch_upper_rel
+   100.0%  [3]           build_join_rel
+    100.0%  [3]            predicate_refuted_by_recurse
+     100.0%  [3]             tokenize_inc_file
+      100.0%  [3]              CreateTransform
+ 25.00%  [1]         make_pathkeys_for_window
+  100.0%  [1]          set_plan_refs
+   100.0%  [1]           finalize_plan
+    100.0%  [1]            0x7847cc
+     100.0%  [1]             get_rule_expr
+
+00.09%  [4]        range_cmp @ /usr/local/bin/postgres
+
+00.09%  [4]        get_relation_info @ /usr/local/bin/postgres
+ 100.0%  [4]         tokenize_inc_file
+  100.0%  [4]          CreateTransform
+
+00.09%  [4]        float4mi @ /usr/local/bin/postgres
+ 100.0%  [4]         AfterTriggerSetState
+  100.0%  [4]          ExecInitModifyTable
+   100.0%  [4]           AlterRole
+    100.0%  [4]            AlterDomainValidateConstraint
+     100.0%  [4]             validateDomainConstraint
+      100.0%  [4]              afterTriggerInvokeEvents
+       100.0%  [4]               ExecCallTriggerFunc
+        100.0%  [4]                ExecEvalWholeRowVar
+         100.0%  [4]                 ExecEvalRowCompare
+          100.0%  [4]                  ExecEvalNullIf
+           100.0%  [4]                   ExecEvalWholeRowVar
+            100.0%  [4]                    create_modifytable_path
+             100.0%  [4]                     predicate_refuted_by_recurse
+              100.0%  [4]                      tokenize_inc_file
+               100.0%  [4]                       CreateTransform
+
+00.09%  [4]        make_agg @ /usr/local/bin/postgres
+ 100.0%  [4]         ExplainNode
+  100.0%  [4]          parse_func_options
+   100.0%  [4]           parse_func_options
+    100.0%  [4]            get_relation_info
+     100.0%  [4]             tokenize_inc_file
+      100.0%  [4]              CreateTransform
+
+00.09%  [4]        get_query_def @ /usr/local/bin/postgres
+ 25.00%  [1]         get_query_def
+
+00.09%  [4]        InstrAggNode @ /usr/local/bin/postgres
+ 100.0%  [4]         InstrEndLoop
+  100.0%  [4]          ComputeIndexAttrs
+   100.0%  [4]           fmgr_sql
+    100.0%  [4]            ExecEvalScalarVar
+     100.0%  [4]             create_modifytable_path
+      100.0%  [4]              predicate_refuted_by_recurse
+       100.0%  [4]               tokenize_inc_file
+        100.0%  [4]                CreateTransform
+
+00.09%  [4]        0x6400d6 @ /usr/local/bin/postgres
+ 100.0%  [4]         ExplainNode
+  100.0%  [4]          parse_func_options
+   100.0%  [4]           parse_func_options
+    100.0%  [4]            get_relation_info
+     100.0%  [4]             tokenize_inc_file
+      100.0%  [4]              CreateTransform
+
+00.07%  [3]        make_ands_implicit @ /usr/local/bin/postgres
+
+00.07%  [3]        tintervallenge @ /usr/local/bin/postgres
+
+00.07%  [3]        0x8eb27 @ /lib/libc.so.7
+ 100.0%  [3]         _bt_leafbuild @ /usr/local/bin/postgres
+  100.0%  [3]          brin_desc
+   100.0%  [3]           heap_xlog_update
+    100.0%  [3]            _bt_restore_page
+     100.0%  [3]             infer_arbiter_indexes
+      100.0%  [3]              tokenize_inc_file
+       100.0%  [3]               CreateTransform
+
+00.07%  [3]        pg_stat_get_activity @ /usr/local/bin/postgres
+ 66.67%  [2]         parse_ident
+  100.0%  [2]          numeric_ln
+   100.0%  [2]           float4div
+    100.0%  [2]            AfterTriggerSetState
+     100.0%  [2]             ExecInitModifyTable
+      100.0%  [2]              AlterRole
+       100.0%  [2]               AlterDomainValidateConstraint
+        100.0%  [2]                validateDomainConstraint
+         100.0%  [2]                 afterTriggerInvokeEvents
+          100.0%  [2]                  ExecCallTriggerFunc
+           100.0%  [2]                   ExecEvalWholeRowVar
+            100.0%  [2]                    ExecEvalRowCompare
+             100.0%  [2]                     ExecEvalNullIf
+              100.0%  [2]                      ExecEvalWholeRowVar
+               100.0%  [2]                       create_modifytable_path
+
+00.07%  [3]        SlruInternalWritePage @ /usr/local/bin/postgres
+ 100.0%  [3]         SimpleLruReadPage
+  100.0%  [3]          SimpleLruReadPage_ReadOnly
+   100.0%  [3]           spg_redo
+    100.0%  [3]            spg_redo
+     100.0%  [3]             FinishPreparedTransaction
+      100.0%  [3]              heap_lock_updated_tuple
+       100.0%  [3]               heap_update
+        100.0%  [3]                predicate_refuted_by_recurse
+         100.0%  [3]                 tokenize_inc_file
+          100.0%  [3]                  CreateTransform
+
+00.07%  [3]        getgrent_r @ /lib/libc.so.7
+ 66.67%  [2]         generate_collation_name @ /usr/local/bin/postgres
+  100.0%  [2]          print_function_arguments
+   100.0%  [2]           expandRTE
+    100.0%  [2]            do_analyze_rel
+     100.0%  [2]             operator_precedence_group
+      100.0%  [2]              checkWellFormedRecursionWalker
+       100.0%  [2]               find_join_rel
+        100.0%  [2]                predicate_refuted_by_recurse
+         100.0%  [2]                 tokenize_inc_file
+          100.0%  [2]                  CreateTransform
+ 33.33%  [1]         interpret_function_parameter_list
+  100.0%  [1]          infer_arbiter_indexes
+   100.0%  [1]           tokenize_inc_file
+    100.0%  [1]            CreateTransform
+
+00.07%  [3]        regex_selectivity_sub @ /usr/local/bin/postgres
+
+00.07%  [3]        atan2f @ /lib/libm.so.5
+ 66.67%  [2]         float8out @ /usr/local/bin/postgres
+  100.0%  [2]          float4mi
+   100.0%  [2]           AfterTriggerSetState
+    100.0%  [2]            ExecInitModifyTable
+     100.0%  [2]             AlterRole
+      100.0%  [2]              AlterDomainValidateConstraint
+       100.0%  [2]               validateDomainConstraint
+        100.0%  [2]                afterTriggerInvokeEvents
+         100.0%  [2]                 ExecCallTriggerFunc
+          100.0%  [2]                  ExecEvalWholeRowVar
+           100.0%  [2]                   ExecEvalRowCompare
+            100.0%  [2]                    ExecEvalNullIf
+             100.0%  [2]                     ExecEvalWholeRowVar
+              100.0%  [2]                      create_modifytable_path
+               100.0%  [2]                       predicate_refuted_by_recurse
+ 33.33%  [1]         float4mi
+  100.0%  [1]          AfterTriggerSetState
+   100.0%  [1]           ExecInitModifyTable
+    100.0%  [1]            AlterRole
+     100.0%  [1]             AlterDomainValidateConstraint
+      100.0%  [1]              validateDomainConstraint
+       100.0%  [1]               afterTriggerInvokeEvents
+        100.0%  [1]                ExecCallTriggerFunc
+         100.0%  [1]                 ExecEvalWholeRowVar
+          100.0%  [1]                  ExecEvalRowCompare
+           100.0%  [1]                   ExecEvalNullIf
+            100.0%  [1]                    ExecEvalWholeRowVar
+             100.0%  [1]                     create_modifytable_path
+              100.0%  [1]                      predicate_refuted_by_recurse
+               100.0%  [1]                       tokenize_inc_file
+
+00.07%  [3]        add_paths_to_joinrel @ /usr/local/bin/postgres
+
+00.07%  [3]        0x8eb08 @ /lib/libc.so.7
+ 100.0%  [3]         _bt_leafbuild @ /usr/local/bin/postgres
+  100.0%  [3]          brin_desc
+   100.0%  [3]           heap_xlog_update
+    100.0%  [3]            _bt_restore_page
+     100.0%  [3]             infer_arbiter_indexes
+      100.0%  [3]              tokenize_inc_file
+       100.0%  [3]               CreateTransform
+
+00.07%  [3]        Xfast_syscall @ /boot/base/kernel
+
+00.07%  [3]        PGSemaphoreCreate @ /usr/local/bin/postgres
+ 100.0%  [3]         predicate_refuted_by_recurse
+  100.0%  [3]          tokenize_inc_file
+   100.0%  [3]           CreateTransform
+
+00.07%  [3]        0x75611e @ /usr/local/bin/postgres
+ 66.67%  [2]         numeric_power
+  100.0%  [2]          ExecInitExpr
+   100.0%  [2]           tupledesc_match
+    100.0%  [2]            ExecEndNode
+     100.0%  [2]             ExecProcNode
+      100.0%  [2]              ExecInitExpr
+       100.0%  [2]               ExecEvalRowCompare
+        100.0%  [2]                ExecEvalNullIf
+         100.0%  [2]                 ExecEvalWholeRowVar
+          100.0%  [2]                  create_modifytable_path
+           100.0%  [2]                   predicate_refuted_by_recurse
+            100.0%  [2]                    tokenize_inc_file
+             100.0%  [2]                     CreateTransform
+ 33.33%  [1]         pg_get_indexdef_worker
+  100.0%  [1]          generate_join_implied_equalities_for_ecs
+   100.0%  [1]           get_parameterized_baserel_size
+    100.0%  [1]            final_cost_nestloop
+     100.0%  [1]             create_lockrows_path
+      100.0%  [1]              predicate_refuted_by_recurse
+       100.0%  [1]               tokenize_inc_file
+        100.0%  [1]                CreateTransform
+
+00.07%  [3]        0xdeca @ /lib/libthr.so.3
+ 100.0%  [3]         ExplainNode @ /usr/local/bin/postgres
+  66.67%  [2]          parse_func_options
+   100.0%  [2]           parse_func_options
+    100.0%  [2]            get_relation_info
+     100.0%  [2]             tokenize_inc_file
+      100.0%  [2]              CreateTransform
+  33.33%  [1]          AlterUserMapping
+   100.0%  [1]           RemoveForeignServerById
+    100.0%  [1]            create_unique_path
+     100.0%  [1]             get_relation_info
+      100.0%  [1]              tokenize_inc_file
+       100.0%  [1]               CreateTransform
+
+00.07%  [3]        make_canonical_pathkey @ /usr/local/bin/postgres
+ 100.0%  [3]         add_path
+  100.0%  [3]          add_path
+   100.0%  [3]           ExecGroup
+    100.0%  [3]            ExecReScanSort
+     100.0%  [3]             ExecWindowAgg
+      100.0%  [3]              ExecParallelRetrieveInstrumentation
+       100.0%  [3]               ExecInitExpr
+        100.0%  [3]                ExecEvalRowCompare
+         100.0%  [3]                 ExecEvalNullIf
+          100.0%  [3]                  ExecEvalWholeRowVar
+           100.0%  [3]                   create_modifytable_path
+            100.0%  [3]                    predicate_refuted_by_recurse
+             100.0%  [3]                     tokenize_inc_file
+              100.0%  [3]                      CreateTransform
+
+00.05%  [2]        0x663c3d @ /usr/local/bin/postgres
+ 100.0%  [2]         build_join_rel
+  100.0%  [2]          predicate_refuted_by_recurse
+   100.0%  [2]           tokenize_inc_file
+    100.0%  [2]            CreateTransform
+
+00.05%  [2]        CreateProceduralLanguage @ /usr/local/bin/postgres
+ 100.0%  [2]         ParallelQueryMain
+  100.0%  [2]          ExecParallelRetrieveInstrumentation
+   100.0%  [2]           ExecInitExpr
+    100.0%  [2]            ExecEvalRowCompare
+     100.0%  [2]             ExecEvalNullIf
+      100.0%  [2]              ExecEvalWholeRowVar
+       100.0%  [2]               create_modifytable_path
+        100.0%  [2]                predicate_refuted_by_recurse
+         100.0%  [2]                 tokenize_inc_file
+          100.0%  [2]                  CreateTransform
+
+00.05%  [2]        RangeVarCallbackForReindexIndex @ /usr/local/bin/postgres
+ 100.0%  [2]         ParallelQueryMain
+  100.0%  [2]          ExecParallelRetrieveInstrumentation
+   100.0%  [2]           ExecInitExpr
+    100.0%  [2]            ExecEvalRowCompare
+     100.0%  [2]             ExecEvalNullIf
+      100.0%  [2]              ExecEvalWholeRowVar
+       100.0%  [2]               create_modifytable_path
+        100.0%  [2]                predicate_refuted_by_recurse
+         100.0%  [2]                 tokenize_inc_file
+          100.0%  [2]                  CreateTransform
+
+00.05%  [2]        0x11ee81 @ /lib/libc.so.7
+ 50.00%  [1]         numeric_power @ /usr/local/bin/postgres
+  100.0%  [1]          ExecSubPlan
+   100.0%  [1]           AfterTriggerBeginSubXact
+    100.0%  [1]            afterTriggerInvokeEvents
+     100.0%  [1]             DefineType
+      100.0%  [1]              ExecCallTriggerFunc
+       100.0%  [1]               ExecEvalWholeRowVar
+        100.0%  [1]                ExecEvalRowCompare
+         100.0%  [1]                 ExecEvalNullIf
+          100.0%  [1]                  ExecEvalWholeRowVar
+           100.0%  [1]                   create_modifytable_path
+            100.0%  [1]                    predicate_refuted_by_recurse
+             100.0%  [1]                     tokenize_inc_file
+              100.0%  [1]                      CreateTransform
+ 50.00%  [1]         ImportForeignSchema
+  100.0%  [1]          create_unique_path
+   100.0%  [1]           get_relation_info
+    100.0%  [1]            tokenize_inc_file
+     100.0%  [1]             CreateTransform
+
+00.05%  [2]        reltimein @ /usr/local/bin/postgres
+ 100.0%  [2]         ln_var
+  100.0%  [2]          ExecInitExpr
+   100.0%  [2]           tupledesc_match
+    100.0%  [2]            ExecEndNode
+     100.0%  [2]             ExecProcNode
+      100.0%  [2]              ExecInitExpr
+       100.0%  [2]               ExecEvalRowCompare
+        100.0%  [2]                ExecEvalNullIf
+         100.0%  [2]                 ExecEvalWholeRowVar
+          100.0%  [2]                  create_modifytable_path
+           100.0%  [2]                   predicate_refuted_by_recurse
+            100.0%  [2]                    tokenize_inc_file
+             100.0%  [2]                     CreateTransform
+
+00.05%  [2]        0x11ba88 @ /lib/libc.so.7
+ 100.0%  [2]         float84lt @ /usr/local/bin/postgres
+
+00.05%  [2]        0x11ee7b @ /lib/libc.so.7
+ 50.00%  [1]         predicate_refuted_by_recurse @ /usr/local/bin/postgres
+  100.0%  [1]          tokenize_inc_file
+   100.0%  [1]           CreateTransform
+ 50.00%  [1]         numeric_power
+  100.0%  [1]          ExecInitExpr
+   100.0%  [1]           tupledesc_match
+    100.0%  [1]            ExecEndNode
+     100.0%  [1]             ExecProcNode
+      100.0%  [1]              ExecInitExpr
+       100.0%  [1]               ExecEvalRowCompare
+        100.0%  [1]                ExecEvalNullIf
+         100.0%  [1]                 ExecEvalWholeRowVar
+          100.0%  [1]                  create_modifytable_path
+           100.0%  [1]                   predicate_refuted_by_recurse
+            100.0%  [1]                    tokenize_inc_file
+             100.0%  [1]                     CreateTransform
+
+00.05%  [2]        build_path_tlist @ /usr/local/bin/postgres
+ 100.0%  [2]         ExplainNode
+  100.0%  [2]          parse_func_options
+   100.0%  [2]           parse_func_options
+    100.0%  [2]            get_relation_info
+     100.0%  [2]             tokenize_inc_file
+      100.0%  [2]              CreateTransform
+
+00.05%  [2]        find_childrel_appendrelinfo @ /usr/local/bin/postgres
+ 100.0%  [2]         build_join_rel
+  100.0%  [2]          predicate_refuted_by_recurse
+   100.0%  [2]           tokenize_inc_file
+    100.0%  [2]            CreateTransform
+
+00.05%  [2]        RI_FKey_check @ /usr/local/bin/postgres
+
+00.05%  [2]        create_unique_path @ /usr/local/bin/postgres
+ 50.00%  [1]         predicate_refuted_by_recurse
+  100.0%  [1]          tokenize_inc_file
+   100.0%  [1]           CreateTransform
+
+00.05%  [2]        ExplainResultDesc @ /usr/local/bin/postgres
+ 100.0%  [2]         gincostestimate
+  100.0%  [2]          fetch_upper_rel
+   100.0%  [2]           build_join_rel
+    100.0%  [2]            predicate_refuted_by_recurse
+     100.0%  [2]             tokenize_inc_file
+      100.0%  [2]              CreateTransform
+
+00.05%  [2]        0x121238 @ /lib/libc.so.7
+ 100.0%  [2]         make_canonical_pathkey @ /usr/local/bin/postgres
+  100.0%  [2]          add_path
+   100.0%  [2]           add_path
+    50.00%  [1]            ExecInitCteScan
+     100.0%  [1]             ExecWindowAgg
+      100.0%  [1]              ExecParallelRetrieveInstrumentation
+       100.0%  [1]               ExecInitExpr
+        100.0%  [1]                ExecEvalRowCompare
+         100.0%  [1]                 ExecEvalNullIf
+          100.0%  [1]                  ExecEvalWholeRowVar
+           100.0%  [1]                   create_modifytable_path
+            100.0%  [1]                    predicate_refuted_by_recurse
+             100.0%  [1]                     tokenize_inc_file
+              100.0%  [1]                      CreateTransform
+    50.00%  [1]            ExecGroup
+     100.0%  [1]             ExecReScanSort
+      100.0%  [1]              ExecWindowAgg
+       100.0%  [1]               ExecParallelRetrieveInstrumentation
+        100.0%  [1]                ExecInitExpr
+         100.0%  [1]                 ExecEvalRowCompare
+          100.0%  [1]                  ExecEvalNullIf
+           100.0%  [1]                   ExecEvalWholeRowVar
+            100.0%  [1]                    create_modifytable_path
+             100.0%  [1]                     predicate_refuted_by_recurse
+              100.0%  [1]                      tokenize_inc_file
+               100.0%  [1]                       CreateTransform
+
+00.05%  [2]        0x12096d @ /lib/libc.so.7
+ 100.0%  [2]         ReleasePredicateLocks @ /usr/local/bin/postgres
+
+00.05%  [2]        get_opfamily_oid @ /usr/local/bin/postgres
+ 100.0%  [2]         ParallelQueryMain
+  100.0%  [2]          ExecParallelRetrieveInstrumentation
+   100.0%  [2]           ExecInitExpr
+    100.0%  [2]            ExecEvalRowCompare
+     100.0%  [2]             ExecEvalNullIf
+      100.0%  [2]              ExecEvalWholeRowVar
+       100.0%  [2]               create_modifytable_path
+        100.0%  [2]                predicate_refuted_by_recurse
+         100.0%  [2]                 tokenize_inc_file
+          100.0%  [2]                  CreateTransform
+
+00.05%  [2]        0x75611d @ /usr/local/bin/postgres
+ 100.0%  [2]         numeric_power
+  100.0%  [2]          ExecInitExpr
+   100.0%  [2]           tupledesc_match
+    100.0%  [2]            ExecEndNode
+     100.0%  [2]             ExecProcNode
+      100.0%  [2]              ExecInitExpr
+       100.0%  [2]               ExecEvalRowCompare
+        100.0%  [2]                ExecEvalNullIf
+         100.0%  [2]                 ExecEvalWholeRowVar
+          100.0%  [2]                  create_modifytable_path
+           100.0%  [2]                   predicate_refuted_by_recurse
+            100.0%  [2]                    tokenize_inc_file
+             100.0%  [2]                     CreateTransform
+
+00.05%  [2]        build_joinrel_tlist @ /usr/local/bin/postgres
+ 100.0%  [2]         build_join_rel
+  100.0%  [2]          predicate_refuted_by_recurse
+   100.0%  [2]           tokenize_inc_file
+    100.0%  [2]            CreateTransform
+
+00.05%  [2]        expand_inherited_tables @ /usr/local/bin/postgres
+
+00.05%  [2]        pull_up_sublinks_qual_recurse @ /usr/local/bin/postgres
+
+00.02%  [1]        btabstimecmp @ /usr/local/bin/postgres
+ 100.0%  [1]         ginvalidate
+  100.0%  [1]          gistdoinsert
+   100.0%  [1]           pg_timezone_names
+    100.0%  [1]            EncodeDateTime
+     100.0%  [1]             EncodeTimezone
+      100.0%  [1]              pg_stat_get_backend_client_port
+       100.0%  [1]               ExecSubPlan
+        100.0%  [1]                AfterTriggerBeginSubXact
+         100.0%  [1]                 afterTriggerInvokeEvents
+          100.0%  [1]                  DefineType
+           100.0%  [1]                   ExecCallTriggerFunc
+            100.0%  [1]                    ExecEvalWholeRowVar
+             100.0%  [1]                     ExecEvalRowCompare
+              100.0%  [1]                      ExecEvalNullIf
+               100.0%  [1]                       ExecEvalWholeRowVar
+
+00.02%  [1]        0xdf61 @ /lib/libthr.so.3
+ 100.0%  [1]         materialize_finished_plan @ /usr/local/bin/postgres
+  100.0%  [1]          ExplainNode
+   100.0%  [1]           parse_func_options
+    100.0%  [1]            parse_func_options
+     100.0%  [1]             get_relation_info
+      100.0%  [1]              tokenize_inc_file
+       100.0%  [1]               CreateTransform
+
+00.02%  [1]        setup_simple_rel_arrays @ /usr/local/bin/postgres
+ 100.0%  [1]         build_simple_rel
+  100.0%  [1]          predicate_refuted_by_recurse
+   100.0%  [1]           tokenize_inc_file
+    100.0%  [1]            CreateTransform
+
+00.02%  [1]        ExecEvalScalarVar @ /usr/local/bin/postgres
+ 100.0%  [1]         create_modifytable_path
+  100.0%  [1]          predicate_refuted_by_recurse
+   100.0%  [1]           tokenize_inc_file
+    100.0%  [1]            CreateTransform
+
+00.02%  [1]        spg_redo @ /usr/local/bin/postgres
+ 100.0%  [1]         FinishPreparedTransaction
+  100.0%  [1]          heap_lock_updated_tuple
+   100.0%  [1]           heap_update
+    100.0%  [1]            predicate_refuted_by_recurse
+     100.0%  [1]             tokenize_inc_file
+      100.0%  [1]              CreateTransform
+
+00.02%  [1]        0x663847 @ /usr/local/bin/postgres
+ 100.0%  [1]         predicate_refuted_by_recurse
+  100.0%  [1]          tokenize_inc_file
+   100.0%  [1]           CreateTransform
+
+00.02%  [1]        poll @ /lib/libc.so.7
+ 100.0%  [1]         WaitEventSetWait @ /usr/local/bin/postgres
+  100.0%  [1]          WaitLatchOrSocket
+   100.0%  [1]           pgstat_start
+    100.0%  [1]            reaper
+     100.0%  [1]             0xe78f @ /lib/libthr.so.3
+      100.0%  [1]              0xdd6f
+
+00.02%  [1]        fix_indexqual_operand @ /usr/local/bin/postgres
+
+00.02%  [1]        FreeSpaceMapTruncateRel @ /usr/local/bin/postgres
+ 100.0%  [1]         pg_stat_get_activity
+  100.0%  [1]          parse_ident
+   100.0%  [1]           numeric_ln
+    100.0%  [1]            float4div
+     100.0%  [1]             AfterTriggerSetState
+      100.0%  [1]              ExecInitModifyTable
+       100.0%  [1]               AlterRole
+        100.0%  [1]                AlterDomainValidateConstraint
+         100.0%  [1]                 validateDomainConstraint
+          100.0%  [1]                  afterTriggerInvokeEvents
+           100.0%  [1]                   ExecCallTriggerFunc
+            100.0%  [1]                    ExecEvalWholeRowVar
+             100.0%  [1]                     ExecEvalRowCompare
+              100.0%  [1]                      ExecEvalNullIf
+               100.0%  [1]                       ExecEvalWholeRowVar
+
+00.02%  [1]        0x1212a9 @ /lib/libc.so.7
+ 100.0%  [1]         create_groupingsets_path @ /usr/local/bin/postgres
+  100.0%  [1]          ExplainNode
+   100.0%  [1]           AlterUserMapping
+    100.0%  [1]            RemoveForeignServerById
+     100.0%  [1]             create_unique_path
+      100.0%  [1]              get_relation_info
+       100.0%  [1]               tokenize_inc_file
+        100.0%  [1]                CreateTransform
+
+00.02%  [1]        0x86d84 @ /lib/libc.so.7
+ 100.0%  [1]         0x872a6
+  100.0%  [1]          pg_get_function_arg_default @ /usr/local/bin/postgres
+   100.0%  [1]           set_rtable_names
+    100.0%  [1]            get_rule_expr
+     100.0%  [1]             predicate_refuted_by_recurse
+      100.0%  [1]              tokenize_inc_file
+       100.0%  [1]               CreateTransform
+
+00.02%  [1]        lo_get_fragment @ /usr/local/bin/postgres
+ 100.0%  [1]         get_relation_info
+  100.0%  [1]          tokenize_inc_file
+   100.0%  [1]           CreateTransform
+
+00.02%  [1]        0x86d87 @ /lib/libc.so.7
+ 100.0%  [1]         0x872a6
+  100.0%  [1]          pg_get_function_arg_default @ /usr/local/bin/postgres
+   100.0%  [1]           set_rtable_names
+
+00.02%  [1]        numeric_power @ /usr/local/bin/postgres
+ 100.0%  [1]         ExecInitExpr
+  100.0%  [1]          tupledesc_match
+   100.0%  [1]           ExecEndNode
+    100.0%  [1]            ExecProcNode
+     100.0%  [1]             ExecInitExpr
+      100.0%  [1]              ExecEvalRowCompare
+       100.0%  [1]               ExecEvalNullIf
+        100.0%  [1]                ExecEvalWholeRowVar
+         100.0%  [1]                 create_modifytable_path
+          100.0%  [1]                  predicate_refuted_by_recurse
+           100.0%  [1]                   tokenize_inc_file
+            100.0%  [1]                    CreateTransform
+
+00.02%  [1]        0x11ee8a @ /lib/libc.so.7
+ 100.0%  [1]         ImportForeignSchema @ /usr/local/bin/postgres
+
+00.02%  [1]        RemoveUserMapping @ /usr/local/bin/postgres
+ 100.0%  [1]         RemoveForeignServerById
+  100.0%  [1]          create_unique_path
+   100.0%  [1]           get_relation_info
+    100.0%  [1]            tokenize_inc_file
+     100.0%  [1]             CreateTransform
+
+00.02%  [1]        0x11ee8e @ /lib/libc.so.7
+ 100.0%  [1]         numeric_combine @ /usr/local/bin/postgres
+
+00.02%  [1]        0x8eb0c @ /lib/libc.so.7
+ 100.0%  [1]         _bt_leafbuild @ /usr/local/bin/postgres
+  100.0%  [1]          brin_desc
+   100.0%  [1]           heap_xlog_update
+    100.0%  [1]            _bt_restore_page
+     100.0%  [1]             infer_arbiter_indexes
+      100.0%  [1]              tokenize_inc_file
+       100.0%  [1]               CreateTransform
+
+00.02%  [1]        build_empty_join_rel @ /usr/local/bin/postgres
+ 100.0%  [1]         build_join_rel
+  100.0%  [1]          predicate_refuted_by_recurse
+   100.0%  [1]           tokenize_inc_file
+    100.0%  [1]            CreateTransform
+
+00.02%  [1]        0x8eb12 @ /lib/libc.so.7
+ 100.0%  [1]         _bt_leafbuild @ /usr/local/bin/postgres
+  100.0%  [1]          brin_desc
+   100.0%  [1]           heap_xlog_update
+    100.0%  [1]            _bt_restore_page
+     100.0%  [1]             infer_arbiter_indexes
+      100.0%  [1]              tokenize_inc_file
+       100.0%  [1]               CreateTransform
+
+00.02%  [1]        getgrnam_r @ /lib/libc.so.7
+ 100.0%  [1]         tokenize_file @ /usr/local/bin/postgres
+  100.0%  [1]          infer_arbiter_indexes
+   100.0%  [1]           tokenize_inc_file
+    100.0%  [1]            CreateTransform
+
+00.02%  [1]        ReleaseSemaphores @ /usr/local/bin/postgres
+ 100.0%  [1]         predicate_refuted_by_recurse
+  100.0%  [1]          tokenize_inc_file
+   100.0%  [1]           CreateTransform
+
+00.02%  [1]        set_plan_refs @ /usr/local/bin/postgres
+ 100.0%  [1]         finalize_plan
+  100.0%  [1]          0x7847cc
+   100.0%  [1]           get_rule_expr
+
+00.02%  [1]        0x7424 @ /lib/libthr.so.3
+ 100.0%  [1]         pgstat_start @ /usr/local/bin/postgres
+  100.0%  [1]          reaper
+   100.0%  [1]           0xe78f @ /lib/libthr.so.3
+    100.0%  [1]            0xdd6f
+
+00.02%  [1]        create_modifytable_path @ /usr/local/bin/postgres
+ 100.0%  [1]         predicate_refuted_by_recurse
+  100.0%  [1]          tokenize_inc_file
+   100.0%  [1]           CreateTransform
+
+00.02%  [1]        0x87229 @ /lib/libc.so.7
+ 100.0%  [1]         pg_get_function_arg_default @ /usr/local/bin/postgres
+  100.0%  [1]          set_rtable_names
+
+00.02%  [1]        0x584f0a @ /usr/local/bin/postgres
+ 100.0%  [1]         predicate_refuted_by_recurse
+  100.0%  [1]          tokenize_inc_file
+   100.0%  [1]           CreateTransform
+
+00.02%  [1]        0x86caf @ /lib/libc.so.7
+ 100.0%  [1]         0x872a6
+  100.0%  [1]          pg_get_function_arg_default @ /usr/local/bin/postgres
+   100.0%  [1]           set_rtable_names
+
+00.02%  [1]        ExecEvalConst @ /usr/local/bin/postgres
+ 100.0%  [1]         create_modifytable_path
+  100.0%  [1]          predicate_refuted_by_recurse
+   100.0%  [1]           tokenize_inc_file
+    100.0%  [1]            CreateTransform
+
+00.02%  [1]        expand_indexqual_conditions @ /usr/local/bin/postgres
+
+00.02%  [1]        0x4e5298 @ /usr/local/bin/postgres
+ 100.0%  [1]         _bt_leafbuild
+  100.0%  [1]          brin_desc
+   100.0%  [1]           heap_xlog_update
+    100.0%  [1]            _bt_restore_page
+     100.0%  [1]             infer_arbiter_indexes
+      100.0%  [1]              tokenize_inc_file
+       100.0%  [1]               CreateTransform
+
+00.02%  [1]        create_minmaxagg_path @ /usr/local/bin/postgres
+ 100.0%  [1]         ExplainNode
+  100.0%  [1]          AlterUserMapping
+   100.0%  [1]           RemoveForeignServerById
+    100.0%  [1]            create_unique_path
+     100.0%  [1]             get_relation_info
+      100.0%  [1]              tokenize_inc_file
+       100.0%  [1]               CreateTransform
+
+00.02%  [1]        CreateTransform @ /usr/local/bin/postgres
+ 100.0%  [1]         ExecInitExpr
+  100.0%  [1]          tupledesc_match
+   100.0%  [1]           ExecEndNode
+    100.0%  [1]            ExecProcNode
+     100.0%  [1]             ExecInitExpr
+      100.0%  [1]              ExecEvalRowCompare
+       100.0%  [1]               ExecEvalNullIf
+        100.0%  [1]                ExecEvalWholeRowVar
+         100.0%  [1]                 create_modifytable_path
+          100.0%  [1]                  predicate_refuted_by_recurse
+           100.0%  [1]                   tokenize_inc_file
+            100.0%  [1]                    CreateTransform
+
+00.02%  [1]        ExecGroup @ /usr/local/bin/postgres
+ 100.0%  [1]         ExecReScanSort
+  100.0%  [1]          ExecWindowAgg
+   100.0%  [1]           ExecParallelRetrieveInstrumentation
+    100.0%  [1]            ExecInitExpr
+     100.0%  [1]             ExecEvalRowCompare
+      100.0%  [1]              ExecEvalNullIf
+       100.0%  [1]               ExecEvalWholeRowVar
+        100.0%  [1]                create_modifytable_path
+         100.0%  [1]                 predicate_refuted_by_recurse
+          100.0%  [1]                  tokenize_inc_file
+           100.0%  [1]                   CreateTransform
+
+00.02%  [1]        0x120955 @ /lib/libc.so.7
+ 100.0%  [1]         ReleasePredicateLocks @ /usr/local/bin/postgres
+
+00.02%  [1]        0x11ba89 @ /lib/libc.so.7
+ 100.0%  [1]         float84lt @ /usr/local/bin/postgres
+  100.0%  [1]          tokenize_file
+   100.0%  [1]           infer_arbiter_indexes
+    100.0%  [1]            tokenize_inc_file
+     100.0%  [1]             CreateTransform
+
+00.02%  [1]        lo_export @ /usr/local/bin/postgres
+ 100.0%  [1]         get_relation_info
+  100.0%  [1]          tokenize_inc_file
+   100.0%  [1]           CreateTransform
+
+00.02%  [1]        0x118959 @ /lib/libc.so.7
+ 100.0%  [1]         make_pathkeys_for_window @ /usr/local/bin/postgres
+  100.0%  [1]          set_plan_refs
+   100.0%  [1]           finalize_plan
+    100.0%  [1]            0x7847cc
+     100.0%  [1]             get_rule_expr
+
+00.02%  [1]        timestamp_abstime @ /usr/local/bin/postgres
+ 100.0%  [1]         ln_var
+  100.0%  [1]          ExecInitExpr
+   100.0%  [1]           tupledesc_match
+    100.0%  [1]            ExecEndNode
+     100.0%  [1]             ExecProcNode
+      100.0%  [1]              ExecInitExpr
+       100.0%  [1]               ExecEvalRowCompare
+        100.0%  [1]                ExecEvalNullIf
+         100.0%  [1]                 ExecEvalWholeRowVar
+          100.0%  [1]                  create_modifytable_path
+           100.0%  [1]                   predicate_refuted_by_recurse
+            100.0%  [1]                    tokenize_inc_file
+             100.0%  [1]                     CreateTransform
+
+00.02%  [1]        recv @ /lib/libc.so.7
+ 100.0%  [1]         pgstat_start @ /usr/local/bin/postgres
+  100.0%  [1]          reaper
+   100.0%  [1]           0xe78f @ /lib/libthr.so.3
+    100.0%  [1]            0xdd6f
+
+00.02%  [1]        0x120960 @ /lib/libc.so.7
+ 100.0%  [1]         ReleasePredicateLocks @ /usr/local/bin/postgres
+
+00.02%  [1]        binary_upgrade_set_record_init_privs @ /usr/local/bin/postgres
+ 100.0%  [1]         abstimein
+  100.0%  [1]          abstime_timestamp
+   100.0%  [1]           ln_var
+    100.0%  [1]            ExecInitExpr
+     100.0%  [1]             tupledesc_match
+      100.0%  [1]              ExecEndNode
+       100.0%  [1]               ExecProcNode
+        100.0%  [1]                ExecInitExpr
+         100.0%  [1]                 ExecEvalRowCompare
+          100.0%  [1]                  ExecEvalNullIf
+           100.0%  [1]                   ExecEvalWholeRowVar
+            100.0%  [1]                    create_modifytable_path
+             100.0%  [1]                     predicate_refuted_by_recurse
+              100.0%  [1]                      tokenize_inc_file
+               100.0%  [1]                       CreateTransform
+
+00.02%  [1]        div_var_fast @ /usr/local/bin/postgres
+ 100.0%  [1]         predicate_refuted_by_recurse
+  100.0%  [1]          tokenize_inc_file
+   100.0%  [1]           CreateTransform
+
+00.02%  [1]        RemoveForeignDataWrapperById @ /usr/local/bin/postgres
+ 100.0%  [1]         get_relation_info
+  100.0%  [1]          tokenize_inc_file
+   100.0%  [1]           CreateTransform
+
+00.02%  [1]        btree_redo @ /usr/local/bin/postgres
+ 100.0%  [1]         _bt_restore_meta
+  100.0%  [1]          _bt_restore_page
+   100.0%  [1]           infer_arbiter_indexes
+    100.0%  [1]            tokenize_inc_file
+     100.0%  [1]             CreateTransform
+
+00.02%  [1]        rename_constraint_internal @ /usr/local/bin/postgres
+ 100.0%  [1]         SimpleLruFlush
+  100.0%  [1]          spgFormInnerTuple
+   100.0%  [1]           0x4c89ee
+    100.0%  [1]            heap_lock_updated_tuple
+     100.0%  [1]             heap_update
+      100.0%  [1]              predicate_refuted_by_recurse
+       100.0%  [1]               tokenize_inc_file
+        100.0%  [1]                CreateTransform
+
+00.02%  [1]        print_function_rettype @ /usr/local/bin/postgres
+ 100.0%  [1]         set_deparse_for_query
+  100.0%  [1]          RangeVarCallbackForReindexIndex
+   100.0%  [1]           DefineDomain
+    100.0%  [1]            ExecInitExpr
+     100.0%  [1]             ExecEndNode
+      100.0%  [1]              ExecProcNode
+       100.0%  [1]               ExecInitExpr
+        100.0%  [1]                ExecEvalRowCompare
+         100.0%  [1]                 ExecEvalNullIf
+          100.0%  [1]                  ExecEvalWholeRowVar
+           100.0%  [1]                   create_modifytable_path
+            100.0%  [1]                    predicate_refuted_by_recurse
+             100.0%  [1]                     tokenize_inc_file
+              100.0%  [1]                      CreateTransform
+
+00.02%  [1]        0x11896c @ /lib/libc.so.7
+ 100.0%  [1]         make_pathkeys_for_window @ /usr/local/bin/postgres
+  100.0%  [1]          set_plan_refs
+   100.0%  [1]           finalize_plan
+    100.0%  [1]            0x7847cc
+     100.0%  [1]             get_rule_expr
+
+00.02%  [1]        hash_range @ /usr/local/bin/postgres
+ 100.0%  [1]         range_minus
+  100.0%  [1]          make_pathkeys_for_window
+   100.0%  [1]           set_plan_refs
+    100.0%  [1]            finalize_plan
+     100.0%  [1]             0x7847cc
+      100.0%  [1]              get_rule_expr
+
+00.02%  [1]        0x1052b8 @ /lib/libc.so.7
+ 100.0%  [1]         ExplainNode @ /usr/local/bin/postgres
+  100.0%  [1]          AlterUserMapping
+   100.0%  [1]           RemoveForeignServerById
+    100.0%  [1]            create_unique_path
+     100.0%  [1]             get_relation_info
+      100.0%  [1]              tokenize_inc_file
+       100.0%  [1]               CreateTransform
+
+00.02%  [1]        abstime2tm @ /usr/local/bin/postgres
+ 100.0%  [1]         MarkAsPreparing
+  100.0%  [1]          SetMultiXactIdLimit
+   100.0%  [1]           SimpleLruReadPage
+    100.0%  [1]            SimpleLruReadPage_ReadOnly
+     100.0%  [1]             spg_redo
+      100.0%  [1]              TrimCLOG
+       100.0%  [1]               spg_redo
+        100.0%  [1]                spgrescan
+         100.0%  [1]                 heap_lock_updated_tuple
+          100.0%  [1]                  heap_update
+           100.0%  [1]                   predicate_refuted_by_recurse
+            100.0%  [1]                    tokenize_inc_file
+             100.0%  [1]                     CreateTransform
+
+00.02%  [1]        0x118970 @ /lib/libc.so.7
+ 100.0%  [1]         make_pathkeys_for_window @ /usr/local/bin/postgres
+  100.0%  [1]          set_plan_refs
+   100.0%  [1]           finalize_plan
+    100.0%  [1]            0x7847cc
+     100.0%  [1]             get_rule_expr
+
+00.02%  [1]        0x11b922 @ /lib/libc.so.7
+ 100.0%  [1]         interpret_function_parameter_list @ /usr/local/bin/postgres
+  100.0%  [1]          infer_arbiter_indexes
+   100.0%  [1]           tokenize_inc_file
+    100.0%  [1]            CreateTransform
+
+00.02%  [1]        deconstruct_recurse @ /usr/local/bin/postgres
+ 100.0%  [1]         gincostestimate
+  100.0%  [1]          predicate_refuted_by_recurse
+   100.0%  [1]           tokenize_inc_file
+    100.0%  [1]            CreateTransform
+
+00.02%  [1]        hash_search_with_hash_value @ /usr/local/bin/postgres
+ 100.0%  [1]         pgstat_start
+  100.0%  [1]          reaper
+   100.0%  [1]           0xe78f @ /lib/libthr.so.3
+    100.0%  [1]            0xdd6f
+
+00.02%  [1]        ExecLockRows @ /usr/local/bin/postgres
+ 100.0%  [1]         ExecLockRows
+  100.0%  [1]          ExecEvalFieldStore
+   100.0%  [1]           ExecEvalCoerceViaIO
+    100.0%  [1]            ExecEvalArrayRef
+     100.0%  [1]             ExecEvalWholeRowVar
+      100.0%  [1]              create_modifytable_path
+       100.0%  [1]               predicate_refuted_by_recurse
+        100.0%  [1]                tokenize_inc_file
+         100.0%  [1]                 CreateTransform
+
+00.02%  [1]        simplify_function @ /usr/local/bin/postgres
+ 100.0%  [1]         add_path
+  100.0%  [1]          ExecGroup
+   100.0%  [1]           ExecReScanSort
+    100.0%  [1]            ExecWindowAgg
+     100.0%  [1]             ExecParallelRetrieveInstrumentation
+      100.0%  [1]              ExecInitExpr
+       100.0%  [1]               ExecEvalRowCompare
+        100.0%  [1]                ExecEvalNullIf
+         100.0%  [1]                 ExecEvalWholeRowVar
+          100.0%  [1]                  create_modifytable_path
+           100.0%  [1]                   predicate_refuted_by_recurse
+            100.0%  [1]                    tokenize_inc_file
+             100.0%  [1]                     CreateTransform
+
+00.02%  [1]        ReleasePredicateLocks @ /usr/local/bin/postgres
+
+00.02%  [1]        ImportForeignSchema @ /usr/local/bin/postgres
+ 100.0%  [1]         create_unique_path
+  100.0%  [1]          get_relation_info
+   100.0%  [1]           tokenize_inc_file
+    100.0%  [1]            CreateTransform
+
+00.02%  [1]        0x769e1c @ /usr/local/bin/postgres
+
+00.02%  [1]        has_legal_joinclause @ /usr/local/bin/postgres
+ 100.0%  [1]         add_path
+  100.0%  [1]          add_path
+   100.0%  [1]           ExecGroup
+    100.0%  [1]            ExecReScanSort
+     100.0%  [1]             ExecWindowAgg
+      100.0%  [1]              ExecParallelRetrieveInstrumentation
+       100.0%  [1]               ExecInitExpr
+        100.0%  [1]                ExecEvalRowCompare
+         100.0%  [1]                 ExecEvalNullIf
+          100.0%  [1]                  ExecEvalWholeRowVar
+           100.0%  [1]                   create_modifytable_path
+            100.0%  [1]                    predicate_refuted_by_recurse
+             100.0%  [1]                     tokenize_inc_file
+              100.0%  [1]                      CreateTransform
+
+00.02%  [1]        get_base_rel_indexes @ /usr/local/bin/postgres
+ 100.0%  [1]         grouping_planner
+
+@ ITLB_MISSES.WALK_COMPLETED [3714 samples]
+
+24.74%  [919]      pthread_mutex_trylock @ /lib/libthr.so.3
+ 99.24%  [912]       create_groupingsets_path @ /usr/local/bin/postgres
+  100.0%  [912]        ExplainNode
+   100.0%  [912]         AlterUserMapping
+    100.0%  [912]          RemoveForeignServerById
+     100.0%  [912]           create_unique_path
+      100.0%  [912]            get_relation_info
+       100.0%  [912]             tokenize_inc_file
+        100.0%  [912]              CreateTransform
+ 00.54%  [5]         _bt_leafbuild
+  100.0%  [5]          brin_desc
+   100.0%  [5]           heap_xlog_update
+    100.0%  [5]            _bt_restore_page
+     100.0%  [5]             infer_arbiter_indexes
+      100.0%  [5]              tokenize_inc_file
+       100.0%  [5]               CreateTransform
+ 00.22%  [2]         create_sort_path
+  100.0%  [2]          ExplainNode
+   100.0%  [2]           parse_func_options
+    100.0%  [2]            parse_func_options
+     100.0%  [2]             get_relation_info
+      100.0%  [2]              tokenize_inc_file
+       100.0%  [2]               CreateTransform
+
+06.84%  [254]      roundl @ /lib/libm.so.5
+ 100.0%  [254]       ExecGroup @ /usr/local/bin/postgres
+  100.0%  [254]        ExecReScanSort
+   100.0%  [254]         ExecWindowAgg
+    100.0%  [254]          ExecParallelRetrieveInstrumentation
+     100.0%  [254]           ExecInitExpr
+      100.0%  [254]            ExecEvalRowCompare
+       100.0%  [254]             ExecEvalNullIf
+        100.0%  [254]              ExecEvalWholeRowVar
+         100.0%  [254]               create_modifytable_path
+          100.0%  [254]                predicate_refuted_by_recurse
+           100.0%  [254]                 tokenize_inc_file
+            100.0%  [254]                  CreateTransform
+
+05.06%  [188]      pg_icu_collator_from_collation @ /usr/local/bin/postgres
+ 100.0%  [188]       pg_stat_get_backend_client_port
+  100.0%  [188]        ExecSubPlan
+   100.0%  [188]         AfterTriggerBeginSubXact
+    100.0%  [188]          afterTriggerInvokeEvents
+     100.0%  [188]           DefineType
+      100.0%  [188]            ExecCallTriggerFunc
+       100.0%  [188]             ExecEvalWholeRowVar
+        100.0%  [188]              ExecEvalRowCompare
+         100.0%  [188]               ExecEvalNullIf
+          100.0%  [188]                ExecEvalWholeRowVar
+           100.0%  [188]                 create_modifytable_path
+            100.0%  [188]                  predicate_refuted_by_recurse
+             100.0%  [188]                   tokenize_inc_file
+              100.0%  [188]                    CreateTransform
+
+04.82%  [179]      ComputeIndexAttrs @ /usr/local/bin/postgres
+ 91.06%  [163]       spgdoinsert
+  96.93%  [158]        ComputeIndexAttrs
+   93.67%  [148]         spgdoinsert
+    100.0%  [148]          spgdoinsert
+     100.0%  [148]           ComputeIndexAttrs
+      100.0%  [148]            heap_abort_speculative
+       100.0%  [148]             heap_update
+        100.0%  [148]              predicate_refuted_by_recurse
+         100.0%  [148]               tokenize_inc_file
+          100.0%  [148]                CreateTransform
+   06.33%  [10]          ComputeIndexAttrs
+    100.0%  [10]           spgdoinsert
+     100.0%  [10]            ComputeIndexAttrs
+      100.0%  [10]             spgdoinsert
+       100.0%  [10]              spgdoinsert
+        100.0%  [10]               ComputeIndexAttrs
+         100.0%  [10]                heap_abort_speculative
+          100.0%  [10]                 heap_update
+           100.0%  [10]                  predicate_refuted_by_recurse
+            100.0%  [10]                   tokenize_inc_file
+             100.0%  [10]                    CreateTransform
+  03.07%  [5]          spgdoinsert
+   100.0%  [5]           ComputeIndexAttrs
+    100.0%  [5]            heap_abort_speculative
+     100.0%  [5]             heap_update
+      100.0%  [5]              predicate_refuted_by_recurse
+       100.0%  [5]               tokenize_inc_file
+        100.0%  [5]                CreateTransform
+ 02.79%  [5]         ComputeIndexAttrs
+  100.0%  [5]          ExecuteDoStmt
+   100.0%  [5]           spgdoinsert
+    100.0%  [5]            heap_lock_updated_tuple
+     100.0%  [5]             heap_update
+      100.0%  [5]              predicate_refuted_by_recurse
+       100.0%  [5]               tokenize_inc_file
+        100.0%  [5]                CreateTransform
+ 02.79%  [5]         ExecIndexBuildScanKeys
+  100.0%  [5]          ExecInitExpr
+   100.0%  [5]           tupledesc_match
+    100.0%  [5]            ExecEndNode
+     100.0%  [5]             ExecProcNode
+      100.0%  [5]              ExecInitExpr
+       100.0%  [5]               ExecEvalRowCompare
+        100.0%  [5]                ExecEvalNullIf
+         100.0%  [5]                 ExecEvalWholeRowVar
+          100.0%  [5]                  create_modifytable_path
+           100.0%  [5]                   predicate_refuted_by_recurse
+            100.0%  [5]                    tokenize_inc_file
+             100.0%  [5]                     CreateTransform
+ 01.68%  [3]         InstrEndLoop
+  100.0%  [3]          ComputeIndexAttrs
+   100.0%  [3]           fmgr_sql
+    100.0%  [3]            ExecEvalScalarVar
+     100.0%  [3]             create_modifytable_path
+      100.0%  [3]              predicate_refuted_by_recurse
+       100.0%  [3]               tokenize_inc_file
+        100.0%  [3]                CreateTransform
+ 00.56%  [1]         ExecEndWindowAgg
+  100.0%  [1]          DefineIndex
+   100.0%  [1]           ExecInitWindowAgg
+    100.0%  [1]            pg_timezone_abbrevs
+     100.0%  [1]             EncodeDateTime
+      100.0%  [1]              EncodeTimezone
+       100.0%  [1]               pg_stat_get_backend_client_port
+        100.0%  [1]                ExecSubPlan
+         100.0%  [1]                 AfterTriggerBeginSubXact
+          100.0%  [1]                  afterTriggerInvokeEvents
+           100.0%  [1]                   DefineType
+            100.0%  [1]                    ExecCallTriggerFunc
+             100.0%  [1]                     ExecEvalWholeRowVar
+              100.0%  [1]                      ExecEvalRowCompare
+               100.0%  [1]                       ExecEvalNullIf
+ 00.56%  [1]         InstrAggNode
+  100.0%  [1]          InstrEndLoop
+   100.0%  [1]           ComputeIndexAttrs
+    100.0%  [1]            fmgr_sql
+     100.0%  [1]             ExecEvalScalarVar
+      100.0%  [1]              create_modifytable_path
+       100.0%  [1]               predicate_refuted_by_recurse
+        100.0%  [1]                tokenize_inc_file
+         100.0%  [1]                 CreateTransform
+ 00.56%  [1]         ExecLockRows
+  100.0%  [1]          ExecLockRows
+   100.0%  [1]           ExecEvalFieldStore
+    100.0%  [1]            ExecEvalCoerceViaIO
+     100.0%  [1]             ExecEvalArrayRef
+      100.0%  [1]              ExecEvalWholeRowVar
+       100.0%  [1]               create_modifytable_path
+        100.0%  [1]                predicate_refuted_by_recurse
+         100.0%  [1]                 tokenize_inc_file
+          100.0%  [1]                  CreateTransform
+
+04.68%  [174]      CheckIndexCompatible @ /usr/local/bin/postgres
+ 100.0%  [174]       spgdoinsert
+  100.0%  [174]        ComputeIndexAttrs
+   66.09%  [115]         ComputeIndexAttrs
+    100.0%  [115]          spgdoinsert
+     100.0%  [115]           ComputeIndexAttrs
+      100.0%  [115]            spgdoinsert
+       100.0%  [115]             spgdoinsert
+        100.0%  [115]              ComputeIndexAttrs
+         100.0%  [115]               heap_abort_speculative
+          100.0%  [115]                heap_update
+           100.0%  [115]                 predicate_refuted_by_recurse
+            100.0%  [115]                  tokenize_inc_file
+             100.0%  [115]                   CreateTransform
+   33.91%  [59]          spgdoinsert
+    100.0%  [59]           spgdoinsert
+     100.0%  [59]            ComputeIndexAttrs
+      100.0%  [59]             heap_abort_speculative
+       100.0%  [59]              heap_update
+        100.0%  [59]               predicate_refuted_by_recurse
+         100.0%  [59]                tokenize_inc_file
+          100.0%  [59]                 CreateTransform
+
+03.82%  [142]      0x11ee9a @ /lib/libc.so.7
+ 95.77%  [136]       CreateUserMapping @ /usr/local/bin/postgres
+  100.0%  [136]        ImportForeignSchema
+   00.74%  [1]           create_unique_path
+    100.0%  [1]            get_relation_info
+     100.0%  [1]             tokenize_inc_file
+      100.0%  [1]              CreateTransform
+ 04.23%  [6]         CreateForeignServer
+  100.0%  [6]          get_relation_info
+   100.0%  [6]           tokenize_inc_file
+    100.0%  [6]            CreateTransform
+
+03.80%  [141]      __mallocx @ /lib/libc.so.7
+ 13.48%  [19]        ExplainNode @ /usr/local/bin/postgres
+  100.0%  [19]         parse_func_options
+   100.0%  [19]          parse_func_options
+    100.0%  [19]           get_relation_info
+     100.0%  [19]            tokenize_inc_file
+      100.0%  [19]             CreateTransform
+
+02.53%  [94]       0x11ee91 @ /lib/libc.so.7
+ 97.87%  [92]        ImportForeignSchema @ /usr/local/bin/postgres
+ 01.06%  [1]         pg_timezone_names
+  100.0%  [1]          EncodeDateTime
+   100.0%  [1]           EncodeTimezone
+    100.0%  [1]            pg_stat_get_backend_client_port
+     100.0%  [1]             ExecSubPlan
+      100.0%  [1]              AfterTriggerBeginSubXact
+       100.0%  [1]               afterTriggerInvokeEvents
+        100.0%  [1]                DefineType
+         100.0%  [1]                 ExecCallTriggerFunc
+          100.0%  [1]                  ExecEvalWholeRowVar
+           100.0%  [1]                   ExecEvalRowCompare
+            100.0%  [1]                    ExecEvalNullIf
+             100.0%  [1]                     ExecEvalWholeRowVar
+              100.0%  [1]                      create_modifytable_path
+               100.0%  [1]                       predicate_refuted_by_recurse
+ 01.06%  [1]         get_relation_info
+  100.0%  [1]          tokenize_inc_file
+   100.0%  [1]           CreateTransform
+
+01.99%  [74]       0x5480 @ /libexec/ld-elf.so.1
+ 86.49%  [64]        0x8eb37 @ /lib/libc.so.7
+  100.0%  [64]         _bt_leafbuild @ /usr/local/bin/postgres
+   100.0%  [64]          brin_desc
+    100.0%  [64]           heap_xlog_update
+     100.0%  [64]            _bt_restore_page
+      100.0%  [64]             infer_arbiter_indexes
+       100.0%  [64]              tokenize_inc_file
+        100.0%  [64]               CreateTransform
+ 13.51%  [10]        0x118b0b @ /lib/libc.so.7
+  100.0%  [10]         0x66384f @ /usr/local/bin/postgres
+   100.0%  [10]          predicate_refuted_by_recurse
+    100.0%  [10]           tokenize_inc_file
+     100.0%  [10]            CreateTransform
+
+01.88%  [70]       CreateUserMapping @ /usr/local/bin/postgres
+ 100.0%  [70]        ImportForeignSchema
+
+01.86%  [69]       spgdoinsert @ /usr/local/bin/postgres
+ 98.55%  [68]        ComputeIndexAttrs
+  67.65%  [46]         spgdoinsert
+   100.0%  [46]          spgdoinsert
+    100.0%  [46]           ComputeIndexAttrs
+     100.0%  [46]            heap_abort_speculative
+      100.0%  [46]             heap_update
+       100.0%  [46]              predicate_refuted_by_recurse
+        100.0%  [46]               tokenize_inc_file
+         100.0%  [46]                CreateTransform
+  32.35%  [22]         ComputeIndexAttrs
+   100.0%  [22]          spgdoinsert
+    100.0%  [22]           ComputeIndexAttrs
+     100.0%  [22]            spgdoinsert
+      100.0%  [22]             spgdoinsert
+       100.0%  [22]              ComputeIndexAttrs
+        100.0%  [22]               heap_abort_speculative
+         100.0%  [22]                heap_update
+          100.0%  [22]                 predicate_refuted_by_recurse
+           100.0%  [22]                  tokenize_inc_file
+            100.0%  [22]                   CreateTransform
+ 01.45%  [1]         spgdoinsert
+  100.0%  [1]          ComputeIndexAttrs
+   100.0%  [1]           heap_abort_speculative
+    100.0%  [1]            heap_update
+     100.0%  [1]             predicate_refuted_by_recurse
+      100.0%  [1]              tokenize_inc_file
+       100.0%  [1]               CreateTransform
+
+01.83%  [68]       _bt_restore_array_keys @ /usr/local/bin/postgres
+ 100.0%  [68]        brin_desc
+  100.0%  [68]         heap_xlog_update
+   100.0%  [68]          _bt_restore_page
+    100.0%  [68]           infer_arbiter_indexes
+     100.0%  [68]            tokenize_inc_file
+      100.0%  [68]             CreateTransform
+
+01.75%  [65]       0x1212a8 @ /lib/libc.so.7
+ 90.77%  [59]        create_groupingsets_path @ /usr/local/bin/postgres
+  100.0%  [59]         ExplainNode
+   100.0%  [59]          AlterUserMapping
+    100.0%  [59]           RemoveForeignServerById
+     100.0%  [59]            create_unique_path
+      100.0%  [59]             get_relation_info
+       100.0%  [59]              tokenize_inc_file
+        100.0%  [59]               CreateTransform
+ 09.23%  [6]         create_sort_path
+  100.0%  [6]          ExplainNode
+   100.0%  [6]           parse_func_options
+    100.0%  [6]            parse_func_options
+     100.0%  [6]             get_relation_info
+      100.0%  [6]              tokenize_inc_file
+       100.0%  [6]               CreateTransform
+
+01.70%  [63]       materialize_finished_plan @ /usr/local/bin/postgres
+ 100.0%  [63]        ExplainNode
+  100.0%  [63]         parse_func_options
+   100.0%  [63]          parse_func_options
+    100.0%  [63]           get_relation_info
+     100.0%  [63]            tokenize_inc_file
+      100.0%  [63]             CreateTransform
+
+01.67%  [62]       EncodeTimezone @ /usr/local/bin/postgres
+ 100.0%  [62]        pg_stat_get_backend_client_port
+  100.0%  [62]         ExecSubPlan
+   100.0%  [62]          AfterTriggerBeginSubXact
+    100.0%  [62]           afterTriggerInvokeEvents
+     100.0%  [62]            DefineType
+      100.0%  [62]             ExecCallTriggerFunc
+       100.0%  [62]              ExecEvalWholeRowVar
+        100.0%  [62]               ExecEvalRowCompare
+         100.0%  [62]                ExecEvalNullIf
+          100.0%  [62]                 ExecEvalWholeRowVar
+           100.0%  [62]                  create_modifytable_path
+            100.0%  [62]                   predicate_refuted_by_recurse
+             100.0%  [62]                    tokenize_inc_file
+              100.0%  [62]                     CreateTransform
+
+01.43%  [53]       atanh @ /lib/libm.so.5
+ 92.45%  [49]        float8out @ /usr/local/bin/postgres
+  100.0%  [49]         float4mi
+   100.0%  [49]          AfterTriggerSetState
+    100.0%  [49]           ExecInitModifyTable
+     100.0%  [49]            AlterRole
+      100.0%  [49]             AlterDomainValidateConstraint
+       100.0%  [49]              validateDomainConstraint
+        100.0%  [49]               afterTriggerInvokeEvents
+         100.0%  [49]                ExecCallTriggerFunc
+          100.0%  [49]                 ExecEvalWholeRowVar
+           100.0%  [49]                  ExecEvalRowCompare
+            100.0%  [49]                   ExecEvalNullIf
+             100.0%  [49]                    ExecEvalWholeRowVar
+              100.0%  [49]                     create_modifytable_path
+               100.0%  [49]                      predicate_refuted_by_recurse
+ 05.66%  [3]         float4mi
+  100.0%  [3]          AfterTriggerSetState
+   100.0%  [3]           ExecInitModifyTable
+    100.0%  [3]            AlterRole
+     100.0%  [3]             AlterDomainValidateConstraint
+      100.0%  [3]              validateDomainConstraint
+       100.0%  [3]               afterTriggerInvokeEvents
+        100.0%  [3]                ExecCallTriggerFunc
+         100.0%  [3]                 ExecEvalWholeRowVar
+          100.0%  [3]                  ExecEvalRowCompare
+           100.0%  [3]                   ExecEvalNullIf
+            100.0%  [3]                    ExecEvalWholeRowVar
+             100.0%  [3]                     create_modifytable_path
+              100.0%  [3]                      predicate_refuted_by_recurse
+               100.0%  [3]                       tokenize_inc_file
+ 01.89%  [1]         get_ts_parser_func
+  100.0%  [1]          ExecInitModifyTable
+   100.0%  [1]           AlterDomainValidateConstraint
+    100.0%  [1]            afterTriggerInvokeEvents
+     100.0%  [1]             ExecCallTriggerFunc
+      100.0%  [1]              ExecEvalWholeRowVar
+       100.0%  [1]               ExecEvalRowCompare
+        100.0%  [1]                ExecEvalNullIf
+         100.0%  [1]                 ExecEvalWholeRowVar
+          100.0%  [1]                  create_modifytable_path
+           100.0%  [1]                   predicate_refuted_by_recurse
+            100.0%  [1]                    tokenize_inc_file
+             100.0%  [1]                     CreateTransform
+
+01.13%  [42]       gincostestimate @ /usr/local/bin/postgres
+ 73.81%  [31]        fetch_upper_rel
+  100.0%  [31]         build_join_rel
+   100.0%  [31]          predicate_refuted_by_recurse
+    100.0%  [31]           tokenize_inc_file
+     100.0%  [31]            CreateTransform
+ 19.05%  [8]         predicate_refuted_by_recurse
+  100.0%  [8]          tokenize_inc_file
+   100.0%  [8]           CreateTransform
+ 07.14%  [3]         gincostestimate
+  100.0%  [3]          predicate_refuted_by_recurse
+   100.0%  [3]           tokenize_inc_file
+    100.0%  [3]            CreateTransform
+
+01.08%  [40]       ExecuteDoStmt @ /usr/local/bin/postgres
+ 100.0%  [40]        spgdoinsert
+  100.0%  [40]         ComputeIndexAttrs
+   75.00%  [30]          ComputeIndexAttrs
+    100.0%  [30]           spgdoinsert
+     100.0%  [30]            ComputeIndexAttrs
+      100.0%  [30]             spgdoinsert
+       100.0%  [30]              spgdoinsert
+        100.0%  [30]               ComputeIndexAttrs
+         100.0%  [30]                heap_abort_speculative
+          100.0%  [30]                 heap_update
+           100.0%  [30]                  predicate_refuted_by_recurse
+            100.0%  [30]                   tokenize_inc_file
+             100.0%  [30]                    CreateTransform
+   25.00%  [10]          spgdoinsert
+    100.0%  [10]           spgdoinsert
+     100.0%  [10]            ComputeIndexAttrs
+      100.0%  [10]             heap_abort_speculative
+       100.0%  [10]              heap_update
+        100.0%  [10]               predicate_refuted_by_recurse
+         100.0%  [10]                tokenize_inc_file
+          100.0%  [10]                 CreateTransform
+
+01.08%  [40]       numeric_exp @ /usr/local/bin/postgres
+ 65.00%  [26]        numeric_power
+  100.0%  [26]         ExecInitExpr
+   100.0%  [26]          tupledesc_match
+    100.0%  [26]           ExecEndNode
+     100.0%  [26]            ExecProcNode
+      100.0%  [26]             ExecInitExpr
+       100.0%  [26]              ExecEvalRowCompare
+        100.0%  [26]               ExecEvalNullIf
+         100.0%  [26]                ExecEvalWholeRowVar
+          100.0%  [26]                 create_modifytable_path
+           100.0%  [26]                  predicate_refuted_by_recurse
+            100.0%  [26]                   tokenize_inc_file
+             100.0%  [26]                    CreateTransform
+ 27.50%  [11]        DelRoleMems
+  100.0%  [11]         validateDomainConstraint
+   100.0%  [11]          afterTriggerInvokeEvents
+    100.0%  [11]           ExecCallTriggerFunc
+     100.0%  [11]            ExecEvalWholeRowVar
+      100.0%  [11]             ExecEvalRowCompare
+       100.0%  [11]              ExecEvalNullIf
+        100.0%  [11]               ExecEvalWholeRowVar
+         100.0%  [11]                create_modifytable_path
+          100.0%  [11]                 predicate_refuted_by_recurse
+           100.0%  [11]                  tokenize_inc_file
+            100.0%  [11]                   CreateTransform
+ 05.00%  [2]         ExecInitExpr
+  100.0%  [2]          tupledesc_match
+   100.0%  [2]           ExecEndNode
+    100.0%  [2]            ExecProcNode
+     100.0%  [2]             ExecInitExpr
+      100.0%  [2]              ExecEvalRowCompare
+       100.0%  [2]               ExecEvalNullIf
+        100.0%  [2]                ExecEvalWholeRowVar
+         100.0%  [2]                 create_modifytable_path
+          100.0%  [2]                  predicate_refuted_by_recurse
+           100.0%  [2]                   tokenize_inc_file
+            100.0%  [2]                    CreateTransform
+ 02.50%  [1]         exp_var
+  100.0%  [1]          0x716abc
+   100.0%  [1]           AfterTriggerSetState
+    100.0%  [1]            ExecInitModifyTable
+     100.0%  [1]             AlterRole
+      100.0%  [1]              AlterDomainValidateConstraint
+       100.0%  [1]               validateDomainConstraint
+        100.0%  [1]                afterTriggerInvokeEvents
+         100.0%  [1]                 ExecCallTriggerFunc
+          100.0%  [1]                  ExecEvalWholeRowVar
+           100.0%  [1]                   ExecEvalRowCompare
+            100.0%  [1]                    ExecEvalNullIf
+             100.0%  [1]                     ExecEvalWholeRowVar
+              100.0%  [1]                      create_modifytable_path
+               100.0%  [1]                       predicate_refuted_by_recurse
+
+00.83%  [31]       ExplainNode @ /usr/local/bin/postgres
+ 80.65%  [25]        parse_func_options
+  100.0%  [25]         parse_func_options
+   100.0%  [25]          get_relation_info
+    100.0%  [25]           tokenize_inc_file
+     100.0%  [25]            CreateTransform
+ 19.35%  [6]         AlterUserMapping
+  100.0%  [6]          RemoveForeignServerById
+   100.0%  [6]           create_unique_path
+    100.0%  [6]            get_relation_info
+     100.0%  [6]             tokenize_inc_file
+      100.0%  [6]              CreateTransform
+
+00.81%  [30]       create_indexscan_plan @ /usr/local/bin/postgres
+ 100.0%  [30]        ExplainNode
+  100.0%  [30]         parse_func_options
+   100.0%  [30]          parse_func_options
+    100.0%  [30]           get_relation_info
+     100.0%  [30]            tokenize_inc_file
+      100.0%  [30]             CreateTransform
+
+00.81%  [30]       build_join_rel @ /usr/local/bin/postgres
+ 100.0%  [30]        predicate_refuted_by_recurse
+  100.0%  [30]         tokenize_inc_file
+   100.0%  [30]          CreateTransform
+
+00.78%  [29]       atanf @ /lib/libm.so.5
+ 100.0%  [29]        float4mi @ /usr/local/bin/postgres
+  100.0%  [29]         AfterTriggerSetState
+   100.0%  [29]          ExecInitModifyTable
+    100.0%  [29]           AlterRole
+     100.0%  [29]            AlterDomainValidateConstraint
+      100.0%  [29]             validateDomainConstraint
+       100.0%  [29]              afterTriggerInvokeEvents
+        100.0%  [29]               ExecCallTriggerFunc
+         100.0%  [29]                ExecEvalWholeRowVar
+          100.0%  [29]                 ExecEvalRowCompare
+           100.0%  [29]                  ExecEvalNullIf
+            100.0%  [29]                   ExecEvalWholeRowVar
+             100.0%  [29]                    create_modifytable_path
+              100.0%  [29]                     predicate_refuted_by_recurse
+               100.0%  [29]                      tokenize_inc_file
+
+00.78%  [29]       makepol @ /usr/local/bin/postgres
+ 100.0%  [29]        _bt_leafbuild
+  100.0%  [29]         brin_desc
+   100.0%  [29]          heap_xlog_update
+    100.0%  [29]           _bt_restore_page
+     100.0%  [29]            infer_arbiter_indexes
+      100.0%  [29]             tokenize_inc_file
+       100.0%  [29]              CreateTransform
+
+00.73%  [27]       _bt_leafbuild @ /usr/local/bin/postgres
+ 100.0%  [27]        brin_desc
+  100.0%  [27]         heap_xlog_update
+   100.0%  [27]          _bt_restore_page
+    100.0%  [27]           infer_arbiter_indexes
+     100.0%  [27]            tokenize_inc_file
+      100.0%  [27]             CreateTransform
+
+00.70%  [26]       parse_ident @ /usr/local/bin/postgres
+ 53.85%  [14]        numeric_power
+  100.0%  [14]         ExecInitExpr
+   100.0%  [14]          tupledesc_match
+    100.0%  [14]           ExecEndNode
+     100.0%  [14]            ExecProcNode
+      100.0%  [14]             ExecInitExpr
+       100.0%  [14]              ExecEvalRowCompare
+        100.0%  [14]               ExecEvalNullIf
+         100.0%  [14]                ExecEvalWholeRowVar
+          100.0%  [14]                 create_modifytable_path
+           100.0%  [14]                  predicate_refuted_by_recurse
+            100.0%  [14]                   tokenize_inc_file
+             100.0%  [14]                    CreateTransform
+ 38.46%  [10]        numeric_ln
+  100.0%  [10]         float4div
+   100.0%  [10]          AfterTriggerSetState
+    100.0%  [10]           ExecInitModifyTable
+     100.0%  [10]            AlterRole
+      100.0%  [10]             AlterDomainValidateConstraint
+       100.0%  [10]              validateDomainConstraint
+        100.0%  [10]               afterTriggerInvokeEvents
+         100.0%  [10]                ExecCallTriggerFunc
+          100.0%  [10]                 ExecEvalWholeRowVar
+           100.0%  [10]                  ExecEvalRowCompare
+            100.0%  [10]                   ExecEvalNullIf
+             100.0%  [10]                    ExecEvalWholeRowVar
+              100.0%  [10]                     create_modifytable_path
+               100.0%  [10]                      predicate_refuted_by_recurse
+ 03.85%  [1]         pg_get_multixact_members
+  100.0%  [1]          DestroyParallelContext
+   100.0%  [1]           TrimCLOG
+    100.0%  [1]            spg_redo
+     100.0%  [1]             spgrescan
+      100.0%  [1]              heap_lock_updated_tuple
+       100.0%  [1]               heap_update
+        100.0%  [1]                predicate_refuted_by_recurse
+         100.0%  [1]                 tokenize_inc_file
+          100.0%  [1]                  CreateTransform
+ 03.85%  [1]         pg_get_indexdef_worker
+  100.0%  [1]          generate_join_implied_equalities_for_ecs
+   100.0%  [1]           get_parameterized_baserel_size
+    100.0%  [1]            final_cost_nestloop
+     100.0%  [1]             create_lockrows_path
+      100.0%  [1]              predicate_refuted_by_recurse
+       100.0%  [1]               tokenize_inc_file
+        100.0%  [1]                CreateTransform
+
+00.70%  [26]       0xdf5a @ /lib/libthr.so.3
+ 88.46%  [23]        materialize_finished_plan @ /usr/local/bin/postgres
+  100.0%  [23]         ExplainNode
+   100.0%  [23]          parse_func_options
+    100.0%  [23]           parse_func_options
+     100.0%  [23]            get_relation_info
+      100.0%  [23]             tokenize_inc_file
+       100.0%  [23]              CreateTransform
+ 11.54%  [3]         ExplainNode
+  66.67%  [2]          parse_func_options
+   100.0%  [2]           parse_func_options
+    100.0%  [2]            get_relation_info
+     100.0%  [2]             tokenize_inc_file
+      100.0%  [2]              CreateTransform
+  33.33%  [1]          AlterUserMapping
+   100.0%  [1]           RemoveForeignServerById
+    100.0%  [1]            create_unique_path
+     100.0%  [1]             get_relation_info
+      100.0%  [1]              tokenize_inc_file
+       100.0%  [1]               CreateTransform
+
+00.67%  [25]       ParallelQueryMain @ /usr/local/bin/postgres
+ 100.0%  [25]        ExecParallelRetrieveInstrumentation
+  100.0%  [25]         ExecInitExpr
+   100.0%  [25]          ExecEvalRowCompare
+    100.0%  [25]           ExecEvalNullIf
+     100.0%  [25]            ExecEvalWholeRowVar
+      100.0%  [25]             create_modifytable_path
+       100.0%  [25]              predicate_refuted_by_recurse
+        100.0%  [25]               tokenize_inc_file
+         100.0%  [25]                CreateTransform
+
+00.65%  [24]       infer_arbiter_indexes @ /usr/local/bin/postgres
+ 100.0%  [24]        tokenize_inc_file
+  100.0%  [24]         CreateTransform
+
+00.62%  [23]       exp_var @ /usr/local/bin/postgres
+ 86.96%  [20]        DelRoleMems
+  100.0%  [20]         validateDomainConstraint
+   100.0%  [20]          afterTriggerInvokeEvents
+    100.0%  [20]           ExecCallTriggerFunc
+     100.0%  [20]            ExecEvalWholeRowVar
+      100.0%  [20]             ExecEvalRowCompare
+       100.0%  [20]              ExecEvalNullIf
+        100.0%  [20]               ExecEvalWholeRowVar
+         100.0%  [20]                create_modifytable_path
+          100.0%  [20]                 predicate_refuted_by_recurse
+           100.0%  [20]                  tokenize_inc_file
+            100.0%  [20]                   CreateTransform
+ 08.70%  [2]         validateDomainConstraint
+  100.0%  [2]          afterTriggerInvokeEvents
+   100.0%  [2]           ExecCallTriggerFunc
+    100.0%  [2]            ExecEvalWholeRowVar
+     100.0%  [2]             ExecEvalRowCompare
+      100.0%  [2]              ExecEvalNullIf
+       100.0%  [2]               ExecEvalWholeRowVar
+        100.0%  [2]                create_modifytable_path
+         100.0%  [2]                 predicate_refuted_by_recurse
+          100.0%  [2]                  tokenize_inc_file
+           100.0%  [2]                   CreateTransform
+ 04.35%  [1]         numeric_avg_deserialize
+  100.0%  [1]          float8pl
+   100.0%  [1]           AfterTriggerSetState
+    100.0%  [1]            ExecInitModifyTable
+     100.0%  [1]             AlterRole
+      100.0%  [1]              AlterDomainValidateConstraint
+       100.0%  [1]               validateDomainConstraint
+        100.0%  [1]                afterTriggerInvokeEvents
+         100.0%  [1]                 ExecCallTriggerFunc
+          100.0%  [1]                  ExecEvalWholeRowVar
+           100.0%  [1]                   ExecEvalRowCompare
+            100.0%  [1]                    ExecEvalNullIf
+             100.0%  [1]                     ExecEvalWholeRowVar
+              100.0%  [1]                      create_modifytable_path
+               100.0%  [1]                       predicate_refuted_by_recurse
+
+00.59%  [22]       0x5481 @ /libexec/ld-elf.so.1
+ 100.0%  [22]        0x8eb37 @ /lib/libc.so.7
+  100.0%  [22]         _bt_leafbuild @ /usr/local/bin/postgres
+   100.0%  [22]          brin_desc
+    100.0%  [22]           heap_xlog_update
+     100.0%  [22]            _bt_restore_page
+      100.0%  [22]             infer_arbiter_indexes
+       100.0%  [22]              tokenize_inc_file
+        100.0%  [22]               CreateTransform
+
+00.57%  [21]       getservent_r @ /lib/libc.so.7
+ 23.81%  [5]         ExplainNode @ /usr/local/bin/postgres
+  100.0%  [5]          AlterUserMapping
+   100.0%  [5]           RemoveForeignServerById
+    100.0%  [5]            create_unique_path
+     100.0%  [5]             get_relation_info
+      100.0%  [5]              tokenize_inc_file
+       100.0%  [5]               CreateTransform
+
+00.54%  [20]       create_groupingsets_path @ /usr/local/bin/postgres
+ 100.0%  [20]        ExplainNode
+  100.0%  [20]         AlterUserMapping
+   100.0%  [20]          RemoveForeignServerById
+    100.0%  [20]           create_unique_path
+     100.0%  [20]            get_relation_info
+      100.0%  [20]             tokenize_inc_file
+       100.0%  [20]              CreateTransform
+
+00.54%  [20]       0x8eb22 @ /lib/libc.so.7
+ 100.0%  [20]        _bt_leafbuild @ /usr/local/bin/postgres
+  100.0%  [20]         brin_desc
+   100.0%  [20]          heap_xlog_update
+    100.0%  [20]           _bt_restore_page
+     100.0%  [20]            infer_arbiter_indexes
+      100.0%  [20]             tokenize_inc_file
+       100.0%  [20]              CreateTransform
+
+00.51%  [19]       0x8eb25 @ /lib/libc.so.7
+ 100.0%  [19]        _bt_leafbuild @ /usr/local/bin/postgres
+  100.0%  [19]         brin_desc
+   100.0%  [19]          heap_xlog_update
+    100.0%  [19]           _bt_restore_page
+     100.0%  [19]            infer_arbiter_indexes
+      100.0%  [19]             tokenize_inc_file
+       100.0%  [19]              CreateTransform
+
+00.46%  [17]       add_path @ /usr/local/bin/postgres
+ 88.24%  [15]        ExecGroup
+  100.0%  [15]         ExecReScanSort
+   100.0%  [15]          ExecWindowAgg
+    100.0%  [15]           ExecParallelRetrieveInstrumentation
+     100.0%  [15]            ExecInitExpr
+      100.0%  [15]             ExecEvalRowCompare
+       100.0%  [15]              ExecEvalNullIf
+        100.0%  [15]               ExecEvalWholeRowVar
+         100.0%  [15]                create_modifytable_path
+          100.0%  [15]                 predicate_refuted_by_recurse
+           100.0%  [15]                  tokenize_inc_file
+            100.0%  [15]                   CreateTransform
+ 05.88%  [1]         add_path
+  100.0%  [1]          ExecGroup
+   100.0%  [1]           ExecReScanSort
+    100.0%  [1]            ExecWindowAgg
+     100.0%  [1]             ExecParallelRetrieveInstrumentation
+      100.0%  [1]              ExecInitExpr
+       100.0%  [1]               ExecEvalRowCompare
+        100.0%  [1]                ExecEvalNullIf
+         100.0%  [1]                 ExecEvalWholeRowVar
+          100.0%  [1]                  create_modifytable_path
+           100.0%  [1]                   predicate_refuted_by_recurse
+            100.0%  [1]                    tokenize_inc_file
+             100.0%  [1]                     CreateTransform
+ 05.88%  [1]         ExecInitCteScan
+  100.0%  [1]          ExecWindowAgg
+   100.0%  [1]           ExecParallelRetrieveInstrumentation
+    100.0%  [1]            ExecInitExpr
+     100.0%  [1]             ExecEvalRowCompare
+      100.0%  [1]              ExecEvalNullIf
+       100.0%  [1]               ExecEvalWholeRowVar
+        100.0%  [1]                create_modifytable_path
+         100.0%  [1]                 predicate_refuted_by_recurse
+          100.0%  [1]                  tokenize_inc_file
+           100.0%  [1]                   CreateTransform
+
+00.46%  [17]       pg_get_function_identity_arguments @ /usr/local/bin/postgres
+ 70.59%  [12]        0x562c3d
+  100.0%  [12]         transformExprRecurse
+   100.0%  [12]          getObjectIdentityParts
+    100.0%  [12]           get_rule_expr
+     100.0%  [12]            predicate_refuted_by_recurse
+      100.0%  [12]             tokenize_inc_file
+       100.0%  [12]              CreateTransform
+ 11.76%  [2]         heap_update
+  100.0%  [2]          predicate_refuted_by_recurse
+   100.0%  [2]           tokenize_inc_file
+    100.0%  [2]            CreateTransform
+ 05.88%  [1]         gincostestimate
+  100.0%  [1]          fetch_upper_rel
+   100.0%  [1]           build_join_rel
+    100.0%  [1]            predicate_refuted_by_recurse
+     100.0%  [1]             tokenize_inc_file
+      100.0%  [1]              CreateTransform
+
+00.46%  [17]       __ns_sprintrrf @ /lib/libc.so.7
+ 58.82%  [10]        _bt_leafbuild @ /usr/local/bin/postgres
+  100.0%  [10]         brin_desc
+   100.0%  [10]          heap_xlog_update
+    100.0%  [10]           _bt_restore_page
+     100.0%  [10]            infer_arbiter_indexes
+      100.0%  [10]             tokenize_inc_file
+       100.0%  [10]              CreateTransform
+ 35.29%  [6]         predicate_refuted_by_recurse
+  100.0%  [6]          tokenize_inc_file
+   100.0%  [6]           CreateTransform
+ 05.88%  [1]         makepol
+  100.0%  [1]          _bt_leafbuild
+   100.0%  [1]           brin_desc
+    100.0%  [1]            heap_xlog_update
+     100.0%  [1]             _bt_restore_page
+      100.0%  [1]              infer_arbiter_indexes
+       100.0%  [1]               tokenize_inc_file
+        100.0%  [1]                CreateTransform
+
+00.46%  [17]       tokenize_file @ /usr/local/bin/postgres
+ 76.47%  [13]        infer_arbiter_indexes
+  100.0%  [13]         tokenize_inc_file
+   100.0%  [13]          CreateTransform
+
+00.43%  [16]       AlterOpFamily @ /usr/local/bin/postgres
+ 100.0%  [16]        ParallelQueryMain
+  100.0%  [16]         ExecParallelRetrieveInstrumentation
+   100.0%  [16]          ExecInitExpr
+    100.0%  [16]           ExecEvalRowCompare
+     100.0%  [16]            ExecEvalNullIf
+      100.0%  [16]             ExecEvalWholeRowVar
+       100.0%  [16]              create_modifytable_path
+        100.0%  [16]               predicate_refuted_by_recurse
+         100.0%  [16]                tokenize_inc_file
+          100.0%  [16]                 CreateTransform
+
+00.40%  [15]       0x1212ad @ /lib/libc.so.7
+ 73.33%  [11]        ExplainNode @ /usr/local/bin/postgres
+  100.0%  [11]         AlterUserMapping
+   100.0%  [11]          RemoveForeignServerById
+    100.0%  [11]           create_unique_path
+     100.0%  [11]            get_relation_info
+      100.0%  [11]             tokenize_inc_file
+       100.0%  [11]              CreateTransform
+ 26.67%  [4]         brin_desc
+  100.0%  [4]          heap_xlog_update
+   100.0%  [4]           _bt_restore_page
+    100.0%  [4]            infer_arbiter_indexes
+     100.0%  [4]             tokenize_inc_file
+      100.0%  [4]              CreateTransform
+
+00.40%  [15]       char2wchar @ /usr/local/bin/postgres
+ 100.0%  [15]        pg_stat_get_backend_client_port
+  100.0%  [15]         ExecSubPlan
+   100.0%  [15]          AfterTriggerBeginSubXact
+    100.0%  [15]           afterTriggerInvokeEvents
+     100.0%  [15]            DefineType
+      100.0%  [15]             ExecCallTriggerFunc
+       100.0%  [15]              ExecEvalWholeRowVar
+        100.0%  [15]               ExecEvalRowCompare
+         100.0%  [15]                ExecEvalNullIf
+          100.0%  [15]                 ExecEvalWholeRowVar
+           100.0%  [15]                  create_modifytable_path
+            100.0%  [15]                   predicate_refuted_by_recurse
+             100.0%  [15]                    tokenize_inc_file
+              100.0%  [15]                     CreateTransform
+
+00.38%  [14]       pg_stat_get_backend_client_port @ /usr/local/bin/postgres
+ 100.0%  [14]        ExecSubPlan
+  100.0%  [14]         AfterTriggerBeginSubXact
+   100.0%  [14]          afterTriggerInvokeEvents
+    100.0%  [14]           DefineType
+     100.0%  [14]            ExecCallTriggerFunc
+      100.0%  [14]             ExecEvalWholeRowVar
+       100.0%  [14]              ExecEvalRowCompare
+        100.0%  [14]               ExecEvalNullIf
+         100.0%  [14]                ExecEvalWholeRowVar
+          100.0%  [14]                 create_modifytable_path
+           100.0%  [14]                  predicate_refuted_by_recurse
+            100.0%  [14]                   tokenize_inc_file
+             100.0%  [14]                    CreateTransform
+
+00.38%  [14]       make_empty_range @ /usr/local/bin/postgres
+ 57.14%  [8]         get_base_rel_indexes
+  100.0%  [8]          grouping_planner
+ 28.57%  [4]         inet_gist_picksplit
+ 07.14%  [1]         add_child_rel_equivalences
+  100.0%  [1]          create_index_paths
+   100.0%  [1]           0x63221a
+ 07.14%  [1]         make_pathkeys_for_window
+  100.0%  [1]          set_plan_refs
+   100.0%  [1]           finalize_plan
+    100.0%  [1]            0x7847cc
+     100.0%  [1]             get_rule_expr
+
+00.38%  [14]       networkjoinsel_semi @ /usr/local/bin/postgres
+
+00.30%  [11]       0x121238 @ /lib/libc.so.7
+ 100.0%  [11]        make_canonical_pathkey @ /usr/local/bin/postgres
+  100.0%  [11]         add_path
+   100.0%  [11]          add_path
+    90.91%  [10]           ExecGroup
+     100.0%  [10]            ExecReScanSort
+      100.0%  [10]             ExecWindowAgg
+       100.0%  [10]              ExecParallelRetrieveInstrumentation
+        100.0%  [10]               ExecInitExpr
+         100.0%  [10]                ExecEvalRowCompare
+          100.0%  [10]                 ExecEvalNullIf
+           100.0%  [10]                  ExecEvalWholeRowVar
+            100.0%  [10]                   create_modifytable_path
+             100.0%  [10]                    predicate_refuted_by_recurse
+              100.0%  [10]                     tokenize_inc_file
+               100.0%  [10]                      CreateTransform
+    09.09%  [1]            ExecInitCteScan
+     100.0%  [1]             ExecWindowAgg
+      100.0%  [1]              ExecParallelRetrieveInstrumentation
+       100.0%  [1]               ExecInitExpr
+        100.0%  [1]                ExecEvalRowCompare
+         100.0%  [1]                 ExecEvalNullIf
+          100.0%  [1]                  ExecEvalWholeRowVar
+           100.0%  [1]                   create_modifytable_path
+            100.0%  [1]                    predicate_refuted_by_recurse
+             100.0%  [1]                     tokenize_inc_file
+              100.0%  [1]                      CreateTransform
+
+00.30%  [11]       similar_escape @ /usr/local/bin/postgres
+ 81.82%  [9]         spg_range_quad_inner_consistent
+  100.0%  [9]          tokenize_file
+   100.0%  [9]           infer_arbiter_indexes
+    100.0%  [9]            tokenize_inc_file
+     100.0%  [9]             CreateTransform
+ 18.18%  [2]         XLogFlush
+  100.0%  [2]          _bt_leafbuild
+   100.0%  [2]           brin_desc
+    100.0%  [2]            heap_xlog_update
+     100.0%  [2]             _bt_restore_page
+      100.0%  [2]              infer_arbiter_indexes
+       100.0%  [2]               tokenize_inc_file
+        100.0%  [2]                CreateTransform
+
+00.30%  [11]       print_function_arguments @ /usr/local/bin/postgres
+ 54.55%  [6]         set_deparse_for_query
+  83.33%  [5]          _bt_restore_meta
+   100.0%  [5]           _bt_restore_page
+    100.0%  [5]            infer_arbiter_indexes
+     100.0%  [5]             tokenize_inc_file
+      100.0%  [5]              CreateTransform
+  16.67%  [1]          _bt_clear_incomplete_split
+   100.0%  [1]           _bt_restore_page
+    100.0%  [1]            infer_arbiter_indexes
+     100.0%  [1]             tokenize_inc_file
+      100.0%  [1]              CreateTransform
+ 45.45%  [5]         generate_relation_name
+  80.00%  [4]          gincostestimate
+   100.0%  [4]           gincostestimate
+    100.0%  [4]            predicate_refuted_by_recurse
+     100.0%  [4]             tokenize_inc_file
+      100.0%  [4]              CreateTransform
+  20.00%  [1]          generate_collation_name
+   100.0%  [1]           print_function_arguments
+
+00.27%  [10]       AlterUserMapping @ /usr/local/bin/postgres
+ 100.0%  [10]        RemoveForeignServerById
+  100.0%  [10]         create_unique_path
+   100.0%  [10]          get_relation_info
+    100.0%  [10]           tokenize_inc_file
+     100.0%  [10]            CreateTransform
+
+00.24%  [9]        numeric_power @ /usr/local/bin/postgres
+ 100.0%  [9]         ExecInitExpr
+  100.0%  [9]          tupledesc_match
+   100.0%  [9]           ExecEndNode
+    100.0%  [9]            ExecProcNode
+     100.0%  [9]             ExecInitExpr
+      100.0%  [9]              ExecEvalRowCompare
+       100.0%  [9]               ExecEvalNullIf
+        100.0%  [9]                ExecEvalWholeRowVar
+         100.0%  [9]                 create_modifytable_path
+          100.0%  [9]                  predicate_refuted_by_recurse
+           100.0%  [9]                   tokenize_inc_file
+            100.0%  [9]                    CreateTransform
+
+00.24%  [9]        predicate_refuted_by_recurse @ /usr/local/bin/postgres
+ 100.0%  [9]         tokenize_inc_file
+  100.0%  [9]          CreateTransform
+
+00.22%  [8]        0x11ee78 @ /lib/libc.so.7
+ 50.00%  [4]         ImportForeignSchema @ /usr/local/bin/postgres
+ 25.00%  [2]         get_relation_info
+  100.0%  [2]          tokenize_inc_file
+   100.0%  [2]           CreateTransform
+ 25.00%  [2]         numeric_exp
+  100.0%  [2]          dataBeginPlaceToPage
+
+00.22%  [8]        DefineOpClass @ /usr/local/bin/postgres
+ 75.00%  [6]         ParallelQueryMain
+  100.0%  [6]          ExecParallelRetrieveInstrumentation
+   100.0%  [6]           ExecInitExpr
+    100.0%  [6]            ExecEvalRowCompare
+     100.0%  [6]             ExecEvalNullIf
+      100.0%  [6]              ExecEvalWholeRowVar
+       100.0%  [6]               create_modifytable_path
+        100.0%  [6]                predicate_refuted_by_recurse
+         100.0%  [6]                 tokenize_inc_file
+          100.0%  [6]                  CreateTransform
+ 25.00%  [2]         ExecProcNode
+  100.0%  [2]          ExecProcNode
+   100.0%  [2]           ExecInitExpr
+    100.0%  [2]            ExecEvalRowCompare
+     100.0%  [2]             ExecEvalNullIf
+      100.0%  [2]              ExecEvalWholeRowVar
+       100.0%  [2]               create_modifytable_path
+        100.0%  [2]                predicate_refuted_by_recurse
+         100.0%  [2]                 tokenize_inc_file
+          100.0%  [2]                  CreateTransform
+
+00.22%  [8]        create_unique_path @ /usr/local/bin/postgres
+ 100.0%  [8]         predicate_refuted_by_recurse
+  100.0%  [8]          tokenize_inc_file
+   100.0%  [8]           CreateTransform
+
+00.22%  [8]        fetch_upper_rel @ /usr/local/bin/postgres
+ 100.0%  [8]         build_join_rel
+  100.0%  [8]          predicate_refuted_by_recurse
+   100.0%  [8]           tokenize_inc_file
+    100.0%  [8]            CreateTransform
+
+00.22%  [8]        create_modifytable_path @ /usr/local/bin/postgres
+ 100.0%  [8]         predicate_refuted_by_recurse
+  100.0%  [8]          tokenize_inc_file
+   100.0%  [8]           CreateTransform
+
+00.22%  [8]        sqrt_var @ /usr/local/bin/postgres
+ 100.0%  [8]         numeric_power
+  100.0%  [8]          ExecInitExpr
+   100.0%  [8]           tupledesc_match
+    100.0%  [8]            ExecEndNode
+     100.0%  [8]             ExecProcNode
+      100.0%  [8]              ExecInitExpr
+       100.0%  [8]               ExecEvalRowCompare
+        100.0%  [8]                ExecEvalNullIf
+         100.0%  [8]                 ExecEvalWholeRowVar
+          100.0%  [8]                  create_modifytable_path
+           100.0%  [8]                   predicate_refuted_by_recurse
+            100.0%  [8]                    tokenize_inc_file
+             100.0%  [8]                     CreateTransform
+
+00.19%  [7]        0x118af9 @ /lib/libc.so.7
+ 100.0%  [7]         0x66384f @ /usr/local/bin/postgres
+  100.0%  [7]          predicate_refuted_by_recurse
+   100.0%  [7]           tokenize_inc_file
+    100.0%  [7]            CreateTransform
+
+00.19%  [7]        0xdec0 @ /lib/libthr.so.3
+ 85.71%  [6]         ExplainNode @ /usr/local/bin/postgres
+  100.0%  [6]          AlterUserMapping
+   100.0%  [6]           RemoveForeignServerById
+    100.0%  [6]            create_unique_path
+     100.0%  [6]             get_relation_info
+      100.0%  [6]              tokenize_inc_file
+       100.0%  [6]               CreateTransform
+ 14.29%  [1]         lo_truncate_internal
+  100.0%  [1]          get_relation_info
+   100.0%  [1]           tokenize_inc_file
+    100.0%  [1]            CreateTransform
+
+00.19%  [7]        heap_xlog_update @ /usr/local/bin/postgres
+ 100.0%  [7]         _bt_restore_page
+  100.0%  [7]          infer_arbiter_indexes
+   100.0%  [7]           tokenize_inc_file
+    100.0%  [7]            CreateTransform
+
+00.19%  [7]        pg_get_indexdef_worker @ /usr/local/bin/postgres
+ 85.71%  [6]         tokenize_inc_file
+  100.0%  [6]          CreateTransform
+ 14.29%  [1]         predicate_refuted_by_recurse
+  100.0%  [1]          tokenize_inc_file
+   100.0%  [1]           CreateTransform
+
+00.19%  [7]        InstrAggNode @ /usr/local/bin/postgres
+ 100.0%  [7]         InstrEndLoop
+  100.0%  [7]          ComputeIndexAttrs
+   100.0%  [7]           fmgr_sql
+    100.0%  [7]            ExecEvalScalarVar
+     100.0%  [7]             create_modifytable_path
+      100.0%  [7]              predicate_refuted_by_recurse
+       100.0%  [7]               tokenize_inc_file
+        100.0%  [7]                CreateTransform
+
+00.19%  [7]        0xdf50 @ /lib/libthr.so.3
+ 85.71%  [6]         materialize_finished_plan @ /usr/local/bin/postgres
+  100.0%  [6]          ExplainNode
+   100.0%  [6]           parse_func_options
+    100.0%  [6]            parse_func_options
+     100.0%  [6]             get_relation_info
+      100.0%  [6]              tokenize_inc_file
+       100.0%  [6]               CreateTransform
+ 14.29%  [1]         ExplainNode
+  100.0%  [1]          AlterUserMapping
+   100.0%  [1]           RemoveForeignServerById
+    100.0%  [1]            create_unique_path
+     100.0%  [1]             get_relation_info
+      100.0%  [1]              tokenize_inc_file
+       100.0%  [1]               CreateTransform
+
+00.16%  [6]        0x4c2a49 @ /usr/local/bin/postgres
+ 100.0%  [6]         _bt_restore_page
+  100.0%  [6]          infer_arbiter_indexes
+   100.0%  [6]           tokenize_inc_file
+    100.0%  [6]            CreateTransform
+
+00.16%  [6]        _bt_restore_meta @ /usr/local/bin/postgres
+ 100.0%  [6]         _bt_restore_page
+  100.0%  [6]          infer_arbiter_indexes
+   100.0%  [6]           tokenize_inc_file
+    100.0%  [6]            CreateTransform
+
+00.16%  [6]        has_legal_joinclause @ /usr/local/bin/postgres
+ 100.0%  [6]         add_path
+  100.0%  [6]          add_path
+   100.0%  [6]           ExecGroup
+    100.0%  [6]            ExecReScanSort
+     100.0%  [6]             ExecWindowAgg
+      100.0%  [6]              ExecParallelRetrieveInstrumentation
+       100.0%  [6]               ExecInitExpr
+        100.0%  [6]                ExecEvalRowCompare
+         100.0%  [6]                 ExecEvalNullIf
+          100.0%  [6]                  ExecEvalWholeRowVar
+           100.0%  [6]                   create_modifytable_path
+            100.0%  [6]                    predicate_refuted_by_recurse
+             100.0%  [6]                     tokenize_inc_file
+              100.0%  [6]                      CreateTransform
+
+00.16%  [6]        TupleDescGetAttInMetadata @ /usr/local/bin/postgres
+ 100.0%  [6]         ExecEvalScalarVar
+  100.0%  [6]          create_modifytable_path
+   100.0%  [6]           predicate_refuted_by_recurse
+    100.0%  [6]            tokenize_inc_file
+     100.0%  [6]             CreateTransform
+
+00.16%  [6]        set_simple_column_names @ /usr/local/bin/postgres
+ 83.33%  [5]         gincostestimate
+  100.0%  [5]          fetch_upper_rel
+   100.0%  [5]           build_join_rel
+    100.0%  [5]            predicate_refuted_by_recurse
+     100.0%  [5]             tokenize_inc_file
+      100.0%  [5]              CreateTransform
+ 16.67%  [1]         0x562c3d
+  100.0%  [1]          transformExprRecurse
+   100.0%  [1]           getObjectIdentityParts
+    100.0%  [1]            get_rule_expr
+     100.0%  [1]             predicate_refuted_by_recurse
+      100.0%  [1]              tokenize_inc_file
+       100.0%  [1]               CreateTransform
+
+00.16%  [6]        BuildTupleFromCStrings @ /usr/local/bin/postgres
+ 100.0%  [6]         TupleDescGetAttInMetadata
+  100.0%  [6]          ExecEvalScalarVar
+   100.0%  [6]           create_modifytable_path
+    100.0%  [6]            predicate_refuted_by_recurse
+     100.0%  [6]             tokenize_inc_file
+      100.0%  [6]              CreateTransform
+
+00.13%  [5]        set_deparse_for_query @ /usr/local/bin/postgres
+ 40.00%  [2]         get_rule_expr
+  50.00%  [1]          get_rule_expr
+   100.0%  [1]           predicate_refuted_by_recurse
+    100.0%  [1]            tokenize_inc_file
+     100.0%  [1]             CreateTransform
+ 40.00%  [2]         DefineOpClass
+  100.0%  [2]          ParallelQueryMain
+   100.0%  [2]           ExecParallelRetrieveInstrumentation
+    100.0%  [2]            ExecInitExpr
+     100.0%  [2]             ExecEvalRowCompare
+      100.0%  [2]              ExecEvalNullIf
+       100.0%  [2]               ExecEvalWholeRowVar
+        100.0%  [2]                create_modifytable_path
+         100.0%  [2]                 predicate_refuted_by_recurse
+          100.0%  [2]                  tokenize_inc_file
+           100.0%  [2]                   CreateTransform
+ 20.00%  [1]         ExplainNode
+  100.0%  [1]          RemoveUserMapping
+
+00.13%  [5]        heap_prepare_freeze_tuple @ /usr/local/bin/postgres
+ 100.0%  [5]         predicate_refuted_by_recurse
+  100.0%  [5]          tokenize_inc_file
+   100.0%  [5]           CreateTransform
+
+00.13%  [5]        0x1189e8 @ /lib/libc.so.7
+ 100.0%  [5]         0x66384f @ /usr/local/bin/postgres
+  100.0%  [5]          predicate_refuted_by_recurse
+   100.0%  [5]           tokenize_inc_file
+    100.0%  [5]            CreateTransform
+
+00.13%  [5]        0x75611d @ /usr/local/bin/postgres
+ 100.0%  [5]         numeric_power
+  100.0%  [5]          ExecInitExpr
+   100.0%  [5]           tupledesc_match
+    100.0%  [5]            ExecEndNode
+     100.0%  [5]             ExecProcNode
+      100.0%  [5]              ExecInitExpr
+       100.0%  [5]               ExecEvalRowCompare
+        100.0%  [5]                ExecEvalNullIf
+         100.0%  [5]                 ExecEvalWholeRowVar
+          100.0%  [5]                  create_modifytable_path
+           100.0%  [5]                   predicate_refuted_by_recurse
+            100.0%  [5]                    tokenize_inc_file
+             100.0%  [5]                     CreateTransform
+
+00.13%  [5]        0x87229 @ /lib/libc.so.7
+ 100.0%  [5]         pg_get_function_arg_default @ /usr/local/bin/postgres
+  100.0%  [5]          set_rtable_names
+   20.00%  [1]           get_relation_info
+    100.0%  [1]            tokenize_inc_file
+     100.0%  [1]             CreateTransform
+
+00.13%  [5]        btcostestimate @ /usr/local/bin/postgres
+ 40.00%  [2]         btcostestimate
+
+00.13%  [5]        make_agg @ /usr/local/bin/postgres
+ 100.0%  [5]         ExplainNode
+  100.0%  [5]          parse_func_options
+   100.0%  [5]           parse_func_options
+    100.0%  [5]            get_relation_info
+     100.0%  [5]             tokenize_inc_file
+      100.0%  [5]              CreateTransform
+
+00.13%  [5]        find_placeholder_info @ /usr/local/bin/postgres
+ 100.0%  [5]         ComputeIndexAttrs
+  80.00%  [4]          spgdoinsert
+   100.0%  [4]           spgdoinsert
+    100.0%  [4]            ComputeIndexAttrs
+     100.0%  [4]             heap_abort_speculative
+      100.0%  [4]              heap_update
+       100.0%  [4]               predicate_refuted_by_recurse
+        100.0%  [4]                tokenize_inc_file
+         100.0%  [4]                 CreateTransform
+  20.00%  [1]          ComputeIndexAttrs
+   100.0%  [1]           ExecuteDoStmt
+    100.0%  [1]            spgdoinsert
+     100.0%  [1]             heap_lock_updated_tuple
+      100.0%  [1]              heap_update
+       100.0%  [1]               predicate_refuted_by_recurse
+        100.0%  [1]                tokenize_inc_file
+         100.0%  [1]                 CreateTransform
+
+00.13%  [5]        tintervallenge @ /usr/local/bin/postgres
+
+00.11%  [4]        0x11ba88 @ /lib/libc.so.7
+ 100.0%  [4]         float84lt @ /usr/local/bin/postgres
+  50.00%  [2]          lo_export
+   100.0%  [2]           get_relation_info
+    100.0%  [2]            tokenize_inc_file
+     100.0%  [2]             CreateTransform
+
+00.11%  [4]        0x769e12 @ /usr/local/bin/postgres
+
+00.11%  [4]        get_query_def @ /usr/local/bin/postgres
+
+00.11%  [4]        build_joinrel_tlist @ /usr/local/bin/postgres
+ 100.0%  [4]         build_join_rel
+  100.0%  [4]          predicate_refuted_by_recurse
+   100.0%  [4]           tokenize_inc_file
+    100.0%  [4]            CreateTransform
+
+00.11%  [4]        range_minus @ /usr/local/bin/postgres
+ 75.00%  [3]         inet_gist_picksplit
+ 25.00%  [1]         get_base_rel_indexes
+  100.0%  [1]          grouping_planner
+
+00.11%  [4]        float4mi @ /usr/local/bin/postgres
+ 100.0%  [4]         AfterTriggerSetState
+  100.0%  [4]          ExecInitModifyTable
+   100.0%  [4]           AlterRole
+    100.0%  [4]            AlterDomainValidateConstraint
+     100.0%  [4]             validateDomainConstraint
+      100.0%  [4]              afterTriggerInvokeEvents
+       100.0%  [4]               ExecCallTriggerFunc
+        100.0%  [4]                ExecEvalWholeRowVar
+         100.0%  [4]                 ExecEvalRowCompare
+          100.0%  [4]                  ExecEvalNullIf
+           100.0%  [4]                   ExecEvalWholeRowVar
+            100.0%  [4]                    create_modifytable_path
+             100.0%  [4]                     predicate_refuted_by_recurse
+              100.0%  [4]                      tokenize_inc_file
+               100.0%  [4]                       CreateTransform
+
+00.11%  [4]        quote_identifier @ /usr/local/bin/postgres
+ 75.00%  [3]         set_deparse_for_query
+  33.33%  [1]          _bt_restore_meta
+   100.0%  [1]           _bt_restore_page
+    100.0%  [1]            infer_arbiter_indexes
+     100.0%  [1]             tokenize_inc_file
+      100.0%  [1]              CreateTransform
+  33.33%  [1]          ReindexMultipleTables
+   100.0%  [1]           ExecProcNode
+    100.0%  [1]            ExecProcNode
+     100.0%  [1]             ExecInitExpr
+      100.0%  [1]              ExecEvalRowCompare
+       100.0%  [1]               ExecEvalNullIf
+        100.0%  [1]                ExecEvalWholeRowVar
+         100.0%  [1]                 create_modifytable_path
+          100.0%  [1]                  predicate_refuted_by_recurse
+           100.0%  [1]                   tokenize_inc_file
+            100.0%  [1]                    CreateTransform
+  33.33%  [1]          ExplainNode
+   100.0%  [1]           RemoveUserMapping
+ 25.00%  [1]         generate_relation_name
+  100.0%  [1]          gincostestimate
+   100.0%  [1]           gincostestimate
+    100.0%  [1]            predicate_refuted_by_recurse
+     100.0%  [1]             tokenize_inc_file
+      100.0%  [1]              CreateTransform
+
+00.11%  [4]        pg_get_function_arguments @ /usr/local/bin/postgres
+ 75.00%  [3]         0x562c3d
+  100.0%  [3]          transformExprRecurse
+   100.0%  [3]           getObjectIdentityParts
+    100.0%  [3]            get_rule_expr
+     100.0%  [3]             predicate_refuted_by_recurse
+      100.0%  [3]              tokenize_inc_file
+       100.0%  [3]               CreateTransform
+
+00.11%  [4]        Xfast_syscall @ /boot/base/kernel
+
+00.08%  [3]        0xdf61 @ /lib/libthr.so.3
+ 100.0%  [3]         materialize_finished_plan @ /usr/local/bin/postgres
+  100.0%  [3]          ExplainNode
+   100.0%  [3]           parse_func_options
+    100.0%  [3]            parse_func_options
+     100.0%  [3]             get_relation_info
+      100.0%  [3]              tokenize_inc_file
+       100.0%  [3]               CreateTransform
+
+00.08%  [3]        atan2f @ /lib/libm.so.5
+ 100.0%  [3]         float8out @ /usr/local/bin/postgres
+  100.0%  [3]          float4mi
+   100.0%  [3]           AfterTriggerSetState
+    100.0%  [3]            ExecInitModifyTable
+     100.0%  [3]             AlterRole
+      100.0%  [3]              AlterDomainValidateConstraint
+       100.0%  [3]               validateDomainConstraint
+        100.0%  [3]                afterTriggerInvokeEvents
+         100.0%  [3]                 ExecCallTriggerFunc
+          100.0%  [3]                  ExecEvalWholeRowVar
+           100.0%  [3]                   ExecEvalRowCompare
+            100.0%  [3]                    ExecEvalNullIf
+             100.0%  [3]                     ExecEvalWholeRowVar
+              100.0%  [3]                      create_modifytable_path
+               100.0%  [3]                       predicate_refuted_by_recurse
+
+00.08%  [3]        get_relation_info @ /usr/local/bin/postgres
+ 100.0%  [3]         tokenize_inc_file
+  100.0%  [3]          CreateTransform
+
+00.08%  [3]        getgrent_r @ /lib/libc.so.7
+ 33.33%  [1]         create_unique_path @ /usr/local/bin/postgres
+  100.0%  [1]          predicate_refuted_by_recurse
+   100.0%  [1]           tokenize_inc_file
+    100.0%  [1]            CreateTransform
+ 33.33%  [1]         makepol
+  100.0%  [1]          _bt_leafbuild
+   100.0%  [1]           brin_desc
+    100.0%  [1]            heap_xlog_update
+     100.0%  [1]             _bt_restore_page
+      100.0%  [1]              infer_arbiter_indexes
+       100.0%  [1]               tokenize_inc_file
+        100.0%  [1]                CreateTransform
+ 33.33%  [1]         generate_collation_name
+  100.0%  [1]          print_function_arguments
+   100.0%  [1]           expandRTE
+    100.0%  [1]            do_analyze_rel
+     100.0%  [1]             operator_precedence_group
+      100.0%  [1]              checkWellFormedRecursionWalker
+       100.0%  [1]               find_join_rel
+        100.0%  [1]                predicate_refuted_by_recurse
+         100.0%  [1]                 tokenize_inc_file
+          100.0%  [1]                  CreateTransform
+
+00.08%  [3]        power_var_int @ /usr/local/bin/postgres
+ 100.0%  [3]         predicate_refuted_by_recurse
+  100.0%  [3]          tokenize_inc_file
+   100.0%  [3]           CreateTransform
+
+00.08%  [3]        build_empty_join_rel @ /usr/local/bin/postgres
+ 100.0%  [3]         build_join_rel
+  100.0%  [3]          predicate_refuted_by_recurse
+   100.0%  [3]           tokenize_inc_file
+    100.0%  [3]            CreateTransform
+
+00.08%  [3]        range_serialize @ /usr/local/bin/postgres
+ 66.67%  [2]         dataBeginPlaceToPage
+  100.0%  [2]          dataBeginPlaceToPage
+ 33.33%  [1]         transformExprRecurse
+  100.0%  [1]          checkWellFormedRecursionWalker
+   100.0%  [1]           find_join_rel
+    100.0%  [1]            predicate_refuted_by_recurse
+     100.0%  [1]             tokenize_inc_file
+      100.0%  [1]              CreateTransform
+
+00.08%  [3]        SlruInternalWritePage @ /usr/local/bin/postgres
+ 66.67%  [2]         SimpleLruReadPage
+  100.0%  [2]          SimpleLruReadPage_ReadOnly
+   100.0%  [2]           spg_redo
+    100.0%  [2]            spg_redo
+     100.0%  [2]             FinishPreparedTransaction
+      100.0%  [2]              heap_lock_updated_tuple
+       100.0%  [2]               heap_update
+        100.0%  [2]                predicate_refuted_by_recurse
+         100.0%  [2]                 tokenize_inc_file
+          100.0%  [2]                  CreateTransform
+ 33.33%  [1]         SimpleLruFlush
+  100.0%  [1]          spgFormInnerTuple
+   100.0%  [1]           0x4c89ee
+    100.0%  [1]            heap_lock_updated_tuple
+     100.0%  [1]             heap_update
+      100.0%  [1]              predicate_refuted_by_recurse
+       100.0%  [1]               tokenize_inc_file
+        100.0%  [1]                CreateTransform
+
+00.08%  [3]        RI_FKey_check @ /usr/local/bin/postgres
+
+00.08%  [3]        make_canonical_pathkey @ /usr/local/bin/postgres
+ 100.0%  [3]         add_path
+  100.0%  [3]          add_path
+   100.0%  [3]           ExecGroup
+    100.0%  [3]            ExecReScanSort
+     100.0%  [3]             ExecWindowAgg
+      100.0%  [3]              ExecParallelRetrieveInstrumentation
+       100.0%  [3]               ExecInitExpr
+        100.0%  [3]                ExecEvalRowCompare
+         100.0%  [3]                 ExecEvalNullIf
+          100.0%  [3]                  ExecEvalWholeRowVar
+           100.0%  [3]                   create_modifytable_path
+            100.0%  [3]                    predicate_refuted_by_recurse
+             100.0%  [3]                     tokenize_inc_file
+              100.0%  [3]                      CreateTransform
+
+00.08%  [3]        0x6400d6 @ /usr/local/bin/postgres
+ 100.0%  [3]         ExplainNode
+  100.0%  [3]          parse_func_options
+   100.0%  [3]           parse_func_options
+    100.0%  [3]            get_relation_info
+     100.0%  [3]             tokenize_inc_file
+      100.0%  [3]              CreateTransform
+
+00.08%  [3]        spg_range_quad_inner_consistent @ /usr/local/bin/postgres
+ 100.0%  [3]         tokenize_file
+  100.0%  [3]          infer_arbiter_indexes
+   100.0%  [3]           tokenize_inc_file
+    100.0%  [3]            CreateTransform
+
+00.08%  [3]        atan @ /lib/libm.so.5
+ 100.0%  [3]         float4mi @ /usr/local/bin/postgres
+  100.0%  [3]          AfterTriggerSetState
+   100.0%  [3]           ExecInitModifyTable
+    100.0%  [3]            AlterRole
+     100.0%  [3]             AlterDomainValidateConstraint
+      100.0%  [3]              validateDomainConstraint
+       100.0%  [3]               afterTriggerInvokeEvents
+        100.0%  [3]                ExecCallTriggerFunc
+         100.0%  [3]                 ExecEvalWholeRowVar
+          100.0%  [3]                  ExecEvalRowCompare
+           100.0%  [3]                   ExecEvalNullIf
+            100.0%  [3]                    ExecEvalWholeRowVar
+             100.0%  [3]                     create_modifytable_path
+              100.0%  [3]                      predicate_refuted_by_recurse
+               100.0%  [3]                       tokenize_inc_file
+
+00.05%  [2]        expand_inherited_tables @ /usr/local/bin/postgres
+
+00.05%  [2]        RangeVarCallbackForReindexIndex @ /usr/local/bin/postgres
+ 100.0%  [2]         ParallelQueryMain
+  100.0%  [2]          ExecParallelRetrieveInstrumentation
+   100.0%  [2]           ExecInitExpr
+    100.0%  [2]            ExecEvalRowCompare
+     100.0%  [2]             ExecEvalNullIf
+      100.0%  [2]              ExecEvalWholeRowVar
+       100.0%  [2]               create_modifytable_path
+        100.0%  [2]                predicate_refuted_by_recurse
+         100.0%  [2]                 tokenize_inc_file
+          100.0%  [2]                  CreateTransform
+
+00.05%  [2]        lo_export @ /usr/local/bin/postgres
+ 100.0%  [2]         get_relation_info
+  100.0%  [2]          tokenize_inc_file
+   100.0%  [2]           CreateTransform
+
+00.05%  [2]        prsd_headline @ /usr/local/bin/postgres
+ 100.0%  [2]         pg_stat_get_activity
+  100.0%  [2]          parse_ident
+   50.00%  [1]           numeric_ln
+    100.0%  [1]            float4div
+     100.0%  [1]             AfterTriggerSetState
+      100.0%  [1]              ExecInitModifyTable
+       100.0%  [1]               AlterRole
+        100.0%  [1]                AlterDomainValidateConstraint
+         100.0%  [1]                 validateDomainConstraint
+          100.0%  [1]                  afterTriggerInvokeEvents
+           100.0%  [1]                   ExecCallTriggerFunc
+            100.0%  [1]                    ExecEvalWholeRowVar
+             100.0%  [1]                     ExecEvalRowCompare
+              100.0%  [1]                      ExecEvalNullIf
+               100.0%  [1]                       ExecEvalWholeRowVar
+   50.00%  [1]           MarkAsPreparing
+    100.0%  [1]            SetMultiXactIdLimit
+     100.0%  [1]             SimpleLruReadPage
+      100.0%  [1]              SimpleLruReadPage_ReadOnly
+       100.0%  [1]               spg_redo
+        100.0%  [1]                TrimCLOG
+         100.0%  [1]                 spg_redo
+          100.0%  [1]                  spgrescan
+           100.0%  [1]                   heap_lock_updated_tuple
+            100.0%  [1]                    heap_update
+             100.0%  [1]                     predicate_refuted_by_recurse
+              100.0%  [1]                      tokenize_inc_file
+               100.0%  [1]                       CreateTransform
+
+00.05%  [2]        _bt_first @ /usr/local/bin/postgres
+ 100.0%  [2]         _bt_restore_page
+  100.0%  [2]          infer_arbiter_indexes
+   100.0%  [2]           tokenize_inc_file
+    100.0%  [2]            CreateTransform
+
+00.05%  [2]        div_var_fast @ /usr/local/bin/postgres
+ 100.0%  [2]         predicate_refuted_by_recurse
+  100.0%  [2]          tokenize_inc_file
+   100.0%  [2]           CreateTransform
+
+00.05%  [2]        create_sort_path @ /usr/local/bin/postgres
+ 100.0%  [2]         ExplainNode
+  100.0%  [2]          parse_func_options
+   100.0%  [2]           parse_func_options
+    100.0%  [2]            get_relation_info
+     100.0%  [2]             tokenize_inc_file
+      100.0%  [2]              CreateTransform
+
+00.05%  [2]        regexec @ /lib/libc.so.7
+ 100.0%  [2]         quote_identifier @ /usr/local/bin/postgres
+  50.00%  [1]          generate_relation_name
+   100.0%  [1]           gincostestimate
+    100.0%  [1]            predicate_refuted_by_recurse
+     100.0%  [1]             tokenize_inc_file
+      100.0%  [1]              CreateTransform
+  50.00%  [1]          set_deparse_for_query
+   100.0%  [1]           ExecWindowAgg
+    100.0%  [1]            ExecParallelRetrieveInstrumentation
+     100.0%  [1]             ExecInitExpr
+      100.0%  [1]              ExecEvalRowCompare
+       100.0%  [1]               ExecEvalNullIf
+        100.0%  [1]                ExecEvalWholeRowVar
+         100.0%  [1]                 create_modifytable_path
+          100.0%  [1]                  predicate_refuted_by_recurse
+           100.0%  [1]                   tokenize_inc_file
+            100.0%  [1]                    CreateTransform
+
+00.05%  [2]        regex_selectivity_sub @ /usr/local/bin/postgres
+
+00.05%  [2]        pg_timezone_abbrevs @ /usr/local/bin/postgres
+ 100.0%  [2]         EncodeDateTime
+  100.0%  [2]          EncodeTimezone
+   100.0%  [2]           pg_stat_get_backend_client_port
+    100.0%  [2]            ExecSubPlan
+     100.0%  [2]             AfterTriggerBeginSubXact
+      100.0%  [2]              afterTriggerInvokeEvents
+       100.0%  [2]               DefineType
+        100.0%  [2]                ExecCallTriggerFunc
+         100.0%  [2]                 ExecEvalWholeRowVar
+          100.0%  [2]                  ExecEvalRowCompare
+           100.0%  [2]                   ExecEvalNullIf
+            100.0%  [2]                    ExecEvalWholeRowVar
+             100.0%  [2]                     create_modifytable_path
+              100.0%  [2]                      predicate_refuted_by_recurse
+               100.0%  [2]                       tokenize_inc_file
+
+00.05%  [2]        _bt_start_array_keys @ /usr/local/bin/postgres
+ 100.0%  [2]         _bt_restore_page
+  100.0%  [2]          infer_arbiter_indexes
+   100.0%  [2]           tokenize_inc_file
+    100.0%  [2]            CreateTransform
+
+00.05%  [2]        0x8eb08 @ /lib/libc.so.7
+ 100.0%  [2]         _bt_leafbuild @ /usr/local/bin/postgres
+  100.0%  [2]          brin_desc
+   100.0%  [2]           heap_xlog_update
+    100.0%  [2]            _bt_restore_page
+     100.0%  [2]             infer_arbiter_indexes
+      100.0%  [2]              tokenize_inc_file
+       100.0%  [2]               CreateTransform
+
+00.05%  [2]        0xdeca @ /lib/libthr.so.3
+ 100.0%  [2]         ExplainNode @ /usr/local/bin/postgres
+  100.0%  [2]          AlterUserMapping
+   100.0%  [2]           RemoveForeignServerById
+    100.0%  [2]            create_unique_path
+     100.0%  [2]             get_relation_info
+      100.0%  [2]              tokenize_inc_file
+       100.0%  [2]               CreateTransform
+
+00.05%  [2]        make_ands_implicit @ /usr/local/bin/postgres
+
+00.05%  [2]        AlterDatabase @ /usr/local/bin/postgres
+
+00.05%  [2]        0x86ce3 @ /lib/libc.so.7
+ 100.0%  [2]         0x872a6
+  100.0%  [2]          pg_get_function_arg_default @ /usr/local/bin/postgres
+   100.0%  [2]           set_rtable_names
+    100.0%  [2]            get_rule_expr
+     100.0%  [2]             predicate_refuted_by_recurse
+      100.0%  [2]              tokenize_inc_file
+       100.0%  [2]               CreateTransform
+
+00.05%  [2]        get_rule_expr @ /usr/local/bin/postgres
+
+00.05%  [2]        0x86d65 @ /lib/libc.so.7
+ 100.0%  [2]         0x872a6
+  100.0%  [2]          pg_get_function_arg_default @ /usr/local/bin/postgres
+   100.0%  [2]           set_rtable_names
+    50.00%  [1]            get_rule_expr
+     100.0%  [1]             predicate_refuted_by_recurse
+      100.0%  [1]              tokenize_inc_file
+       100.0%  [1]               CreateTransform
+
+00.05%  [2]        simplify_function @ /usr/local/bin/postgres
+ 100.0%  [2]         add_path
+  50.00%  [1]          ExecInitCteScan
+   100.0%  [1]           ExecWindowAgg
+    100.0%  [1]            ExecParallelRetrieveInstrumentation
+     100.0%  [1]             ExecInitExpr
+      100.0%  [1]              ExecEvalRowCompare
+       100.0%  [1]               ExecEvalNullIf
+        100.0%  [1]                ExecEvalWholeRowVar
+         100.0%  [1]                 create_modifytable_path
+          100.0%  [1]                  predicate_refuted_by_recurse
+           100.0%  [1]                   tokenize_inc_file
+            100.0%  [1]                    CreateTransform
+  50.00%  [1]          ExecGroup
+   100.0%  [1]           ExecReScanSort
+    100.0%  [1]            ExecWindowAgg
+     100.0%  [1]             ExecParallelRetrieveInstrumentation
+      100.0%  [1]              ExecInitExpr
+       100.0%  [1]               ExecEvalRowCompare
+        100.0%  [1]                ExecEvalNullIf
+         100.0%  [1]                 ExecEvalWholeRowVar
+          100.0%  [1]                  create_modifytable_path
+           100.0%  [1]                   predicate_refuted_by_recurse
+            100.0%  [1]                    tokenize_inc_file
+             100.0%  [1]                     CreateTransform
+
+00.05%  [2]        build_simple_rel @ /usr/local/bin/postgres
+
+00.05%  [2]        ImportForeignSchema @ /usr/local/bin/postgres
+
+00.05%  [2]        generate_relation_name @ /usr/local/bin/postgres
+ 100.0%  [2]         gincostestimate
+  100.0%  [2]          gincostestimate
+   100.0%  [2]           predicate_refuted_by_recurse
+    100.0%  [2]            tokenize_inc_file
+     100.0%  [2]             CreateTransform
+
+00.05%  [2]        0x11ee7b @ /lib/libc.so.7
+ 50.00%  [1]         ParallelQueryMain @ /usr/local/bin/postgres
+  100.0%  [1]          ExecParallelRetrieveInstrumentation
+   100.0%  [1]           ExecInitExpr
+    100.0%  [1]            ExecEvalRowCompare
+     100.0%  [1]             ExecEvalNullIf
+      100.0%  [1]              ExecEvalWholeRowVar
+       100.0%  [1]               create_modifytable_path
+        100.0%  [1]                predicate_refuted_by_recurse
+         100.0%  [1]                 tokenize_inc_file
+          100.0%  [1]                  CreateTransform
+ 50.00%  [1]         shimTriConsistentFn
+  100.0%  [1]          transformExprRecurse
+   100.0%  [1]           checkWellFormedRecursionWalker
+    100.0%  [1]            find_join_rel
+     100.0%  [1]             predicate_refuted_by_recurse
+      100.0%  [1]              tokenize_inc_file
+       100.0%  [1]               CreateTransform
+
+00.05%  [2]        pg_get_expr_worker @ /usr/local/bin/postgres
+ 100.0%  [2]         predicate_refuted_by_recurse
+  100.0%  [2]          tokenize_inc_file
+   100.0%  [2]           CreateTransform
+
+00.05%  [2]        ExecEvalConst @ /usr/local/bin/postgres
+ 100.0%  [2]         create_modifytable_path
+  100.0%  [2]          predicate_refuted_by_recurse
+   100.0%  [2]           tokenize_inc_file
+    100.0%  [2]            CreateTransform
+
+00.03%  [1]        0x11ba95 @ /lib/libc.so.7
+ 100.0%  [1]         float84lt @ /usr/local/bin/postgres
+  100.0%  [1]          lo_export
+   100.0%  [1]           get_relation_info
+    100.0%  [1]            tokenize_inc_file
+     100.0%  [1]             CreateTransform
+
+00.03%  [1]        ReindexIndex @ /usr/local/bin/postgres
+ 100.0%  [1]         ParallelQueryMain
+  100.0%  [1]          ExecParallelRetrieveInstrumentation
+   100.0%  [1]           ExecInitExpr
+    100.0%  [1]            ExecEvalRowCompare
+     100.0%  [1]             ExecEvalNullIf
+      100.0%  [1]              ExecEvalWholeRowVar
+       100.0%  [1]               create_modifytable_path
+        100.0%  [1]                predicate_refuted_by_recurse
+         100.0%  [1]                 tokenize_inc_file
+          100.0%  [1]                  CreateTransform
+
+00.03%  [1]        0xdef1 @ /lib/libthr.so.3
+
+00.03%  [1]        RemoveOperatorById @ /usr/local/bin/postgres
+ 100.0%  [1]         pg_timezone_abbrevs
+  100.0%  [1]          EncodeDateTime
+   100.0%  [1]           EncodeTimezone
+    100.0%  [1]            pg_stat_get_backend_client_port
+     100.0%  [1]             ExecSubPlan
+      100.0%  [1]              AfterTriggerBeginSubXact
+       100.0%  [1]               afterTriggerInvokeEvents
+        100.0%  [1]                DefineType
+         100.0%  [1]                 ExecCallTriggerFunc
+          100.0%  [1]                  ExecEvalWholeRowVar
+           100.0%  [1]                   ExecEvalRowCompare
+            100.0%  [1]                    ExecEvalNullIf
+             100.0%  [1]                     ExecEvalWholeRowVar
+              100.0%  [1]                      create_modifytable_path
+               100.0%  [1]                       predicate_refuted_by_recurse
+
+00.03%  [1]        0x4c2c08 @ /usr/local/bin/postgres
+ 100.0%  [1]         brin_desc
+  100.0%  [1]          heap_xlog_update
+   100.0%  [1]           _bt_restore_page
+    100.0%  [1]            infer_arbiter_indexes
+     100.0%  [1]             tokenize_inc_file
+      100.0%  [1]              CreateTransform
+
+00.03%  [1]        make_sort_from_sortclauses @ /usr/local/bin/postgres
+ 100.0%  [1]         ExplainNode
+  100.0%  [1]          parse_func_options
+   100.0%  [1]           parse_func_options
+    100.0%  [1]            get_relation_info
+     100.0%  [1]             tokenize_inc_file
+      100.0%  [1]              CreateTransform
+
+00.03%  [1]        ExplainDummyGroup @ /usr/local/bin/postgres
+ 100.0%  [1]         ExplainDummyGroup
+  100.0%  [1]          brincostestimate
+   100.0%  [1]           setup_simple_rel_arrays
+    100.0%  [1]            getObjectIdentityParts
+     100.0%  [1]             get_rule_expr
+      100.0%  [1]              predicate_refuted_by_recurse
+       100.0%  [1]               tokenize_inc_file
+        100.0%  [1]                CreateTransform
+
+00.03%  [1]        _bt_restore_page @ /usr/local/bin/postgres
+ 100.0%  [1]         heap_xlog_update
+  100.0%  [1]          _bt_restore_page
+   100.0%  [1]           infer_arbiter_indexes
+    100.0%  [1]            tokenize_inc_file
+     100.0%  [1]             CreateTransform
+
+00.03%  [1]        set_plan_references @ /usr/local/bin/postgres
+ 100.0%  [1]         grouping_planner
+
+00.03%  [1]        getgrnam_r @ /lib/libc.so.7
+ 100.0%  [1]         tokenize_file @ /usr/local/bin/postgres
+  100.0%  [1]          infer_arbiter_indexes
+   100.0%  [1]           tokenize_inc_file
+    100.0%  [1]            CreateTransform
+
+00.03%  [1]        0x11d657 @ /lib/libc.so.7
+ 100.0%  [1]         0x11d59b
+  100.0%  [1]          0x11ba9a
+   100.0%  [1]           float84lt @ /usr/local/bin/postgres
+    100.0%  [1]            tokenize_file
+     100.0%  [1]             infer_arbiter_indexes
+      100.0%  [1]              tokenize_inc_file
+       100.0%  [1]               CreateTransform
+
+00.03%  [1]        XLogPageRead @ /usr/local/bin/postgres
+ 100.0%  [1]         tokenize_inc_file
+  100.0%  [1]          CreateTransform
+
+00.03%  [1]        _bt_preprocess_keys @ /usr/local/bin/postgres
+ 100.0%  [1]         brin_desc
+  100.0%  [1]          heap_xlog_update
+   100.0%  [1]           _bt_restore_page
+    100.0%  [1]            infer_arbiter_indexes
+     100.0%  [1]             tokenize_inc_file
+      100.0%  [1]              CreateTransform
+
+00.03%  [1]        brincostestimate @ /usr/local/bin/postgres
+ 100.0%  [1]         transformExprRecurse
+  100.0%  [1]          getObjectIdentityParts
+   100.0%  [1]           get_rule_expr
+    100.0%  [1]            predicate_refuted_by_recurse
+     100.0%  [1]             tokenize_inc_file
+      100.0%  [1]              CreateTransform
+
+00.03%  [1]        0x8eb0e @ /lib/libc.so.7
+ 100.0%  [1]         _bt_leafbuild @ /usr/local/bin/postgres
+  100.0%  [1]          brin_desc
+   100.0%  [1]           heap_xlog_update
+    100.0%  [1]            _bt_restore_page
+     100.0%  [1]             infer_arbiter_indexes
+      100.0%  [1]              tokenize_inc_file
+       100.0%  [1]               CreateTransform
+
+00.03%  [1]        rangesel @ /usr/local/bin/postgres
+ 100.0%  [1]         similar_escape
+  100.0%  [1]          XLogFlush
+   100.0%  [1]           _bt_leafbuild
+    100.0%  [1]            brin_desc
+     100.0%  [1]             heap_xlog_update
+      100.0%  [1]              _bt_restore_page
+       100.0%  [1]               infer_arbiter_indexes
+        100.0%  [1]                tokenize_inc_file
+         100.0%  [1]                 CreateTransform
+
+00.03%  [1]        0x8eb0c @ /lib/libc.so.7
+ 100.0%  [1]         _bt_leafbuild @ /usr/local/bin/postgres
+  100.0%  [1]          brin_desc
+   100.0%  [1]           heap_xlog_update
+    100.0%  [1]            _bt_restore_page
+     100.0%  [1]             infer_arbiter_indexes
+      100.0%  [1]              tokenize_inc_file
+       100.0%  [1]               CreateTransform
+
+00.03%  [1]        0x12127c @ /lib/libc.so.7
+ 100.0%  [1]         ExplainNode @ /usr/local/bin/postgres
+  100.0%  [1]          parse_func_options
+   100.0%  [1]           parse_func_options
+    100.0%  [1]            get_relation_info
+     100.0%  [1]             tokenize_inc_file
+      100.0%  [1]              CreateTransform
+
+00.03%  [1]        RemoveUserMapping @ /usr/local/bin/postgres
+
+00.03%  [1]        makeDependencyGraphWalker @ /usr/local/bin/postgres
+ 100.0%  [1]         find_join_rel
+  100.0%  [1]          predicate_refuted_by_recurse
+   100.0%  [1]           tokenize_inc_file
+    100.0%  [1]            CreateTransform
+
+00.03%  [1]        0x120975 @ /lib/libc.so.7
+ 100.0%  [1]         afterTriggerInvokeEvents @ /usr/local/bin/postgres
+  100.0%  [1]          ExecCallTriggerFunc
+   100.0%  [1]           ExecEvalWholeRowVar
+    100.0%  [1]            ExecEvalRowCompare
+     100.0%  [1]             ExecEvalNullIf
+      100.0%  [1]              ExecEvalWholeRowVar
+       100.0%  [1]               create_modifytable_path
+        100.0%  [1]                predicate_refuted_by_recurse
+         100.0%  [1]                 tokenize_inc_file
+          100.0%  [1]                  CreateTransform
+
+00.03%  [1]        0x11ee8a @ /lib/libc.so.7
+ 100.0%  [1]         ImportForeignSchema @ /usr/local/bin/postgres
+
+00.03%  [1]        ExplainResultDesc @ /usr/local/bin/postgres
+ 100.0%  [1]         gincostestimate
+  100.0%  [1]          fetch_upper_rel
+   100.0%  [1]           build_join_rel
+    100.0%  [1]            predicate_refuted_by_recurse
+     100.0%  [1]             tokenize_inc_file
+      100.0%  [1]              CreateTransform
+
+00.03%  [1]        0x12122d @ /lib/libc.so.7
+ 100.0%  [1]         add_path @ /usr/local/bin/postgres
+  100.0%  [1]          add_path
+   100.0%  [1]           ExecInitCteScan
+    100.0%  [1]            ExecWindowAgg
+     100.0%  [1]             ExecParallelRetrieveInstrumentation
+      100.0%  [1]              ExecInitExpr
+       100.0%  [1]               ExecEvalRowCompare
+        100.0%  [1]                ExecEvalNullIf
+         100.0%  [1]                 ExecEvalWholeRowVar
+          100.0%  [1]                  create_modifytable_path
+           100.0%  [1]                   predicate_refuted_by_recurse
+            100.0%  [1]                    tokenize_inc_file
+             100.0%  [1]                     CreateTransform
+
+00.03%  [1]        ExecInitSubPlan @ /usr/local/bin/postgres
+ 100.0%  [1]         AfterTriggerSaveEvent
+  100.0%  [1]          ExecCallTriggerFunc
+   100.0%  [1]           ExecEvalWholeRowVar
+    100.0%  [1]            ExecEvalRowCompare
+     100.0%  [1]             ExecEvalNullIf
+      100.0%  [1]              ExecEvalWholeRowVar
+       100.0%  [1]               create_modifytable_path
+        100.0%  [1]                predicate_refuted_by_recurse
+         100.0%  [1]                 tokenize_inc_file
+          100.0%  [1]                  CreateTransform
+
+00.03%  [1]        reltimein @ /usr/local/bin/postgres
+ 100.0%  [1]         ln_var
+  100.0%  [1]          ExecInitExpr
+   100.0%  [1]           tupledesc_match
+    100.0%  [1]            ExecEndNode
+     100.0%  [1]             ExecProcNode
+      100.0%  [1]              ExecInitExpr
+       100.0%  [1]               ExecEvalRowCompare
+        100.0%  [1]                ExecEvalNullIf
+         100.0%  [1]                 ExecEvalWholeRowVar
+          100.0%  [1]                  create_modifytable_path
+           100.0%  [1]                   predicate_refuted_by_recurse
+            100.0%  [1]                    tokenize_inc_file
+             100.0%  [1]                     CreateTransform
+
+00.03%  [1]        lo_get_fragment @ /usr/local/bin/postgres
+ 100.0%  [1]         get_relation_info
+  100.0%  [1]          tokenize_inc_file
+   100.0%  [1]           CreateTransform
+
+00.03%  [1]        0x11ee84 @ /lib/libc.so.7
+ 100.0%  [1]         ImportForeignSchema @ /usr/local/bin/postgres
+
+00.03%  [1]        refnameRangeTblEntry @ /usr/local/bin/postgres
+ 100.0%  [1]         addRangeTableEntry
+  100.0%  [1]          operator_precedence_group
+   100.0%  [1]           transformExprRecurse
+    100.0%  [1]            fetch_upper_rel
+     100.0%  [1]             build_join_rel
+      100.0%  [1]              predicate_refuted_by_recurse
+       100.0%  [1]               tokenize_inc_file
+        100.0%  [1]                CreateTransform
+
+00.03%  [1]        do_analyze_rel @ /usr/local/bin/postgres
+ 100.0%  [1]         transformExprRecurse
+  100.0%  [1]          getObjectIdentityParts
+   100.0%  [1]           get_rule_expr
+    100.0%  [1]            predicate_refuted_by_recurse
+     100.0%  [1]             tokenize_inc_file
+      100.0%  [1]              CreateTransform
+
+00.03%  [1]        create_lockrows_path @ /usr/local/bin/postgres
+ 100.0%  [1]         predicate_refuted_by_recurse
+  100.0%  [1]          tokenize_inc_file
+   100.0%  [1]           CreateTransform
+
+00.03%  [1]        dataBeginPlaceToPage @ /usr/local/bin/postgres
+ 100.0%  [1]         dataBeginPlaceToPage
+
+00.03%  [1]        addRangeTableEntryForValues @ /usr/local/bin/postgres
+ 100.0%  [1]         expandRTE
+  100.0%  [1]          do_analyze_rel
+   100.0%  [1]           operator_precedence_group
+    100.0%  [1]            checkWellFormedRecursionWalker
+     100.0%  [1]             find_join_rel
+      100.0%  [1]              predicate_refuted_by_recurse
+       100.0%  [1]               tokenize_inc_file
+        100.0%  [1]                CreateTransform
+
+00.03%  [1]        set_rel_width @ /usr/local/bin/postgres
+ 100.0%  [1]         final_cost_nestloop
+  100.0%  [1]          create_lockrows_path
+   100.0%  [1]           predicate_refuted_by_recurse
+    100.0%  [1]            tokenize_inc_file
+     100.0%  [1]             CreateTransform
+
+00.03%  [1]        truncate_useless_pathkeys @ /usr/local/bin/postgres
+
+00.03%  [1]        _bt_buildadd @ /usr/local/bin/postgres
+ 100.0%  [1]         btree_redo
+  100.0%  [1]          _bt_restore_meta
+   100.0%  [1]           _bt_restore_page
+    100.0%  [1]            infer_arbiter_indexes
+     100.0%  [1]             tokenize_inc_file
+      100.0%  [1]              CreateTransform
+
+00.03%  [1]        0x6402fa @ /usr/local/bin/postgres
+ 100.0%  [1]         ExplainNode
+  100.0%  [1]          parse_func_options
+   100.0%  [1]           parse_func_options
+    100.0%  [1]            get_relation_info
+     100.0%  [1]             tokenize_inc_file
+      100.0%  [1]              CreateTransform
+
+00.03%  [1]        pull_up_sublinks_qual_recurse @ /usr/local/bin/postgres
+
+00.03%  [1]        ExecGroup @ /usr/local/bin/postgres
+ 100.0%  [1]         ExecReScanSort
+  100.0%  [1]          ExecWindowAgg
+   100.0%  [1]           ExecParallelRetrieveInstrumentation
+    100.0%  [1]            ExecInitExpr
+     100.0%  [1]             ExecEvalRowCompare
+      100.0%  [1]              ExecEvalNullIf
+       100.0%  [1]               ExecEvalWholeRowVar
+        100.0%  [1]                create_modifytable_path
+         100.0%  [1]                 predicate_refuted_by_recurse
+          100.0%  [1]                  tokenize_inc_file
+           100.0%  [1]                   CreateTransform
+
+00.03%  [1]        CreateTransform @ /usr/local/bin/postgres
+ 100.0%  [1]         ExecInitExpr
+  100.0%  [1]          tupledesc_match
+   100.0%  [1]           ExecEndNode
+    100.0%  [1]            ExecProcNode
+     100.0%  [1]             ExecInitExpr
+      100.0%  [1]              ExecEvalRowCompare
+       100.0%  [1]               ExecEvalNullIf
+        100.0%  [1]                ExecEvalWholeRowVar
+         100.0%  [1]                 create_modifytable_path
+          100.0%  [1]                  predicate_refuted_by_recurse
+           100.0%  [1]                   tokenize_inc_file
+            100.0%  [1]                    CreateTransform
+
+00.03%  [1]        bttintervalcmp @ /usr/local/bin/postgres
+
+00.03%  [1]        0x769e1c @ /usr/local/bin/postgres
+
+00.03%  [1]        __sys_poll @ /lib/libc.so.7
+ 100.0%  [1]         0xb5e6 @ /lib/libthr.so.3
+  100.0%  [1]          WaitEventSetWait @ /usr/local/bin/postgres
+   100.0%  [1]           WaitLatchOrSocket
+    100.0%  [1]            pgstat_start
+     100.0%  [1]             reaper
+      100.0%  [1]              0xe78f @ /lib/libthr.so.3
+       100.0%  [1]               0xdd6f
+
+00.03%  [1]        PGSemaphoreCreate @ /usr/local/bin/postgres
+ 100.0%  [1]         predicate_refuted_by_recurse
+  100.0%  [1]          tokenize_inc_file
+   100.0%  [1]           CreateTransform
+
+00.03%  [1]        make_limit @ /usr/local/bin/postgres
+ 100.0%  [1]         ExplainNode
+  100.0%  [1]          parse_func_options
+   100.0%  [1]           parse_func_options
+    100.0%  [1]            get_relation_info
+     100.0%  [1]             tokenize_inc_file
+      100.0%  [1]              CreateTransform
+
+00.03%  [1]        finalize_plan @ /usr/local/bin/postgres
+ 100.0%  [1]         0x7847cc
+  100.0%  [1]          get_rule_expr
+
+00.03%  [1]        0x118958 @ /lib/libc.so.7
+ 100.0%  [1]         sqrt_var @ /usr/local/bin/postgres
+  100.0%  [1]          numeric_sqrt
+   100.0%  [1]           float8out
+    100.0%  [1]            float4mi
+     100.0%  [1]             AfterTriggerSetState
+      100.0%  [1]              ExecInitModifyTable
+       100.0%  [1]               AlterRole
+        100.0%  [1]                AlterDomainValidateConstraint
+         100.0%  [1]                 validateDomainConstraint
+          100.0%  [1]                  afterTriggerInvokeEvents
+           100.0%  [1]                   ExecCallTriggerFunc
+            100.0%  [1]                    ExecEvalWholeRowVar
+             100.0%  [1]                     ExecEvalRowCompare
+              100.0%  [1]                      ExecEvalNullIf
+               100.0%  [1]                       ExecEvalWholeRowVar
+
+00.03%  [1]        get_opfamily_oid @ /usr/local/bin/postgres
+ 100.0%  [1]         ParallelQueryMain
+  100.0%  [1]          ExecParallelRetrieveInstrumentation
+   100.0%  [1]           ExecInitExpr
+    100.0%  [1]            ExecEvalRowCompare
+     100.0%  [1]             ExecEvalNullIf
+      100.0%  [1]              ExecEvalWholeRowVar
+       100.0%  [1]               create_modifytable_path
+        100.0%  [1]                predicate_refuted_by_recurse
+         100.0%  [1]                 tokenize_inc_file
+          100.0%  [1]                  CreateTransform
+
+00.03%  [1]        0x8eb27 @ /lib/libc.so.7
+ 100.0%  [1]         _bt_leafbuild @ /usr/local/bin/postgres
+  100.0%  [1]          brin_desc
+   100.0%  [1]           heap_xlog_update
+    100.0%  [1]            _bt_restore_page
+     100.0%  [1]             infer_arbiter_indexes
+      100.0%  [1]              tokenize_inc_file
+       100.0%  [1]               CreateTransform
+
+00.03%  [1]        find_childrel_appendrelinfo @ /usr/local/bin/postgres
+ 100.0%  [1]         build_join_rel
+  100.0%  [1]          predicate_refuted_by_recurse
+   100.0%  [1]           tokenize_inc_file
+    100.0%  [1]            CreateTransform
+
+00.03%  [1]        0x74a5f9 @ /usr/local/bin/postgres
+
+00.03%  [1]        ginPlaceToPage @ /usr/local/bin/postgres
+ 100.0%  [1]         InitializeParallelDSM
+  100.0%  [1]          pg_get_multixact_members
+   100.0%  [1]           DestroyParallelContext
+    100.0%  [1]            TrimCLOG
+     100.0%  [1]             spg_redo
+      100.0%  [1]              spgrescan
+       100.0%  [1]               heap_lock_updated_tuple
+        100.0%  [1]                heap_update
+         100.0%  [1]                 predicate_refuted_by_recurse
+          100.0%  [1]                  tokenize_inc_file
+           100.0%  [1]                   CreateTransform
+
+00.03%  [1]        index_beginscan_bitmap @ /usr/local/bin/postgres
+ 100.0%  [1]         _bt_restore_page
+  100.0%  [1]          infer_arbiter_indexes
+   100.0%  [1]           tokenize_inc_file
+    100.0%  [1]            CreateTransform
+
+00.03%  [1]        create_limit_path @ /usr/local/bin/postgres
+ 100.0%  [1]         0x66229c
+  100.0%  [1]          tokenize_inc_file
+   100.0%  [1]           CreateTransform
+
+00.03%  [1]        0x663c3d @ /usr/local/bin/postgres
+ 100.0%  [1]         build_join_rel
+  100.0%  [1]          predicate_refuted_by_recurse
+   100.0%  [1]           tokenize_inc_file
+    100.0%  [1]            CreateTransform
+
+00.03%  [1]        InitializeParallelDSM @ /usr/local/bin/postgres
+ 100.0%  [1]         pg_get_multixact_members
+  100.0%  [1]          DestroyParallelContext
+   100.0%  [1]           TrimCLOG
+    100.0%  [1]            spg_redo
+     100.0%  [1]             spgrescan
+      100.0%  [1]              heap_lock_updated_tuple
+       100.0%  [1]               heap_update
+        100.0%  [1]                predicate_refuted_by_recurse
+         100.0%  [1]                 tokenize_inc_file
+          100.0%  [1]                  CreateTransform
+
+00.03%  [1]        0xb7ad2 @ /lib/libc.so.7
+ 100.0%  [1]         0x118b35
+  100.0%  [1]          0x66384f @ /usr/local/bin/postgres
+   100.0%  [1]           predicate_refuted_by_recurse
+    100.0%  [1]            tokenize_inc_file
+     100.0%  [1]             CreateTransform
+
+00.03%  [1]        0x87273 @ /lib/libc.so.7
+
+00.03%  [1]        __error @ /lib/libc.so.7
+ 100.0%  [1]         0x1597ea
+  100.0%  [1]          pgstat_start @ /usr/local/bin/postgres
+   100.0%  [1]           reaper
+    100.0%  [1]            0xe78f @ /lib/libthr.so.3
+     100.0%  [1]             0xdd6f
+
+00.03%  [1]        0x86d46 @ /lib/libc.so.7
+ 100.0%  [1]         0x872a6
+  100.0%  [1]          pg_get_function_arg_default @ /usr/local/bin/postgres
+   100.0%  [1]           set_rtable_names
+    100.0%  [1]            get_rule_expr
+     100.0%  [1]             predicate_refuted_by_recurse
+      100.0%  [1]              tokenize_inc_file
+       100.0%  [1]               CreateTransform
+
+00.03%  [1]        0x663c3e @ /usr/local/bin/postgres
+ 100.0%  [1]         build_join_rel
+  100.0%  [1]          predicate_refuted_by_recurse
+   100.0%  [1]           tokenize_inc_file
+    100.0%  [1]            CreateTransform
+
+00.03%  [1]        CreateForeignServer @ /usr/local/bin/postgres
+ 100.0%  [1]         get_relation_info
+  100.0%  [1]          tokenize_inc_file
+   100.0%  [1]           CreateTransform
+
